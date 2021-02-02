@@ -1,6 +1,14 @@
 # fovt-data-pipeline
 
-This repository contains the configuration directives and necessary scripts to validate, triplify, reason, and load data into an external document store for the FuTRES project.  This repository uses data that has first been pre-processed using R Scripts and [GEOME](https://geome-db.org/) for validating data and reporting problem data, the [Ontology Data Pipeline](https://github.com/biocodellc/ontology-data-pipeline) to direct post-processing steps, [FuTRES Ontology for Vertebrate Traits](https://github.com/futres/fovt) as the source ontology, and [Ontopilot](https://github.com/stuckyb/ontopilot) as a contributing library for the reasoning steps.  Configuration directives are stored in the `config/` directory.  If you want to modify configuration settings, refer to [ontology-data-pipeline](https://github.com/biocodellc/ontology-data-pipeline) for instructions.
+This repository contains the configuration directives and necessary scripts to validate, triplify, reason, and load data into an external document store for the FuTRES project.  This repository uses data that has first been pre-processed using [data-mapping R Scripts](https://github.com/futres/fovt-data-mapping) and [GEOME](https://geome-db.org/) for validating data and reporting problem data.  Refer to the [data-mapping](https://github.com/futres/fovt-data-mapping) repository for more information. 
+
+Once the data has been pre-processed using the prior steps, this pipeline completes the steps for data integration, validation, reasoning, and database loading.  This codebase draws on the [Ontology Data Pipeline](https://github.com/biocodellc/ontology-data-pipeline) for triplifying and reasoning, the [FuTRES Ontology for Vertebrate Traits](https://github.com/futres/fovt) as the source ontology, and [Ontopilot](https://github.com/stuckyb/ontopilot) as a contributing library for the reasoning steps.  
+
+Here is a summary of the steps contained in this pipeline:
+ * Process data using the `fetch.py` script in this repository.  This provides summary statistics for the [FuTRES website](https://futres.org/) as well as assembling all data sources into a single file in `../FutresAPI/data/futres_data_processed.csv`.  Importantly, this step reports any data that has been removed from the data set during processing into an error log: `../FutresAPI/data/futres_data_with_errors.csv`
+  * Run the pipeline code `run.sh data/futres_data_processed.csv data/output config`
+  * Run the loader code to load data into elasticsearch `python loader.py`. This script looks for output in `data/output/output_reasoned_csv/data*.csv`
+
 
 # Pre-processing: Assembling data and building API lookup Tables
 ## Installation
@@ -75,14 +83,7 @@ The `loader.py` script populates the elasticsearch backend database using the lo
 The FuTRES dynamic data is hosted by the plantphenology nodejs proxy service at:
 https://github.com/biocodellc/ppo-data-server/blob/master/docs/es_futres_proxy.md
 
-# A summary of processing steps for FuTRES Data
-
-The following steps describe the entire loading/process pipeline for FuTRES data.  The user will need to verify and check all data sources following each step.  In addition, data loading (the very last step) must be run from a host that has direct access to the ElasticSearch data store.  We use the `biscicol.org` server for this.
-  * Assemble data from sources and pre-process using [data-mapping R scripts](https://github.com/futres/fovt-data-mapping)
-  * Load data into [GEOME](https://geome-db.org/), which provides user feedback on data quality.  This does not include [VertNet](http://vertnet.org/) data sources, which have been processed separately.
-  * Process data using the `fetch.py` script in this repository.  This provides summary statistics for the [FuTRES website](https://futres.org/) as well as assembling all data sources into a single file in `../FutresAPI/data/futres_data_processed.csv`.  Importantly, this step reports any data that has been removed from the data set during processing into an error log: `../FutresAPI/data/futres_data_with_errors.csv`
-  * Run the pipeline code `run.sh data/futres_data_processed.csv data/output config`
-  * Run the loader code to load data into elasticsearch `python loader.py`. This script looks for output in `data/output/output_reasoned_csv/data*.csv`
+ 
 
 
 
