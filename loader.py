@@ -45,12 +45,20 @@ class ESLoader(object):
         self.alias = alias
         self.es = Elasticsearch([host], serializer=JSONSerializerPython2())
 
-        # Create lookup file for mapping uris to labels
+        # Create lookup file for mapping trait URIs to trait Labels
         self.lookup = dict()
         with urllib.request.urlopen("https://plantphenology.org//futresapi/v2/fovt/") as url:
             data = json.loads(url.read().decode())
             for trait in data:
                 self.lookup[trait['termID']] = trait['label']
+
+        # Create loookup file for mapping projectIDs to projectTitles
+        self.lookup_project = dict()
+        with urllib.request.urlopen("https://raw.githubusercontent.com/futres/fovt-data-pipeline/master/data/projects.json") as url:
+            data = json.loads(url.read().decode())
+            for project in data:
+                self.lookup_project[project['projectID']] = project['projectTitle'].replace('_',' ')
+
     def load(self):
         if not self.es.indices.exists(self.index_name):
             print ('creating index ' + self.index_name)
@@ -96,6 +104,9 @@ class ESLoader(object):
                         pass
                 row['mapped_traits'] = mapped_traits
 
+                # A mapping of projects to use instead of IDs
+                row['mapped_project'] = self.lookup_project[row['projectID']]
+
                 # remove hashes from measurementType
                 row['measurementType'] = row['measurementType'].replace('{', '').replace('}','')
 
@@ -128,6 +139,7 @@ class ESLoader(object):
                         "lifeStage": {"type": "keyword"},
                         "genus": {"type": "keyword"},
                         "projectID": {"type": "keyword"},
+                        "mapped_project": {"type": "keyword"},
                         "measurementType": {"type": "text"},
                         "measurementValue": {"type": "float"},
                         "decimalLatitude": { "type": "float" },
