@@ -12,7 +12,7 @@ If you wish to quickly test the validation, triplifying and reasoning steps, you
 ```
 ./run.sh sample_data_processed.csv data/output config
 ```
-This example uses a file that has already been pre-processed `sample_data_processed.csv` and tagged with labels that exist in our ontology.
+This example uses a file that has already been pre-processed (`sample_data_processed.csv`) and tagged with labels that exist in our ontology.  Output is stored in `data/output` and uses processing directives stored in the `config` directory.
 
 ## Complete process / Advanced
  * Process data using the `fetch.py` script in this repository.  This provides summary statistics for the [FuTRES website](https://futres.org/) as well as assembling all data sources into a single file in `../FutresAPI/data/futres_data_processed.csv`.  Importantly, this step reports any data that has been removed from the data set during processing into an error log: `../FutresAPI/data/futres_data_with_errors.csv`
