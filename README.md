@@ -1,12 +1,12 @@
 # fovt-data-pipeline
 
-This repository contains the configuration directives and necessary scripts to validate, triplify, reason, and load data into an external document store for the FuTRES project.  This repository uses data that has first been pre-processed using [data-mapping R Scripts](https://github.com/futres/fovt-data-mapping) and [GEOME](https://geome-db.org/) for validating data and reporting problem data.  Refer to the [data-mapping](https://github.com/futres/fovt-data-mapping) repository for more information.  Please note that this repository is designed to process millions of records from multiple repositories and is fairly complex.  
+This repository contains the configuration directives and necessary scripts to validate, triplify, reason, and load data into an external document store for the FuTRES project.  This repository uses data that has first been pre-processed using [data-mapping R Scripts](https://github.com/futres/fovt-data-mapping) and [GEOME](https://geome-db.org/) for validating data and reporting problem data.  Refer to the [data-mapping](https://github.com/futres/fovt-data-mapping) repository for more information.  Please note that this repository is designed to process millions of records from multiple repositories and is fairly complex.  We have a provided a simple start section below which demonstrates the reasoning steps used in producing the final output.  
 
 This codebase draws on the [Ontology Data Pipeline](https://github.com/biocodellc/ontology-data-pipeline) for triplifying and reasoning, the [FuTRES Ontology for Vertebrate Traits](https://github.com/futres/fovt) as the source ontology, and [Ontopilot](https://github.com/stuckyb/ontopilot) as a contributing library for the reasoning steps.  
 
 # Getting Started
 ## Simple Start
-If you wish to quickly test the validation, triplifying and reasoning steps, you can start here.  
+If you wish to quickly test the validation, triplifying and reasoning steps, you can start here.    
   * First, [Install docker](https://docs.docker.com/install/) and then clone this repository.  Once that is done, you can test
   * Second, run the pipeline using some provided examples, like  like this:
 ```
@@ -15,6 +15,7 @@ If you wish to quickly test the validation, triplifying and reasoning steps, you
 This example uses a file that has already been pre-processed (`sample_data_processed.csv`) and tagged with labels that exist in our ontology.  Output is stored in `data/output` and uses processing directives stored in the `config` directory.
 
 ## Complete process / Advanced
+Here we follow the complete process for pre-processing and processing data for the API and formatting for the pipeline. 
  * Process data using the `fetch.py` script in this repository.  This provides summary statistics for the [FuTRES website](https://futres.org/) as well as assembling all data sources into a single file in `../FutresAPI/data/futres_data_processed.csv`.  Importantly, this step reports any data that has been removed from the data set during processing into an error log: `../FutresAPI/data/futres_data_with_errors.csv`
   * Run the pipeline code `run.sh data/futres_data_processed.csv data/output config`
   * Run the loader code to load data into elasticsearch `python loader.py`. This script looks for output in `data/output/output_reasoned_csv/data*.csv`
