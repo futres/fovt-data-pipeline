@@ -6,9 +6,9 @@ This codebase draws on the [Ontology Data Pipeline](https://github.com/biocodell
 
 API:
 FuTRES Endpoints
-  *  [futresapi/v2/download_futres_proxy](docs/download_futres_proxy.md) Query the Futres data store download_futres_proxy.md
-  *  [futresapi/v1/query](docs/es_futres_proxy.md) Query the Futres data store 
-  *  [futresapi/v2/fovt](docs/futres_ontology_proxy.md) Lookup terms from the FOVT ontology
+  *  [futresapi/v2/download_futres_proxy](https://github.com/biocodellc/ppo-data-server/blob/master/docs/download_futres_proxy.md) Query the Futres data store download_futres_proxy.md
+  *  [futresapi/v1/query](https://github.com/biocodellc/ppo-data-server/blob/master/docs/es_futres_proxy.md) Query the Futres data store 
+  *  [futresapi/v2/fovt](https://github.com/biocodellc/ppo-data-server/blob/master/docs/futres_ontology_proxy.md) Lookup terms from the FOVT ontology
   *  [https://github.com/futres/fovt-data-pipeline/blob/master/api.md] API tools which drive browse lists
 
 # Getting Started
