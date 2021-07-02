@@ -12,3 +12,5 @@ output.txt.err
 .DS_Store
 db.ini
 vertnet/
+ontopilot
+data/futres_data_processed.csv.gz
