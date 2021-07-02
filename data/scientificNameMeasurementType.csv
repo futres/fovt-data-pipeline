@@ -2303,7 +2303,8 @@ Connochaetes taurinus,{ear length to notch},3
 Connochaetes taurinus,{pes length},3
 Connochaetes taurinus,{tail length},2
 Cormohipparion aff. sinapensis,{depth of the medial side of talus},1
-Cormohipparion aff. sinapensis,{length of the medial side of talus},1
+Cormohipparion aff. sinapensis,{talus length},2
+Cormohipparion aff. sinapensis,{talus width},2
 Crateromys heaneyi,{body length},1
 Crateromys heaneyi,{body mass},1
 Crateromys heaneyi,{ear length to notch},1
@@ -2352,16 +2353,24 @@ Cratogeomys zinseri,{body length},3
 Cratogeomys zinseri,{ear length to notch},3
 Cratogeomys zinseri,{pes length},3
 Cratogeomys zinseri,{tail length},3
+Cremohipparion aff. matthewi,{calcaneus length},2
 Cremohipparion aff. matthewi,{depth of the medial side of talus},6
-Cremohipparion aff. matthewi,{length of the medial side of talus},6
+Cremohipparion aff. matthewi,{talus length},12
+Cremohipparion aff. matthewi,{talus width},12
+Cremohipparion antelopinum,{calcaneus length},8
 Cremohipparion antelopinum,{depth of the medial side of talus},5
-Cremohipparion antelopinum,{length of the medial side of talus},5
+Cremohipparion antelopinum,{talus length},10
+Cremohipparion antelopinum,{talus width},8
 Cremohipparion cf. antelopinum,{depth of the medial side of talus},1
-Cremohipparion cf. antelopinum,{length of the medial side of talus},1
+Cremohipparion cf. antelopinum,{talus length},2
+Cremohipparion cf. antelopinum,{talus width},2
 Cremohipparion cf. nikosi,{depth of the medial side of talus},1
-Cremohipparion cf. nikosi,{length of the medial side of talus},1
+Cremohipparion cf. nikosi,{talus length},2
+Cremohipparion cf. nikosi,{talus width},2
+Cremohipparion mediterraneum,{calcaneus length},4
 Cremohipparion mediterraneum,{depth of the medial side of talus},4
-Cremohipparion mediterraneum,{length of the medial side of talus},4
+Cremohipparion mediterraneum,{talus length},8
+Cremohipparion mediterraneum,{talus width},8
 Cricetidae,{body length},48
 Cricetidae,{body mass},25
 Cricetidae,{ear length to notch},19
@@ -3708,16 +3717,20 @@ Equus,{body length},10
 Equus,{tail length},1
 Equus Linnaeus,{body length},4
 Equus asinus,{body length},6
+Equus asinus,{calcaneus length},2
 Equus asinus,{depth of the medial side of talus},1
-Equus asinus,{length of the medial side of talus},1
+Equus asinus,{talus length},2
+Equus asinus,{talus width},2
 Equus burchelli,{body length},1
 Equus burchelli,{body mass},1
 Equus burchellii,{body length},13
+Equus burchellii,{calcaneus length},2
 Equus burchellii,{depth of the medial side of talus},1
 Equus burchellii,{ear length to notch},2
-Equus burchellii,{length of the medial side of talus},1
 Equus burchellii,{pes length},2
 Equus burchellii,{tail length},2
+Equus burchellii,{talus length},2
+Equus burchellii,{talus width},2
 Equus caballus,{body length},39
 Equus caballus,{body mass},1
 Equus caballus,{ear length to notch},2
@@ -3725,67 +3738,94 @@ Equus caballus,{pes length},2
 Equus caballus,{tail length},3
 Equus calobatus,{body length},2
 Equus cf. grevyi,{depth of the medial side of talus},2
-Equus cf. grevyi,{length of the medial side of talus},2
+Equus cf. grevyi,{talus length},4
+Equus cf. grevyi,{talus width},4
 Equus conversidens,{body length},2
 Equus conversidens,{depth of the medial side of talus},1
+Equus conversidens,{talus length},2
+Equus conversidens,{talus width},2
 Equus eisenmannae,{depth of the medial side of talus},1
-Equus eisenmannae,{length of the medial side of talus},1
+Equus eisenmannae,{talus length},2
+Equus eisenmannae,{talus width},2
 Equus ferus,{body length},1
 Equus grevyi,{body length},10
 Equus grevyi,{body mass},1
+Equus grevyi,{calcaneus length},24
 Equus grevyi,{depth of the medial side of talus},14
 Equus grevyi,{ear length to notch},2
 Equus grevyi,{femur length to greater trochanter},3
 Equus grevyi,{femur length to head of femur},3
-Equus grevyi,{humerus length to caput of humerus},3
-Equus grevyi,{humerus length to ventral tubercle},3
-Equus grevyi,{length of the medial side of talus},14
+Equus grevyi,{humerus length to caput of humerus},6
+Equus grevyi,{humerus length to ventral tubercle},6
 Equus grevyi,{pes length},2
 Equus grevyi,{tail length},2
+Equus grevyi,{talus length},28
+Equus grevyi,{talus width},28
 Equus hemionus,{body length},3
+Equus hemionus,{calcaneus length},4
 Equus hemionus,{depth of the medial side of talus},2
-Equus hemionus,{length of the medial side of talus},2
+Equus hemionus,{talus length},4
+Equus hemionus,{talus width},4
 Equus kiang,{body length},1
+Equus kiang,{calcaneus length},6
 Equus kiang,{depth of the medial side of talus},4
-Equus kiang,{length of the medial side of talus},4
+Equus kiang,{talus length},8
+Equus kiang,{talus width},8
 Equus livenzoensis,{depth of the medial side of talus},4
-Equus livenzoensis,{length of the medial side of talus},4
+Equus livenzoensis,{talus length},8
+Equus livenzoensis,{talus width},8
 Equus major/bressanus,{depth of the medial side of talus},2
-Equus major/bressanus,{length of the medial side of talus},2
+Equus major/bressanus,{talus length},4
+Equus major/bressanus,{talus width},4
 Equus occidentalis,{body length},2
+Equus occidentalis,{calcaneus length},20
 Equus occidentalis,{depth of the medial side of talus},10
-Equus occidentalis,{length of the medial side of talus},10
+Equus occidentalis,{talus length},20
+Equus occidentalis,{talus width},20
 Equus onager,{body length},1
 Equus przewalskii,{body length},2
 Equus quagga,{body length},12
+Equus quagga,{calcaneus length},14
 Equus quagga,{depth of the medial side of talus},8
-Equus quagga,{femur length to greater trochanter},2
+Equus quagga,{femur length to greater trochanter},3
 Equus quagga,{femur length to head of femur},2
-Equus quagga,{humerus length to caput of humerus},2
-Equus quagga,{humerus length to ventral tubercle},1
-Equus quagga,{length of the medial side of talus},7
+Equus quagga,{humerus length to caput of humerus},4
+Equus quagga,{humerus length to ventral tubercle},4
+Equus quagga,{talus length},15
+Equus quagga,{talus width},16
+Equus quagga boehemi,{calcaneus length},10
 Equus quagga boehemi,{depth of the medial side of talus},5
-Equus quagga boehemi,{length of the medial side of talus},5
+Equus quagga boehemi,{talus length},10
+Equus quagga boehemi,{talus width},10
 Equus scotti,{body length},1
+Equus simplicidens,{calcaneus length},32
 Equus simplicidens,{depth of the medial side of talus},13
 Equus simplicidens,{femur length to greater trochanter},3
 Equus simplicidens,{femur length to head of femur},3
-Equus simplicidens,{humerus length to caput of humerus},3
-Equus simplicidens,{humerus length to ventral tubercle},3
-Equus simplicidens,{length of the medial side of talus},16
+Equus simplicidens,{humerus length to caput of humerus},6
+Equus simplicidens,{humerus length to ventral tubercle},6
+Equus simplicidens,{talus length},32
+Equus simplicidens,{talus width},32
+Equus sp.,{calcaneus length},66
 Equus sp.,{depth of the medial side of talus},99
-Equus sp.,{length of the medial side of talus},113
+Equus sp.,{talus length},226
+Equus sp.,{talus width},210
 Equus stehlini,{depth of the medial side of talus},1
-Equus stehlini,{length of the medial side of talus},1
+Equus stehlini,{talus length},2
+Equus stehlini,{talus width},2
+Equus stenonis,{calcaneus length},6
 Equus stenonis,{depth of the medial side of talus},3
-Equus stenonis,{length of the medial side of talus},4
+Equus stenonis,{talus length},8
+Equus stenonis,{talus width},6
 Equus zebra,{body length},8
 Equus zebra,{body mass},1
 Equus zebra,{ear length to notch},2
 Equus zebra,{pes length},2
 Equus zebra,{tail length},3
+Equus zebra zebra,{calcaneus length},2
 Equus zebra zebra,{depth of the medial side of talus},1
-Equus zebra zebra,{length of the medial side of talus},1
+Equus zebra zebra,{talus length},2
+Equus zebra zebra,{talus width},2
 Eremitalpa granti,{body mass},1
 Erethizon,{body length},1
 Erethizon dorsata,{body length},18
@@ -3895,36 +3935,52 @@ Euphractus sexcinctus,{tail length},8
 Eupleres goudotii,{body length},2
 Euroscaptor longirostris,{body length},4
 Eurygnathohippus aff. cornelianus,{depth of the medial side of talus},2
-Eurygnathohippus aff. cornelianus,{length of the medial side of talus},2
+Eurygnathohippus aff. cornelianus,{talus length},4
+Eurygnathohippus aff. cornelianus,{talus width},4
 Eurygnathohippus aff. feibeli,{depth of the medial side of talus},4
-Eurygnathohippus aff. feibeli,{length of the medial side of talus},4
+Eurygnathohippus aff. feibeli,{talus length},8
+Eurygnathohippus aff. feibeli,{talus width},6
+Eurygnathohippus aff. hasumense,{calcaneus length},12
 Eurygnathohippus aff. hasumense,{depth of the medial side of talus},12
-Eurygnathohippus aff. hasumense,{humerus length to caput of humerus},1
-Eurygnathohippus aff. hasumense,{length of the medial side of talus},12
+Eurygnathohippus aff. hasumense,{humerus length to caput of humerus},2
+Eurygnathohippus aff. hasumense,{talus length},24
+Eurygnathohippus aff. hasumense,{talus width},28
 Eurygnathohippus cf. feibeli,{depth of the medial side of talus},3
-Eurygnathohippus cf. feibeli,{length of the medial side of talus},3
+Eurygnathohippus cf. feibeli,{talus length},6
+Eurygnathohippus cf. feibeli,{talus width},6
 Eurygnathohippus cf. hasumense,{depth of the medial side of talus},2
-Eurygnathohippus cf. hasumense,{length of the medial side of talus},2
+Eurygnathohippus cf. hasumense,{talus length},4
+Eurygnathohippus cf. hasumense,{talus width},4
+Eurygnathohippus feibeli,{calcaneus length},4
 Eurygnathohippus feibeli,{depth of the medial side of talus},9
-Eurygnathohippus feibeli,{length of the medial side of talus},9
+Eurygnathohippus feibeli,{talus length},18
+Eurygnathohippus feibeli,{talus width},16
 Eurygnathohippus hasumense,{depth of the medial side of talus},8
-Eurygnathohippus hasumense,{length of the medial side of talus},9
+Eurygnathohippus hasumense,{talus length},18
+Eurygnathohippus hasumense,{talus width},14
+Eurygnathohippus hooijeri,{calcaneus length},8
 Eurygnathohippus hooijeri,{depth of the medial side of talus},13
 Eurygnathohippus hooijeri,{femur length to greater trochanter},2
 Eurygnathohippus hooijeri,{femur length to head of femur},2
-Eurygnathohippus hooijeri,{humerus length to caput of humerus},1
-Eurygnathohippus hooijeri,{humerus length to ventral tubercle},1
-Eurygnathohippus hooijeri,{length of the medial side of talus},13
+Eurygnathohippus hooijeri,{humerus length to caput of humerus},2
+Eurygnathohippus hooijeri,{humerus length to ventral tubercle},2
+Eurygnathohippus hooijeri,{talus length},26
+Eurygnathohippus hooijeri,{talus width},26
 Eurygnathohippus pomeli,{depth of the medial side of talus},1
-Eurygnathohippus pomeli,{length of the medial side of talus},1
+Eurygnathohippus pomeli,{talus length},2
+Eurygnathohippus pomeli,{talus width},2
+Eurygnathohippus sp.,{calcaneus length},4
 Eurygnathohippus sp.,{depth of the medial side of talus},33
 Eurygnathohippus sp.,{femur length to greater trochanter},1
 Eurygnathohippus sp.,{femur length to head of femur},2
-Eurygnathohippus sp.,{length of the medial side of talus},45
+Eurygnathohippus sp.,{talus length},90
+Eurygnathohippus sp.,{talus width},86
 Eurygnathohippus sp. lg.,{depth of the medial side of talus},2
-Eurygnathohippus sp. lg.,{length of the medial side of talus},3
+Eurygnathohippus sp. lg.,{talus length},6
+Eurygnathohippus sp. lg.,{talus width},6
 Eurygnathohippus woldegabrieli,{depth of the medial side of talus},5
-Eurygnathohippus woldegabrieli,{length of the medial side of talus},5
+Eurygnathohippus woldegabrieli,{talus length},10
+Eurygnathohippus woldegabrieli,{talus width},6
 Euryoryzomys legatus,{body length},33
 Euryoryzomys legatus,{body mass},32
 Euryoryzomys legatus,{ear length to notch},33
@@ -4810,8 +4866,11 @@ Heteromys teleus,{tail length},1
 Heterosorex Gaillard,{body length},1
 Heteroxerus Stehlin,{body length},2
 Hexaprotodon liberiensis,{body length},1
+Hipparion prostylum,{calcaneus length},44
 Hipparion prostylum,{depth of the medial side of talus},26
-Hipparion prostylum,{length of the medial side of talus},24
+Hipparion prostylum,{talus length},48
+Hipparion prostylum,{talus width},58
+Hipparion sp.,{calcaneus length},2
 Hippocamelus antisensis,{body length},6
 Hippocamelus antisensis,{ear length to notch},4
 Hippocamelus antisensis,{pes length},4
@@ -4823,12 +4882,14 @@ Hippopotamus amphibius,{body mass},1
 Hippopotamus amphibius,{ear length to notch},1
 Hippotherium giganteum,{femur length to greater trochanter},1
 Hippotherium giganteum,{femur length to head of femur},1
+Hippotherium primigeneium,{calcaneus length},64
 Hippotherium primigeneium,{depth of the medial side of talus},52
 Hippotherium primigeneium,{femur length to greater trochanter},9
 Hippotherium primigeneium,{femur length to head of femur},9
-Hippotherium primigeneium,{humerus length to caput of humerus},9
-Hippotherium primigeneium,{humerus length to ventral tubercle},9
-Hippotherium primigeneium,{length of the medial side of talus},58
+Hippotherium primigeneium,{humerus length to caput of humerus},18
+Hippotherium primigeneium,{humerus length to ventral tubercle},18
+Hippotherium primigeneium,{talus length},116
+Hippotherium primigeneium,{talus width},90
 Hippotragus equinus,{body length},10
 Hippotragus niger,{body length},8
 Hippotragus niger,{ear length to notch},1
@@ -7931,21 +7992,25 @@ Odocoileus sp.,{body length},1
 Odocoileus sp.,{pes length},1
 Odocoileus sp.,{tail length},1
 Odocoileus virginianus,{body height},1
-Odocoileus virginianus,{body length},2796
-Odocoileus virginianus,{body mass},1804
-Odocoileus virginianus,{ear length to notch},778
-Odocoileus virginianus,{pes length},1290
-Odocoileus virginianus,{tail length},1300
-Odocoileus virginianus borealis,{body mass},2
-Odocoileus virginianus cousei,{body length},1
+Odocoileus virginianus,{body length with tail},667
+Odocoileus virginianus,{body length},2132
+Odocoileus virginianus,{body mass},1807
+Odocoileus virginianus,{calcaneus length},19
+Odocoileus virginianus,{ear length to notch},1290
+Odocoileus virginianus,{pes length},1401
+Odocoileus virginianus,{tail length},1439
+Odocoileus virginianus,{tibia length},14
+Odocoileus virginianus borealis,{body mass},3
+Odocoileus virginianus cousei,{body length with tail},1
 Odocoileus virginianus cousei,{body mass},1
+Odocoileus virginianus cousei,{ear length to notch},1
 Odocoileus virginianus cousei,{pes length},1
 Odocoileus virginianus cousei,{tail length},1
 Odocoileus virginianus dacotensis,{body mass},1
-Odocoileus virginianus truei,{body length},1
+Odocoileus virginianus truei,{body length with tail},1
 Odocoileus virginianus truei,{body mass},1
-Odocoileus virginianus truei,{pes length},1
-Odocoileus virginianus truei,{tail length},1
+Odocoileus virginianus truei,{pes length},2
+Odocoileus virginianus truei,{tail length},2
 Oecomys,{body length},4
 Oecomys,{body mass},3
 Oecomys,{ear length to notch},4
@@ -9649,7 +9714,8 @@ Plesiadapis rex,{body length},2
 Plesiadapis simonsi,{body length},1
 Plesiadapis walbeckensis,{tail length},1
 Plesiohipparion longipes,{depth of the medial side of talus},2
-Plesiohipparion longipes,{length of the medial side of talus},2
+Plesiohipparion longipes,{talus length},4
+Plesiohipparion longipes,{talus width},4
 Plesiosminthus schaubi,{body length},1
 Pliomys Méhely,{body length},1
 Pliomys Méhely,{body mass},5
@@ -9787,8 +9853,10 @@ Prionailurus viverrinus,{body mass},1
 Prionailurus viverrinus,{ear length to notch},1
 Prionailurus viverrinus,{pes length},1
 Prionailurus viverrinus,{tail length},1
+Proboscidipparion heintzi,{calcaneus length},2
 Proboscidipparion heintzi,{depth of the medial side of talus},3
-Proboscidipparion heintzi,{length of the medial side of talus},4
+Proboscidipparion heintzi,{talus length},8
+Proboscidipparion heintzi,{talus width},8
 Procamptoceras Schaub,{body length},1
 Procapra gutturosa,{body length},4
 Procapra picticaudata,{body length},1
@@ -10038,7 +10106,8 @@ Pudu puda,{body mass},4
 Pudu puda,{ear length to notch},4
 Pudu puda,{pes length},4
 Pudu puda,{tail length},4
-Puma concolor,{body length},7516
+Puma concolor,{body length with tail},7349
+Puma concolor,{body length},167
 Puma concolor,{body mass},5976
 Puma concolor,{ear length to notch},93
 Puma concolor,{pes length},109
@@ -10914,22 +10983,33 @@ Sigmodontomys alfari,{ear length to notch},2
 Sigmodontomys alfari,{pes length},2
 Sigmodontomys alfari,{tail length},2
 Sinomastodon Tobien,{body length},1
+Sivalhippus anwari,{calcaneus length},4
 Sivalhippus anwari,{depth of the medial side of talus},1
-Sivalhippus anwari,{length of the medial side of talus},1
+Sivalhippus anwari,{talus length},2
+Sivalhippus anwari,{talus width},2
 Sivalhippus cf. perimense,{depth of the medial side of talus},1
-Sivalhippus cf. perimense,{length of the medial side of talus},1
+Sivalhippus cf. perimense,{talus length},2
+Sivalhippus cf. perimense,{talus width},2
 Sivalhippus cf. theobaldi,{depth of the medial side of talus},1
-Sivalhippus cf. theobaldi,{length of the medial side of talus},1
+Sivalhippus cf. theobaldi,{talus length},2
+Sivalhippus cf. theobaldi,{talus width},2
+Sivalhippus nagriensis,{calcaneus length},18
 Sivalhippus nagriensis,{depth of the medial side of talus},17
-Sivalhippus nagriensis,{length of the medial side of talus},21
+Sivalhippus nagriensis,{talus length},42
+Sivalhippus nagriensis,{talus width},42
+Sivalhippus perimense,{calcaneus length},4
 Sivalhippus perimense,{depth of the medial side of talus},6
-Sivalhippus perimense,{length of the medial side of talus},7
+Sivalhippus perimense,{talus length},14
+Sivalhippus perimense,{talus width},14
+Sivalhippus sp.,{calcaneus length},2
 Sivalhippus sp.,{depth of the medial side of talus},3
-Sivalhippus sp.,{length of the medial side of talus},3
+Sivalhippus sp.,{talus length},6
+Sivalhippus sp.,{talus width},6
 Sivalhippus turkanensis,{depth of the medial side of talus},3
 Sivalhippus turkanensis,{femur length to greater trochanter},1
 Sivalhippus turkanensis,{femur length to head of femur},1
-Sivalhippus turkanensis,{length of the medial side of talus},2
+Sivalhippus turkanensis,{talus length},4
+Sivalhippus turkanensis,{talus width},6
 Smilodon fatalis,{body length},1
 Sminthopsis aitkeni,{body length},2
 Sminthopsis crassicaudata,{body length},21
@@ -11319,11 +11399,13 @@ Spermophilus atricapillus,{body mass},3
 Spermophilus atricapillus,{ear length to notch},3
 Spermophilus atricapillus,{pes length},3
 Spermophilus atricapillus,{tail length},3
-Spermophilus beecheyi,{body length},532
+Spermophilus beecheyi,{body length with tail},158
+Spermophilus beecheyi,{body length},374
 Spermophilus beecheyi,{body mass},233
-Spermophilus beecheyi,{ear length to notch},296
-Spermophilus beecheyi,{pes length},491
+Spermophilus beecheyi,{ear length to notch},434
+Spermophilus beecheyi,{pes length},492
 Spermophilus beecheyi,{tail length},489
+Spermophilus beecheyi,{tooth row length},323
 Spermophilus beechyi,{body length},1
 Spermophilus beechyi,{ear length to notch},1
 Spermophilus beechyi,{pes length},1
@@ -12686,9 +12768,17 @@ Uncia uncia,{pes length},15
 Uncia uncia,{tail length},15
 Unknown,{body length},12
 Unknown,{body mass},6
+Unknown,{calcaneus length},14
+Unknown,{depth of the medial side of talus},16
 Unknown,{ear length to notch},10
+Unknown,{femur length to greater trochanter},1
+Unknown,{femur length to head of femur},1
+Unknown,{humerus length to caput of humerus},1
+Unknown,{humerus length to ventral tubercle},1
 Unknown,{pes length},10
 Unknown,{tail length},10
+Unknown,{talus length},28
+Unknown,{talus width},22
 Uranomys ruddi,{body length},2
 Uranomys ruddi,{body mass},1
 Uranomys ruddi,{ear length to notch},1
@@ -13095,22 +13185,27 @@ Zyzomys argurus,{ear length to notch},10
 Zyzomys argurus,{pes length},10
 Zyzomys argurus,{tail length},3
 Zyzomys woodwardi,{tail length},1
+aff. Cremohipparion periafricanum,{calcaneus length},2
 aff. Cremohipparion periafricanum,{depth of the medial side of talus},1
-aff. Cremohipparion periafricanum,{length of the medial side of talus},1
+aff. Cremohipparion periafricanum,{talus length},2
+aff. Cremohipparion periafricanum,{talus width},2
 cf. Cercocebus,{body length},1
+cf. Eurygnathohippus sp.,{calcaneus length},4
 cf. Eurygnathohippus sp.,{depth of the medial side of talus},1
-cf. Eurygnathohippus sp.,{length of the medial side of talus},1
+cf. Eurygnathohippus sp.,{talus length},2
+cf. Eurygnathohippus sp.,{talus width},2
 cf. Sciurus,{body length},1
+cf. Sivalhippus turkanensis,{calcaneus length},4
 cf. Sivalhippus turkanensis,{depth of the medial side of talus},5
-cf. Sivalhippus turkanensis,{length of the medial side of talus},4
+cf. Sivalhippus turkanensis,{talus length},8
+cf. Sivalhippus turkanensis,{talus width},6
 sigmodon hispidus,{body length},1
 sigmodon hispidus,{body mass},1
 sigmodon hispidus,{ear length to notch},1
 sigmodon hispidus,{pes length},1
 sigmodon hispidus,{tail length},1
-unknown,{depth of the medial side of talus},16
-unknown,{femur length to greater trochanter},1
-unknown,{femur length to head of femur},1
+unknown,{calcaneus length},14
 unknown,{humerus length to caput of humerus},1
 unknown,{humerus length to ventral tubercle},1
-unknown,{length of the medial side of talus},28
+unknown,{talus length},28
+unknown,{talus width},22
