@@ -8,6 +8,9 @@ import os
 import re
 from configparser import ConfigParser
 import data_pruner
+import ssl
+
+ssl._create_default_https_context = ssl._create_unverified_context
         
 # hold scientificName objects 
 class scientificNames:
@@ -26,7 +29,7 @@ def quicktest():
     temp_file = "test.xlsx"
     print ('processing ' + temp_file)
 
-    df = pd.read_excel(temp_file,sheet_name='Samples', na_filter=False)                                                    
+    df = pd.read_excel(temp_file,sheet_name='Samples', na_filter=False, engine='xlrd')                                                    
     prunedDF, cleanDF = data_cleaning(df)
      
     #print(prunedDF)
@@ -34,7 +37,7 @@ def quicktest():
     #group = cleanDF.groupby('scientificName')['scientificName'].size()    
     #json_writer(group,'scientificName','data/scientificName.json','counts grouped by scientificName') 
     
-    #group = cleanDF.groupby('scientificName')['scientificName'].value_counts().sort_values(ascending=False).head(20)            
+    #group = cleanDF.groupby( 'scientificName')['scientificName'].value_counts().sort_values(ascending=False).head(20)            
     #json_writer(group,'scientificName','data/scientificName_top20.json','counts grouped by scientificName for top 20 names') 
     
     
@@ -62,6 +65,7 @@ def fetch_geome_data():
                 print("processing data for project = " + str(project["projectId"]))
                 temp_file = 'data/project_' + str(project["projectId"]) + ".xlsx"                                                
                 excel_file_url = json.loads(r.content)['url']   + "?access_token=" + access_token             
+                print(excel_file_url)
                 reqRet = urllib.request.urlretrieve(excel_file_url, temp_file)                
                                                                   
 def file_len(fname):
@@ -84,7 +88,7 @@ def process_data():
                 temp_file = os.path.join(subdir, file)
                 print ('processing ' + temp_file)
 
-                thisDF = pd.read_excel(temp_file,sheet_name='Samples', na_filter=False)                                                
+                thisDF = pd.read_excel(temp_file,sheet_name='Samples', na_filter=False, engine='xlrd')                                                
                 thisDF = thisDF.rename(columns={'projectId': 'projectID'})
                 thisDF = thisDF.reindex(columns=columns)            
                 thisDF = thisDF.astype(str)
@@ -432,7 +436,8 @@ api.write("|filename|definition|\n")
 api.write("|----|---|\n")
 
 # global variables
-columns = ['observationID','materialSampleID','country','locality','yearCollected','samplingProtocol','basisOfRecord','scientificName','genus','specificEpithet','measurementMethod','measurementUnit','measurementType','measurementValue','lifeStage','individualID','sex','decimalLatitude','decimalLongitude','projectID']
+#columns = ['observationID','materialSampleID','country','locality','yearCollected','samplingProtocol','basisOfRecord','scientificName','genus','specificEpithet','measurementMethod','measurementUnit','measurementType','measurementValue','lifeStage','individualID','sex','decimalLatitude','decimalLongitude','projectID']
+columns = ['observationID', 'projectId', 'expeditionCode', 'individualID', 'materialSampleID', 'diagnosticID', 'verbatimEventDate', 'institutionCode', 'collectionCode', 'catalogNumber', 'otherCatalogNumbers', 'basisOfRecord', 'materialSampleCondition', 'scientificName', 'genus', 'specificEpithet',  'previousIdentifications', 'lifeStage', 'sex', 'reproductiveCondition', 'locality', 'country', 'stateProvince', 'decimalLatitude', 'decimalLongitude', 'verbatimElevation', 'yearCollected', 'samplingProtocol', 'minimumChronometricAge', 'maximumChronometricAge', 'measurementSide', 'measurementType', 'measurementValue', 'measurementUnit', 'measurementMethod']
 processed_csv_filename = 'data/futres_data_processed.csv'
 pruned_csv_filename = 'data/futres_data_with_errors.csv'
 
