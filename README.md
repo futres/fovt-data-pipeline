@@ -24,6 +24,7 @@ This example uses a file that has already been pre-processed (`sample_data_proce
 ## Complete process / Advanced
 Here we follow the complete process for pre-processing and processing data for the API and formatting for the pipeline. 
  * Process data using the `fetch.py` script in this repository.  This provides summary statistics for the [FuTRES website](https://futres.org/) as well as assembling all data sources into a single file in `../FutresAPI/data/futres_data_processed.csv`.  Importantly, this step reports any data that has been removed from the data set during processing into an error log: `../FutresAPI/data/futres_data_with_errors.csv`
+  * Uncompress the data file if it is compressed, e.g. `gunzip data/futures_data_processed.csv.gz`
   * Run the pipeline code `run.sh data/futres_data_processed.csv data/output config`
   * Run the loader code to load data into elasticsearch `python loader.py`. This script looks for output in `data/output/output_reasoned_csv/data*.csv`
 
