@@ -104,14 +104,21 @@ def process_data():
                 temp_file = os.path.join(subdir, file)
                 print ('processing ' + temp_file)
                 thisDF = pd.read_csv(temp_file, na_filter=False)                                                
+                # the following columns vertnet does not have but we are creating a spot for them 
+                # anyway in the dataframe to match GEOME which may have the data
                 thisDF['individualID'] = ''
                 thisDF['observationID'] = ''
-
+                thisDF['maximumChronometricAge'] = ''
+                thisDF['measurementSide'] = ''
+                thisDF['minimumChronometricAge'] = ''
+                thisDF['reproductiveCondition'] = ''
+                thisDF['stateProvince'] = ''
                 thisDF['projectID'] = 'Vertnet'
                 # create empty columns for genus/specificEpithet, we will use scientificName to 
                 # parse these in taxonomize functon
-                thisDF['genus'] = ''
+                thisDF['genus'] = ''                
                 thisDF['specificEpithet'] = ''
+                thisDF['expeditionCode'] = ''
                 thisDF = thisDF[columns] 
                       
                 thisDF = thisDF.reindex(columns=columns)            
@@ -437,7 +444,8 @@ api.write("|----|---|\n")
 
 # global variables
 #columns = ['observationID','materialSampleID','country','locality','yearCollected','samplingProtocol','basisOfRecord','scientificName','genus','specificEpithet','measurementMethod','measurementUnit','measurementType','measurementValue','lifeStage','individualID','sex','decimalLatitude','decimalLongitude','projectID']
-columns = ['observationID', 'projectId', 'expeditionCode', 'individualID', 'materialSampleID', 'diagnosticID', 'verbatimEventDate', 'institutionCode', 'collectionCode', 'catalogNumber', 'otherCatalogNumbers', 'basisOfRecord', 'materialSampleCondition', 'scientificName', 'genus', 'specificEpithet',  'previousIdentifications', 'lifeStage', 'sex', 'reproductiveCondition', 'locality', 'country', 'stateProvince', 'decimalLatitude', 'decimalLongitude', 'verbatimElevation', 'yearCollected', 'samplingProtocol', 'minimumChronometricAge', 'maximumChronometricAge', 'measurementSide', 'measurementType', 'measurementValue', 'measurementUnit', 'measurementMethod']
+
+columns = ['observationID', 'projectID', 'expeditionCode', 'individualID', 'materialSampleID', 'diagnosticID', 'institutionCode', 'collectionCode', 'catalogNumber', 'basisOfRecord', 'scientificName', 'genus', 'specificEpithet', 'lifeStage', 'sex', 'reproductiveCondition', 'locality', 'country', 'stateProvince', 'decimalLatitude', 'decimalLongitude', 'yearCollected', 'samplingProtocol', 'minimumChronometricAge', 'maximumChronometricAge', 'measurementSide', 'measurementType', 'measurementValue', 'measurementUnit', 'measurementMethod']
 processed_csv_filename = 'data/futres_data_processed.csv'
 pruned_csv_filename = 'data/futres_data_with_errors.csv'
 
