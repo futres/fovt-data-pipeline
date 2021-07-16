@@ -2,7 +2,7 @@
 
 The fovt-data-pipeline contains scripts to process, reason, and load data into an external document store for the FuTRES project as well as populating summary statistics in driving the [FuTRES website](https://futres.org/).  This repository aggregates FuTRES trait data that has been loaded into [GEOME](https://geome-db.org/) as well as VertNet.  Detailed instructions on loading data into GEOME, using the FuTRES team, are provided on the [FuTRES website](https://futres.org/data_tutorial/).  Please note that this repository is designed to process millions of records from multiple repositories and is fairly complex.  To give interested users an idea of how the reasoning steps work, we have a provided a simple start section below demonstrating how this crucial part of the process works.  
 
-Credits: This codebase draws on the [Ontology Data Pipeline](https://github.com/biocodellc/ontology-data-pipeline) for triplifying and reasoning, the [FuTRES Ontology for Vertebrate Traits](https://github.com/futres/fovt) as the source ontology, and [Ontopilot](https://github.com/stuckyb/ontopilot) as a contributing library for the reasoning steps.  Data processing scripts in assembling VertNet data extracts and getting legacy data ready for ingest into GEOME are stored at [fovt-data-mapping](https://github.com/futres/fovt-data-mapping)
+*Credits: This codebase draws on the [Ontology Data Pipeline](https://github.com/biocodellc/ontology-data-pipeline) for triplifying and reasoning, the [FuTRES Ontology for Vertebrate Traits](https://github.com/futres/fovt) as the source ontology, and [Ontopilot](https://github.com/stuckyb/ontopilot) as a contributing library for the reasoning steps.  Data processing scripts in assembling VertNet data extracts and getting legacy data ready for ingest into GEOME are stored at [fovt-data-mapping](https://github.com/futres/fovt-data-mapping)*
 
 # Simple Start
 To quickly test the validation, triplifying and reasoning steps, you can start here.
@@ -62,10 +62,10 @@ data/output as the output directory and configuration files stored in the config
 ./run.sh data/futres_data_processed.csv data/output config
 ```
 
-*NOTE 1:* you must reference your input data file to reason within the root-level heirarchicy of this repository. We have provided the `data/` directory for putting input and output data files, although you can use any directory under the root.
-The docker image cannot find files like `../some-other-directory/file.txt`. 
+*NOTE 1: you must reference your input data file to reason within the root-level heirarchicy of this repository. We have provided the `data/` directory for putting input and output data files, although you can use any directory under the root.
+The docker image cannot find files like `../some-other-directory/file.txt`.*
 
-*NOTE 2:*  you may wish to run the reasoner using python directly instead of docker.  You can find a reference to that procedure by visiting the [ontology-data-pipeline repository](https://github.com/biocodellc/ontology-data-pipeline).
+*NOTE 2:  you may wish to run the reasoner using python directly instead of docker.  You can find a reference to that procedure by visiting the [ontology-data-pipeline repository](https://github.com/biocodellc/ontology-data-pipeline).*
 
 ## STEP 3: Loading Data
 
