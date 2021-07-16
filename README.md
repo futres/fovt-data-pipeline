@@ -1,6 +1,6 @@
 # fovt-data-pipeline
 
-This repository contains the configuration directives and necessary scripts to validate, triplify, reason, and load data into an external document store for the FuTRES project.  This repository uses data that has first been pre-processed using [data-mapping R Scripts](https://github.com/futres/fovt-data-mapping) and [GEOME](https://geome-db.org/) for validating data and reporting problem data.  Refer to the [data-mapping](https://github.com/futres/fovt-data-mapping) repository for more information.  Please note that this repository is designed to process millions of records from multiple repositories and is fairly complex.  We have a provided a simple start section below which demonstrates the reasoning steps used in producing the final output.  
+This repository contains the configuration directives and necessary scripts to validate, reason, and load data into an external document store for the FuTRES project as well as populating summary statistics in driving the [FuTRES website](https://futres.org/).  This repository uses data that has first been pre-processed using [data-mapping R Scripts](https://github.com/futres/fovt-data-mapping) and [GEOME](https://geome-db.org/) for validating data and reporting problem data.  Refer to the [data-mapping](https://github.com/futres/fovt-data-mapping) repository for more information.  Please note that this repository is designed to process millions of records from multiple repositories and is fairly complex.  We have a provided a simple start section below which demonstrates the reasoning steps used in producing the final output.  
 
 This codebase draws on the [Ontology Data Pipeline](https://github.com/biocodellc/ontology-data-pipeline) for triplifying and reasoning, the [FuTRES Ontology for Vertebrate Traits](https://github.com/futres/fovt) as the source ontology, and [Ontopilot](https://github.com/stuckyb/ontopilot) as a contributing library for the reasoning steps. 
 
@@ -14,13 +14,10 @@ If you wish to quickly test the validation, triplifying and reasoning steps, you
 This example uses a file that has already been pre-processed (`sample_data_processed.csv`) and tagged with labels that exist in our ontology.  Output is stored in `data/output` and uses processing directives stored in the `config` directory.
 
 # Complete Process 
-Here we follow the complete process for processing FuTRES data.  It begins with fetching data from GEOME as well as VertNet.  The steps below are completed sequentially with outputs from earlier steps, used to feed into outputs from later steps.
-
- * Process data using the ```python fetch.py``` script in this repository.  This provides summary statistics for the [FuTRES website](https://futres.org/) as well as assembling all data sources into a single file in `data/futres_data_processed.csv`.  Importantly, this step reports any data that has been removed from the data set during processing into an error log: `data/futres_data_with_errors.csv`
-  * Run the loader code to load data into elasticsearch ```python loader.py```. This script looks for output in `data/output/output_reasoned_csv/data*.csv`
+Here we follow the complete process for processing FuTRES data.  It begins with fetching data from GEOME and VertNet.  The steps below are completed sequentially with outputs from earlier steps, used to feed into outputs from later steps.
 
 ## STEP 1: Pre-processing
-Pre-processing functions to obtain data from remote sources and populating data tables that are used in the reasoning step.
+Pre-processing functions to obtain data from remote sources and populating data tables that are used in the reasoning step.   This provides summary statistics for the [FuTRES website](https://futres.org/) as well as assembling all data sources into a single file in `data/futres_data_processed.csv`.  Importantly, this step reports any data that has been removed from the data set during processing into an error log: `data/futres_data_with_errors.csv`
 
 ### Installation
 First, we need to setup our environment to be able to connect to remote local stores and setup our python working environment:
@@ -51,6 +48,7 @@ The fetch script is run using:
 ```
 python fetch.py
 ```
+The above script reports any data that has been removed from the data set during processing into an error log: `data/futres_data_with_errors.csv` and storing data at `data/futres_data_processed.csv`.
 
 ## STEP 2: Running the Reasoner
 First, [Install docker](https://docs.docker.com/install/) and then clone this repository.  Once that is done, you can test
@@ -82,6 +80,12 @@ The docker image cannot find files like `../some-other-directory/file.txt`.
 ## STEP 3: Loading Data
 
 The `loader.py` script populates the elasticsearch backend database using the loader.py script.  The elastic search loader references the host, index, and directory to search for files directly in the script.  In cases where this repository is forked, these values can be changed directly in code.
+
+```
+# this script looks for output in `data/output/output_reasoned_csv/data*.csv`
+python loader.py
+```
+
 
 # Application Programming Interface
 This repository generates files in the pre-processing steop which serve as an API.  These files are referenced at [https://github.com/futres/fovt-data-pipeline/blob/master/api.md].  In addition to this datasource, there is a dynamic data service which references files that were loaded into elasticsearch in the "Loading Data" step, above.  The FuTRES dynamic data is hosted by the plantphenology nodejs proxy service at:
