@@ -14,10 +14,10 @@ To quickly test the validation, triplifying and reasoning steps, you can start h
 ./example.run.sh
 ```
 
-This example uses a file that has already been pre-processed (`sample_data_processed.csv`) and tagged with labels that exist in our ontology.  Output is stored in `data/output` and uses processing directives stored in the `config` directory.
+This example uses a file that has already been pre-processed, `sample_data_processed.csv`, and tagged with labels that exist in our ontology.  Output is stored in `data/output` and uses processing directives stored in the `config` directory.
 
 # Complete Process 
-Here we follow the complete process for processing FuTRES data.  It begins with fetching data from GEOME and VertNet.  The steps below are completed sequentially with outputs from earlier steps, used to feed into outputs from later steps.
+Here we follow the complete process for processing FuTRES data.  The steps below are completed sequentially with outputs from earlier steps, used to feed into outputs from later steps.
 
 ## STEP 1: Pre-processing
 Pre-processing functions to obtain data from remote sources and populating data tables that are used in the reasoning step.   This provides summary statistics for the [FuTRES website](https://futres.org/) as well as assembling all data sources into a single file in `data/futres_data_processed.csv`.  Importantly, this step reports any data that has been removed from the data set during processing into an error log: `data/futres_data_with_errors.csv`
