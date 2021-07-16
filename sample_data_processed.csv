@@ -2,16 +2,16 @@ observationID,materialSampleID,country,locality,yearCollected,samplingProtocol,b
 1,1,USA,Hagerman Horse Q,unknown,Unknown,FossilSpecimen,Equus simplicidens,Equus,simplicidens,Unknown,mm,{body height},63502.88,adult,,male,44.59336738,-120.8009166,294
 2,2,USA,Hagerman Horse Q,unknown,Unknown,FossilSpecimen,Equus simplicidens,Equus,simplicidens,Unknown,mm,{body length},100,adult,,male,44.59336738,-120.8009166,294
 3,3,USA,Hagerman Horse Q,unknown,Unknown,FossilSpecimen,Equus simplicidens,Equus,simplicidens,Unknown,g,{body mass},100,adult,,male,44.59336738,-120.8009166,294
-4,4,USA,Hagerman Horse Q,unknown,Unknown,FossilSpecimen,Equus simplicidens,Equus,simplicidens,Unknown,mm,{breadth of the trochlea of talus},100,adult,,male,44.59336738,-120.8009166,294
-5,5,USA,Hagerman Horse Q,unknown,Unknown,FossilSpecimen,Equus simplicidens,Equus,simplicidens,Unknown,mm,{depth of the medial side of talus},100,adult,,male,44.59336738,-120.8009166,294
+4,4,USA,Hagerman Horse Q,unknown,Unknown,FossilSpecimen,Equus simplicidens,Equus,simplicidens,Unknown,mm,{length},100,adult,,male,44.59336738,-120.8009166,294
+5,5,USA,Hagerman Horse Q,unknown,Unknown,FossilSpecimen,Equus simplicidens,Equus,simplicidens,Unknown,mm,{length},100,adult,,male,44.59336738,-120.8009166,294
 6,6,USA,Hagerman Horse Q,unknown,Unknown,FossilSpecimen,Equus simplicidens,Equus,simplicidens,Unknown,mm,{ear length to notch},100,adult,,male,44.59336738,-120.8009166,294
-7,7,USA,Hagerman Horse Q,unknown,Unknown,FossilSpecimen,Equus simplicidens,Equus,simplicidens,Unknown,mm,{femur length to greater trochanter},100,adult,,male,44.59336738,-120.8009166,294
-8,8,USA,Hagerman Horse Q,unknown,Unknown,FossilSpecimen,Equus simplicidens,Equus,simplicidens,Unknown,mm,{femur length to head of femur},100,adult,,male,44.59336738,-120.8009166,294
+7,7,USA,Hagerman Horse Q,unknown,Unknown,FossilSpecimen,Equus simplicidens,Equus,simplicidens,Unknown,mm,{femur length},100,adult,,male,44.59336738,-120.8009166,294
+8,8,USA,Hagerman Horse Q,unknown,Unknown,FossilSpecimen,Equus simplicidens,Equus,simplicidens,Unknown,mm,{femur length},100,adult,,male,44.59336738,-120.8009166,294
 9,9,USA,Hagerman Horse Q,unknown,Unknown,FossilSpecimen,Equus simplicidens,Equus,simplicidens,Unknown,mm,{femur length},100,adult,,male,44.59336738,-120.8009166,294
-10,10,USA,Hagerman Horse Q,unknown,Unknown,FossilSpecimen,Equus simplicidens,Equus,simplicidens,Unknown,mm,{humerus length to caput of humerus},100,adult,,male,44.59336738,-120.8009166,294
-11,11,USA,Hagerman Horse Q,unknown,Unknown,FossilSpecimen,Equus simplicidens,Equus,simplicidens,Unknown,mm,{humerus length to ventral tubercle},100,adult,,male,44.59336738,-120.8009166,294
+10,10,USA,Hagerman Horse Q,unknown,Unknown,FossilSpecimen,Equus simplicidens,Equus,simplicidens,Unknown,mm,{humerus length},100,adult,,male,44.59336738,-120.8009166,294
+11,11,USA,Hagerman Horse Q,unknown,Unknown,FossilSpecimen,Equus simplicidens,Equus,simplicidens,Unknown,mm,{humerus length},100,adult,,male,44.59336738,-120.8009166,294
 12,12,USA,Hagerman Horse Q,unknown,Unknown,FossilSpecimen,Equus simplicidens,Equus,simplicidens,Unknown,mm,{humerus length},100,adult,,male,44.59336738,-120.8009166,294
-13,13,USA,Hagerman Horse Q,unknown,Unknown,FossilSpecimen,Equus simplicidens,Equus,simplicidens,Unknown,mm,{length of the medial side of talus},100,adult,,male,44.59336738,-120.8009166,294
+13,13,USA,Hagerman Horse Q,unknown,Unknown,FossilSpecimen,Equus simplicidens,Equus,simplicidens,Unknown,mm,{humerus length},100,adult,,male,44.59336738,-120.8009166,294
 14,14,USA,Hagerman Horse Q,unknown,Unknown,FossilSpecimen,Equus simplicidens,Equus,simplicidens,Unknown,mm,{pes length},100,adult,,male,44.59336738,-120.8009166,294
 15,15,USA,Hagerman Horse Q,unknown,Unknown,FossilSpecimen,Equus simplicidens,Equus,simplicidens,Unknown,mm,{tail length},100,adult,,male,44.59336738,-120.8009166,294
 16,16,USA,Hagerman Horse Q,unknown,Unknown,FossilSpecimen,Equus simplicidens,Equus,simplicidens,Unknown,mm,{talus length},100,adult,,male,44.59336738,-120.8009166,294
