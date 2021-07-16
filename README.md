@@ -30,6 +30,7 @@ Here is how to create a virtual environment specific to futres (assuming you alr
 ```
 # Create a virtual environment for futres-pyenv
 pyenv virtualenv 3.7.2 futres-api
+
 # automatically set futres-api to current directory when you navigate to this directory
 pyenv local futres-api
 ```
@@ -57,6 +58,7 @@ the environment by using the following script, which demonstrates calling docker
 ```
 # This script executes a docker pull (to check for the latest image), and then runs the script in the local environment,
 # using the provided `sample_data_processed.csv` file and a sample ontology:
+
 ./example.run.sh
 
 # You will see some output text, ending with something like this:
@@ -69,6 +71,7 @@ After testing the reasoner using the command above, you can run the pipeline cod
 ```
 # run ontology-data-pipeline using the input data file data/futres_data_processed.csv as input data,
 # data/output as the output directory and configuration files stored in the config directory.
+
 ./run.sh data/futres_data_processed.csv data/output config
 ```
 
@@ -83,12 +86,13 @@ The `loader.py` script populates the elasticsearch backend database using the lo
 
 ```
 # this script looks for output in `data/output/output_reasoned_csv/data*.csv`
+
 python loader.py
 ```
 
 
 # Application Programming Interface
-This repository generates files in the pre-processing steop which serve as an API.  These files are referenced at [https://github.com/futres/fovt-data-pipeline/blob/master/api.md].  In addition to this datasource, there is a dynamic data service which references files that were loaded into elasticsearch in the "Loading Data" step, above.  The FuTRES dynamic data is hosted by the plantphenology nodejs proxy service at:
+This repository generates files in the pre-processing step which serve as an API.  These files are referenced at [https://github.com/futres/fovt-data-pipeline/blob/master/api.md].  In addition to this datasource, there is a dynamic data service which references files that were loaded into elasticsearch in the "Loading Data" step, above.  The FuTRES dynamic data is hosted by the plantphenology nodejs proxy service at:
 https://github.com/biocodellc/ppo-data-server/blob/master/docs/es_futres_proxy.md   The following endpoints to that datastore are:
 
   *  [futresapi/v2/download_futres_proxy](https://github.com/biocodellc/ppo-data-server/blob/master/docs/download_futres_proxy.md) Query the Futres data store download_futres_proxy.md
