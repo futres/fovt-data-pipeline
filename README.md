@@ -1,16 +1,19 @@
 # fovt-data-pipeline
 
-This repository contains the configuration directives and necessary scripts to validate, reason, and load data into an external document store for the FuTRES project as well as populating summary statistics in driving the [FuTRES website](https://futres.org/).  This repository uses data that has first been pre-processed using [data-mapping R Scripts](https://github.com/futres/fovt-data-mapping) and [GEOME](https://geome-db.org/) for validating data and reporting problem data.  Refer to the [data-mapping](https://github.com/futres/fovt-data-mapping) repository for more information.  Please note that this repository is designed to process millions of records from multiple repositories and is fairly complex.  We have a provided a simple start section below which demonstrates the reasoning steps used in producing the final output.  
+The fovt-data-pipeline contains scripts to process, reason, and load data into an external document store for the FuTRES project as well as populating summary statistics in driving the [FuTRES website](https://futres.org/).  This repository aggregates FuTRES trait data that has been loaded into [GEOME](https://geome-db.org/) as well as VertNet.  Detailed instructions on loading your data into GEOME, using the FuTRES team, are provided on the [FuTRES website](https://futres.org/data_tutorial/).  Please note that this repository is designed to process millions of records from multiple repositories and is fairly complex.  To give interested users an idea of how the reasoning steps work, we have a provided a simple start section below demonstrating how this crucial part of the process works.  
 
 This codebase draws on the [Ontology Data Pipeline](https://github.com/biocodellc/ontology-data-pipeline) for triplifying and reasoning, the [FuTRES Ontology for Vertebrate Traits](https://github.com/futres/fovt) as the source ontology, and [Ontopilot](https://github.com/stuckyb/ontopilot) as a contributing library for the reasoning steps. 
 
 # Simple Start
-If you wish to quickly test the validation, triplifying and reasoning steps, you can start here.    
-  * First, [Install docker](https://docs.docker.com/install/) and then clone this repository.  Once that is done, you can test
-  * Second, run the pipeline using some provided examples, like  like this:
+To quickly test the validation, triplifying and reasoning steps, you can start here.
+
+  * First, [Install docker](https://docs.docker.com/install/) and then clone this repository.  
+  * Second, run the pipeline using the provided example:
+
 ```
-./run.sh sample_data_processed.csv data/output config
+./example.run.sh
 ```
+
 This example uses a file that has already been pre-processed (`sample_data_processed.csv`) and tagged with labels that exist in our ontology.  Output is stored in `data/output` and uses processing directives stored in the `config` directory.
 
 # Complete Process 
@@ -35,43 +38,27 @@ pyenv virtualenv 3.7.2 futres-api
 pyenv local futres-api
 ```
 
-### Fetching vertnet data
-Vertnet data extracts live in a directory called `vertnet` immediately off of the root directory of this repository.
-This directory is ignored in the .gitignore file.  The [getDiscoveryEnvironmentData.md](getDiscoveryEnvironmentData.md) has
-information on updating the vertnet dataset.
+### Fetching VertNet data
+Vertnet data extracts are stored in a directory called `vertnet` immediately off of the root directory of this repository.
+This directory is ignored in the .gitignore file.  You will need to first copy the VertNet data extracts from the CyVerse Discovery Environment. See [getDiscoveryEnvironmentData.md](getDiscoveryEnvironmentData.md) for instructions on coyping the VertNet data.
 
 ### Running the Script
-The fetch.py script gets data from GEOME and looks in the vertnet directory for
-processed Vertnet scripts and populates JSON files in the data directory as well
-as the `data/futres_data_processed.csv` which is used by the reasoning pipeline below.
-The fetch script is run using:
+The fetch.py script fetches data from GEOME and looks in the VertNet directory for
+processed Vertnet data,  populating summary statistics as JSON files, and finally creates a single file to store all processed data as  `data/futres_data_processed.csv`.  This file is used by the reasoning pipeline in Step 2 below.  The fetch script is run using:
 
 ```
 python fetch.py
 ```
+
 The above script reports any data that has been removed from the data set during processing into an error log: `data/futres_data_with_errors.csv` and storing data at `data/futres_data_processed.csv`.
 
 ## STEP 2: Running the Reasoner
 First, [Install docker](https://docs.docker.com/install/) and then clone this repository.  Once that is done, you can test
-the environment by using the following script, which demonstrates calling docker and running the necessary commands. 
+the environment by following the instructions under 'Simple Start' above.  This will verify that the reasoner is running correctly.
+Run the ontology-data-pipeline using the input data file data/futres_data_processed.csv as input data,
+data/output as the output directory and configuration files stored in the config directory.
 
 ```
-# This script executes a docker pull (to check for the latest image), and then runs the script in the local environment,
-# using the provided `sample_data_processed.csv` file and a sample ontology:
-
-./example.run.sh
-
-# You will see some output text, ending with something like this:
-...
-INFO:root:reasoned_csv output at data/output/output_reasoned_csv/data_1.ttl.csv
-```
-
-After testing the reasoner using the command above, you can run the pipeline code using:
-
-```
-# run ontology-data-pipeline using the input data file data/futres_data_processed.csv as input data,
-# data/output as the output directory and configuration files stored in the config directory.
-
 ./run.sh data/futres_data_processed.csv data/output config
 ```
 
@@ -82,11 +69,9 @@ The docker image cannot find files like `../some-other-directory/file.txt`.
 
 ## STEP 3: Loading Data
 
-The `loader.py` script populates the elasticsearch backend database using the loader.py script.  The elastic search loader references the host, index, and directory to search for files directly in the script.  In cases where this repository is forked, these values can be changed directly in code.
+The `loader.py` script populates the elasticsearch backend database using the loader.py script.  The elastic search loader references the host, index, and directory to search for files directly in the script.  In cases where this repository is forked, these values can be changed directly in code. The following script looks for output in `data/output/output_reasoned_csv/data*.csv`
 
 ```
-# this script looks for output in `data/output/output_reasoned_csv/data*.csv`
-
 python loader.py
 ```
 
