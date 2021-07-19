@@ -13,7 +13,6 @@ Futres API Documentation
 |data/measurementType.json|measurementType|
 |data/scientificName_projectID_277.json|unique scientificName count for project 277|
 |data/scientificName_projectID_278.json|unique scientificName count for project 278|
-|data/scientificName_projectID_279.json|unique scientificName count for project 279|
 |data/scientificName_projectID_282.json|unique scientificName count for project 282|
 |data/scientificName_projectID_294.json|unique scientificName count for project 294|
 |data/scientificName_projectID_314.json|unique scientificName count for project 314|

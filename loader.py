@@ -2,12 +2,15 @@
 import csv
 import datetime
 import json
-import os
+import os,ssl
 import urllib.request
 
 
 import elasticsearch.helpers
 from elasticsearch import Elasticsearch, RequestsHttpConnection, serializer, compat, exceptions
+
+if (not os.environ.get('PYTHONHTTPSVERIFY', '') and getattr(ssl, '_create_unverified_context', None)):
+    ssl._create_default_https_context = ssl._create_unverified_context
 
 
 TYPE = 'record'
