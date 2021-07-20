@@ -83,6 +83,11 @@ The `loader.py` script populates the elasticsearch backend database using the lo
 python loader.py
 ```
 
+NOTE: since the size of the data can be quite large and the `loader.py` script sends uncompressed data, we probably want to send the files to a remote server from our desktop machine.  This command would look like:
+
+```
+tar zcvf - data/output/output_reasoned_csv/* | ssh -p 1657 USER@SOME.SERVER.COM  "cd /home/USER/data/futres; tar xvzf -"
+```
 
 # Application Programming Interface
 This repository generates files in the pre-processing step which serve as an API.  These files are referenced at [https://github.com/futres/fovt-data-pipeline/blob/master/api.md].  In addition to this datasource, there is a dynamic data service which references files that were loaded into elasticsearch in the "Loading Data" step, above.  The FuTRES dynamic data is hosted by the plantphenology nodejs proxy service at:
