@@ -31,6 +31,9 @@ First, we need to setup our environment to be able to connect to remote local st
 
 Here is how to create a virtual environment specific to futres (assuming you already have setup pyenv):
 ```
+# install a python version
+pyenv install 3.7.2
+
 # Create a virtual environment for futres-pyenv
 pyenv virtualenv 3.7.2 futres-api
 
