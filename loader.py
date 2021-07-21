@@ -125,7 +125,7 @@ class ESLoader(object):
 
                 data.append({k: v for k, v in row.items() if v})  # remove any empty values
 
-            elasticsearch.helpers.bulk(client=self.es, index=self.index_name, actions=data, doc_type=TYPE,
+            elasticsearch.helpers.bulk(client=self.es, index=self.index_name, actions=data, 
                                        raise_on_error=True, chunk_size=10000, request_timeout=60)
             doc_count += len(data)
             print("Indexed {} documents in {}".format(doc_count, f.name))
@@ -135,7 +135,6 @@ class ESLoader(object):
     def __create_index(self):
         request_body = {
             "mappings": {
-                TYPE: {
                     "properties": {
                         "traits": {"type": "keyword"},
                         "mapped_traits": {"type": "keyword"},
@@ -153,7 +152,6 @@ class ESLoader(object):
                         "decimalLongitude": { "type": "float" },
                         "location": { "type": "geo_point" }                        
                     }
-                }
             }
         }
         self.es.indices.create(index=self.index_name, body=request_body)
@@ -172,7 +170,8 @@ index = 'futres'
 drop_existing = True
 alias = 'futres'
 host =  'tarly.cyverse.org:80'
-data_dir = 'data/output/output_reasoned_csv/'
+data_dir = '/home/jdeck/data/futres/data/output/output_reasoned_csv/'
+#data_dir = '/home/jdeck/code/fovt-data-pipeline/foo'
 #file_name = 'loadertest.csv'
 
 loader = ESLoader(data_dir, index, drop_existing, alias, host)
