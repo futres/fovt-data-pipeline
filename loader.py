@@ -53,7 +53,7 @@ class ESLoader(object):
         with urllib.request.urlopen("https://plantphenology.org//futresapi/v2/fovt/") as url:
             data = json.loads(url.read().decode())
             for trait in data:
-                self.lookup[trait['termID']] = trait['label']
+                self.lookup[trait['uri']] = trait['label']
 
         # Create loookup file for mapping projectIDs to projectTitles
         self.lookup_project = dict()
