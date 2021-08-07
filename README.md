@@ -97,7 +97,7 @@ python loader.py
 NOTE: since the size of the data can be quite large and the `loader.py` script sends uncompressed data, we probably want to send the files to a remote server from our desktop machine.  This command would look like:
 
 ```
-tar zcvf - data/output/output_reasoned_csv/* | ssh -p 1657 USER@SOME.SERVER.COM  "cd /home/USER/data/futres; tar xvzf -"
+tar zcvf - data/output/output_reasoned_csv/* | ssh USER@SOME.SERVER.COM  "cd /home/USER/data/futres; tar xvzf -"
 ```
 
 # Application Programming Interface
