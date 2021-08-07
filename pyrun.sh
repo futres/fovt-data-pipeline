@@ -1,3 +1,4 @@
+#!/bin/bash
 PYENV_VERSION=futres-api
 INPUT_DATAFILE=$1
 OUTPUT_DIRECTORY=$2

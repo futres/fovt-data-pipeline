@@ -53,7 +53,7 @@ class ESLoader(object):
         with urllib.request.urlopen("https://plantphenology.org//futresapi/v2/fovt/") as url:
             data = json.loads(url.read().decode())
             for trait in data:
-                self.lookup[trait['uri']] = trait['label']
+                self.lookup[trait['termID']] = trait['label']
 
         # Create loookup file for mapping projectIDs to projectTitles
         self.lookup_project = dict()
@@ -136,7 +136,6 @@ class ESLoader(object):
         request_body = {
             "mappings": {
                     "properties": {
-                        "traits": {"type": "keyword"},
                         "mapped_traits": {"type": "keyword"},
                         "lifeStage": {"type": "keyword"},
                         "genus": {"type": "keyword"},
@@ -170,9 +169,8 @@ index = 'futres'
 drop_existing = True
 alias = 'futres'
 host =  'tarly.cyverse.org:80'
-data_dir = '/home/jdeck/data/futres/data/output/output_reasoned_csv/'
-#data_dir = '/home/jdeck/code/fovt-data-pipeline/foo'
-#file_name = 'loadertest.csv'
+data_dir = 'data/output/output_reasoned_csv/'
+#data_dir = '/home/jdeck/data/futres/data/output/output_reasoned_csv/'
 
 loader = ESLoader(data_dir, index, drop_existing, alias, host)
 loader.load()

@@ -11,7 +11,11 @@ To quickly test the validation, triplifying and reasoning steps, you can start h
   * Second, run the pipeline using the provided example:
 
 ```
+# try the example script using Docker
 ./example.run.sh
+
+# or, you can run this directly in python.  This assumes you checkout the ontology-data-pipeline code repository at the same level as ontology-data-pipeline
+ python ../ontology-data-pipeline/pipeline.py -v --drop_invalid  sample_data_processed.csv sample_data/output https://raw.githubusercontent.com/futres/fovt/master/fovt.owl config
 ```
 
 This example uses a file that has already been pre-processed, `sample_data_processed.csv`, and tagged with labels that exist in our ontology.  Output is stored in `data/output` and uses processing directives stored in the `config` directory.
@@ -62,7 +66,11 @@ Run the ontology-data-pipeline using the input data file data/futres_data_proces
 data/output as the output directory and configuration files stored in the config directory.
 
 ```
+# using docker
 ./run.sh data/futres_data_processed.csv data/output config
+
+# using python and ontology-data-pipeline directly:
+ python ../ontology-data-pipeline/pipeline.py -v --drop_invalid  data/futres_data_processed.csv data/output https://raw.githubusercontent.com/futres/fovt/master/fovt.owl config
 ```
 
 An alternate way of running the reasoner, if you want to bypass docker and instead use python directly would be:
