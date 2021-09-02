@@ -18,7 +18,7 @@ fi
 
 echo " python ../ontology-data-pipeline/pipeline.py -v --drop_invalid " $INPUT_DATAFILE $OUTPUT_DIRECTORY  $ONTOLOGY  $CONFIG 
 
-python ../ontology-data-pipeline/pipeline.py \
+python3 ../ontology-data-pipeline/pipeline.py \
 -v --drop_invalid \
 $INPUT_DATAFILE \
 $OUTPUT_DIRECTORY \
