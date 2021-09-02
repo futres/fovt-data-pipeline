@@ -11,9 +11,10 @@ prefix urn: <urn:>
 # Use the concat/group_concat function to push all plantStructurePresence types into an array within a field.
 # this enables ElasticSearch to index this easily while shrinking output file sizes
 SELECT ?observationID ?individualID ?materialSampleID 
-	?decimalLatitude ?decimalLongitude ?country ?locality ?samplingProtocol ?yearCollected
+	?decimalLatitude ?decimalLongitude ?country ?stateProvince ?locality ?samplingProtocol ?yearCollected
+	?institutionCode ?collectionCode ?catalogNumber ?reproductiveCondition ?minimumChronometricAge ?maximumChronometricAge
 	?scientificName ?genus ?specificEpithet ?basisOfRecord ?lifeStage ?sex ?projectID ?individualID 
-	?measurementValue ?measurementUnit ?measurementMethod ?measurementType
+	?measurementValue ?measurementUnit ?measurementMethod ?measurementType ?measurementSide
 	(group_concat(distinct ?traitTypes;separator='|') as ?traits)
 
 WHERE {    
@@ -39,9 +40,12 @@ WHERE {
 	OPTIONAL {?vertTraitObsProc dwc:decimalLatitude ?decimalLatitude} .
 	OPTIONAL {?vertTraitObsProc dwc:decimalLongitude ?decimalLongitude} .
 	OPTIONAL {?vertTraitObsProc dwc:country ?country} .
+	OPTIONAL {?vertTraitObsProc dwc:stateProvince ?stateProvince} .
 	OPTIONAL {?vertTraitObsProc dwc:locality ?locality} .
 	OPTIONAL {?vertTraitObsProc dwc:samplingProtocol ?samplingProtocol} .
 	OPTIONAL {?vertTraitObsProc dwc:year ?yearCollected} .
+	OPTIONAL {?minimumChronometricAge urn:minimumChronometricAge ?minimumChronometricAge} .
+	OPTIONAL {?maximumChronometricAge urn:maximumChronometricAge ?maximumChronometricAge} .
 
 	# Organism Attributes
     OPTIONAL {?vertOrg dwc:scientificName ?scientificName} . 
@@ -51,19 +55,27 @@ WHERE {
 	OPTIONAL {?vertOrg dwc:basisOfRecord ?basisOfRecord} . 
 	OPTIONAL {?vertOrg dwc:lifeStage ?lifeStage} . 
 	OPTIONAL {?vertOrg dwc:sex ?sex} . 
-	OPTIONAL {?vertOrg dwc:collectionCode ?projectID} . 
+	OPTIONAL {?vertOrg urn:projectID ?projectID} . 
 	OPTIONAL {?vertOrg dwc:individualID ?individualID} . 
+	OPTIONAL {?vertOrg dwc:institutionCode ?institutionCode} . 
+	OPTIONAL {?vertOrg dwc:collectionCode ?collectionCode} . 
+	OPTIONAL {?vertOrg dwc:catalogNumber ?catalogNumber} . 
+	OPTIONAL {?vertOrg dwc:reproductiveCondition ?reproductiveCondition} . 
+
 	OPTIONAL {?vertTrait dwc:measurementType ?measurementType} .
 
 	# Scalar Measurement Datum
 	OPTIONAL {?measurementDatum dwc:measurementValue ?measurementValue} .
 	OPTIONAL {?measurementDatum dwc:measurementUnit ?measurementUnit} .
-	OPTIONAL {?measurementDatum dwc:measurementMethod ?measurementMethod} .
+	OPTIONAL {?measurementDatum dwc:measurementMethod ?measurementMethod} .	
+	OPTIONAL {?measurementDatum urn:measurementSide ?measurementSide} .
+
 }
 
 GROUP BY ?observationID ?individualID ?materialSampleID 
-	?decimalLatitude ?decimalLongitude ?country ?locality ?samplingProtocol ?yearCollected
+	?decimalLatitude ?decimalLongitude ?country ?stateProvince ?locality ?samplingProtocol ?yearCollected
+	?institutionCode ?collectionCode ?catalogNumber ?reproductiveCondition ?minimumChronometricAge ?maximumChronometricAge
 	?scientificName ?genus ?specificEpithet ?basisOfRecord ?lifeStage ?sex ?projectID ?individualID 
-	?measurementValue ?measurementUnit ?measurementMethod ?measurementType
+	?measurementValue ?measurementUnit ?measurementMethod ?measurementType ?measurementSide
 ORDER BY ASC(?observationID)
 

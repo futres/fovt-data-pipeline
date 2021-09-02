@@ -115,17 +115,23 @@ def process_data():
                 thisDF['stateProvince'] = ''
                 thisDF['projectID'] = 'Vertnet'
                 # create empty columns for genus/specificEpithet, we will use scientificName to 
-                # parse these in taxonomize functon
-                thisDF['genus'] = ''                
+                # parse these in data_cleaning functon
+                thisDF['genus'] = ''   
+                thisDF['family'] = ''                
+                thisDF['order'] = ''                
+                thisDF['class'] = ''                
+             
+                           
                 thisDF['specificEpithet'] = ''
                 thisDF['expeditionCode'] = ''
                 thisDF = thisDF[columns] 
-                      
+                                      
                 thisDF = thisDF.reindex(columns=columns)            
                 thisDF = thisDF.astype(str)
 
                 df = df.append(thisDF,sort=False)  
     
+
     prunedDF, cleanDF = data_cleaning(df)
     
     print("writing dataframe to spreadsheet and csv file...")               
@@ -149,6 +155,15 @@ def data_cleaning(df):
     
     df['genus'] = df['scientificName'].str.split(' ').str[0]
     df['specificEpithet'] = df['scientificName'].str.split(' ').str[1]    
+    
+    # append higher level taxonomy fields and use lookup list to fill these out
+    taxon_levels_df = pd.read_csv("futres_scientific_levels.csv")
+
+    #df['family'] = ''                
+    #df['order'] = ''    
+    #df['class'] = '' 
+    # merge the futres_scientific_levels data file, generated using taxize into set
+    pd.merge(df, taxon_levels_df,  left_on = 'genus', right_on = 'genus',  how='left')
     
     # standardize yearCollected values
     df.loc[df['yearCollected'] == 'Unknown', 'yearCollected'] = 'unknown'
@@ -445,7 +460,7 @@ api.write("|----|---|\n")
 # global variables
 #columns = ['observationID','materialSampleID','country','locality','yearCollected','samplingProtocol','basisOfRecord','scientificName','genus','specificEpithet','measurementMethod','measurementUnit','measurementType','measurementValue','lifeStage','individualID','sex','decimalLatitude','decimalLongitude','projectID']
 
-columns = ['observationID', 'projectID', 'expeditionCode', 'individualID', 'materialSampleID', 'diagnosticID', 'institutionCode', 'collectionCode', 'catalogNumber', 'basisOfRecord', 'scientificName', 'genus', 'specificEpithet', 'lifeStage', 'sex', 'reproductiveCondition', 'locality', 'country', 'stateProvince', 'decimalLatitude', 'decimalLongitude', 'yearCollected', 'samplingProtocol', 'minimumChronometricAge', 'maximumChronometricAge', 'measurementSide', 'measurementType', 'measurementValue', 'measurementUnit', 'measurementMethod']
+columns = ['observationID', 'projectID', 'expeditionCode', 'individualID', 'materialSampleID', 'diagnosticID', 'institutionCode', 'collectionCode', 'catalogNumber', 'basisOfRecord', 'scientificName', 'genus', 'family', 'order', 'class', 'specificEpithet', 'lifeStage', 'sex', 'reproductiveCondition', 'locality', 'country', 'stateProvince', 'decimalLatitude', 'decimalLongitude', 'yearCollected', 'samplingProtocol', 'minimumChronometricAge', 'maximumChronometricAge', 'measurementSide', 'measurementType', 'measurementValue', 'measurementUnit', 'measurementMethod']
 processed_csv_filename = 'data/futres_data_processed.csv'
 pruned_csv_filename = 'data/futres_data_with_errors.csv'
 

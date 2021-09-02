@@ -6464,6 +6464,7 @@ Lavia frons,{pes length},2
 Lavia frons,{tail length},11
 Leggadina forresti,{body length},6
 Leggadina forresti,{body mass},1
+Leistes cf. Leistes loyca,{femur length},4
 Lemmiscus curtatus,{body length},512
 Lemmiscus curtatus,{body mass},203
 Lemmiscus curtatus,{ear length to notch},263
@@ -10233,6 +10234,7 @@ Octodon lunatus,{body mass},1
 Octodon lunatus,{ear length to notch},1
 Octodon lunatus,{pes length},1
 Octodon lunatus,{tail length},1
+Octodontidae,{femur length},2
 Octodontomys gliroides,{body length},7
 Octodontomys gliroides,{body mass},4
 Octodontomys gliroides,{ear length to notch},4

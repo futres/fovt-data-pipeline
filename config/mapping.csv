@@ -2,7 +2,10 @@ column,uri,entity_alias,notes
 observationID,http://rs.tdwg.org/dwc/terms/eventID,vertTraitObsProc,
 materialSampleID,http://rs.tdwg.org/dwc/terms/materialSampleID,vertOrg,
 country,http://rs.tdwg.org/dwc/terms/country,vertTraitObsProc,
+stateProvince,http://rs.tdwg.org/dwc/terms/stateProvince,vertTraitObsProc,
 locality,http://rs.tdwg.org/dwc/terms/locality,vertTraitObsProc,
+minimumChronometricAge,urn:minimumChronometricAge,vertTraitObsProc,
+maximumChronometricAge,urn:maximumChronometricAge,vertTraitObsProc,
 yearCollected,http://rs.tdwg.org/dwc/terms/year,vertTraitObsProc,
 samplingProtocol,http://rs.tdwg.org/dwc/terms/samplingProtocol,vertTraitObsProc,
 basisOfRecord,http://rs.tdwg.org/dwc/terms/basisOfRecord,vertOrg,
@@ -14,9 +17,20 @@ measurementUnit,http://rs.tdwg.org/dwc/terms/measurementUnit,measurementDatum,
 measurementType,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,vertTrait,specifying rdf:type means we will be mapping values as object properties
 measurementType,http://rs.tdwg.org/dwc/terms/measurementType,vertTrait,
 measurementValue,http://rs.tdwg.org/dwc/terms/measurementValue,measurementDatum,
+measurementSide,urn:measurementSide,measurementDatum,
 lifeStage,http://rs.tdwg.org/dwc/terms/lifeStage,vertOrg,
 sex,http://rs.tdwg.org/dwc/terms/sex,vertOrg,
 decimalLatitude,http://rs.tdwg.org/dwc/terms/decimalLatitude,vertTraitObsProc,
 decimalLongitude,http://rs.tdwg.org/dwc/terms/decimalLongitude,vertTraitObsProc,
-projectID,http://rs.tdwg.org/dwc/terms/collectionCode,vertOrg,
+projectID,urn:projectID,vertOrg,
 individualID,http://rs.tdwg.org/dwc/terms/individualID,vertOrg,
+institutionCode,http://rs.tdwg.org/dwc/terms/institutionCode,vertOrg,
+collectionCode,http://rs.tdwg.org/dwc/terms/collectionCode,vertOrg,
+catalogNumber,http://rs.tdwg.org/dwc/terms/catalogNumber,vertOrg,
+reproductiveCondition,http://rs.tdwg.org/dwc/terms/reproductiveCondition,vertOrg,
+
+
+
+
+
+
