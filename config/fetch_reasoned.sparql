@@ -13,7 +13,7 @@ prefix urn: <urn:>
 SELECT ?observationID ?individualID ?materialSampleID 
 	?decimalLatitude ?decimalLongitude ?country ?stateProvince ?locality ?samplingProtocol ?yearCollected
 	?institutionCode ?collectionCode ?catalogNumber ?reproductiveCondition ?minimumChronometricAge ?maximumChronometricAge
-	?scientificName ?genus ?specificEpithet ?basisOfRecord ?lifeStage ?sex ?projectID ?individualID 
+	?scientificName ?genus ?family ?order ?class ?specificEpithet ?basisOfRecord ?lifeStage ?sex ?projectID ?individualID 
 	?measurementValue ?measurementUnit ?measurementMethod ?measurementType ?measurementSide
 	(group_concat(distinct ?traitTypes;separator='|') as ?traits)
 
@@ -50,6 +50,9 @@ WHERE {
 	# Organism Attributes
     OPTIONAL {?vertOrg dwc:scientificName ?scientificName} . 
 	OPTIONAL {?vertOrg dwc:genus ?genus} . 
+	OPTIONAL {?vertOrg dwc:family ?family} . 
+	OPTIONAL {?vertOrg dwc:order ?order} . 
+	OPTIONAL {?vertOrg dwc:class ?class} . 
 	OPTIONAL {?vertOrg dwc:specificEpithet ?specificEpithet} . 
     OPTIONAL {?vertOrg dwc:materialSampleID ?materialSampleID} . 
 	OPTIONAL {?vertOrg dwc:basisOfRecord ?basisOfRecord} . 
@@ -75,7 +78,7 @@ WHERE {
 GROUP BY ?observationID ?individualID ?materialSampleID 
 	?decimalLatitude ?decimalLongitude ?country ?stateProvince ?locality ?samplingProtocol ?yearCollected
 	?institutionCode ?collectionCode ?catalogNumber ?reproductiveCondition ?minimumChronometricAge ?maximumChronometricAge
-	?scientificName ?genus ?specificEpithet ?basisOfRecord ?lifeStage ?sex ?projectID ?individualID 
+	?scientificName ?genus ?family ?order ?class ?specificEpithet ?basisOfRecord ?lifeStage ?sex ?projectID ?individualID 
 	?measurementValue ?measurementUnit ?measurementMethod ?measurementType ?measurementSide
 ORDER BY ASC(?observationID)
 

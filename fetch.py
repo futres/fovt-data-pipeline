@@ -157,13 +157,18 @@ def data_cleaning(df):
     df['specificEpithet'] = df['scientificName'].str.split(' ').str[1]    
     
     # append higher level taxonomy fields and use lookup list to fill these out
-    taxon_levels_df = pd.read_csv("futres_scientific_levels.csv")
+    taxon_levels_df = pd.read_csv("config/futres_scientific_levels.csv")
 
     #df['family'] = ''                
     #df['order'] = ''    
     #df['class'] = '' 
     # merge the futres_scientific_levels data file, generated using taxize into set
-    pd.merge(df, taxon_levels_df,  left_on = 'genus', right_on = 'genus',  how='left')
+    output = pd.merge(df, taxon_levels_df,  left_on = 'genus', right_on = 'genus',  how='outer', suffixes=('_delme', ''))
+    #output = pd.merge(df, taxon_levels_df,  left_on = 'genus', right_on = 'genus',  how='outer', suffixes=('_delme', ''))
+    del output['family_delme'] 
+    del output['order_delme'] 
+    del output['class_delme'] 
+    df = output
     
     # standardize yearCollected values
     df.loc[df['yearCollected'] == 'Unknown', 'yearCollected'] = 'unknown'
