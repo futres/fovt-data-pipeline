@@ -100,6 +100,11 @@ NOTE: since the size of the data can be quite large and the `loader.py` script s
 tar zcvf - data/output/output_reasoned_csv/* | ssh USER@SOME.SERVER.COM  "cd /home/USER/data/futres; tar xvzf -"
 ```
 
+## STEP 4: biscicol-server updates
+The code over at [biscicol-server](https://biscicol.org/) has additional functions for serving the loaded FuTRES data living at the https://futres.org/ website, including:
+  * updating fovt ontology lookups (with links to updating GEOME Controlled Vocabs) and dynamic links for generating ontology lookup lists for the FuTRES website
+  * a nodejs script, under `scripts/futres.fetchall.js` for bundling all of FuTRES script into a single zip archive, handy for R work where you want to look at all of FuTRES data
+
 # Application Programming Interface
 This repository generates files in the pre-processing step which serve as an API.  These files are referenced at [https://github.com/futres/fovt-data-pipeline/blob/master/api.md].  In addition to this datasource, there is a dynamic data service which references files that were loaded into elasticsearch in the "Loading Data" step, above.  The FuTRES dynamic data is hosted by the plantphenology nodejs proxy service at:
 https://github.com/biocodellc/ppo-data-server/blob/master/docs/es_futres_proxy.md   The following endpoints to that datastore are:
