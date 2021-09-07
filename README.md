@@ -1,6 +1,6 @@
 # fovt-data-pipeline
 
-The fovt-data-pipeline contains scripts to process, reason, and load data into an external document store for the FuTRES project as well as populating summary statistics in driving the [FuTRES website](https://futres.org/).  This repository aggregates FuTRES trait data that has been loaded into [GEOME](https://geome-db.org/) as well as VertNet.  Detailed instructions on loading data into GEOME, using the FuTRES team, are provided on the [FuTRES website](https://futres.org/data_tutorial/).  Please note that this repository is designed to process millions of records from multiple repositories and is fairly complex.  To give interested users an idea of how the reasoning steps work, we have a provided a simple start section below demonstrating how this crucial part of the process works.  
+The fovt-data-pipeline contains scripts to process, reason, and load data for the FuTRES project.  Processed data is loaded into an ElasticSearch document store and made accessible to the [FuTRES query interface](https://futres-data-interface.netlify.app/) and the [FuTRES R package](https://github.com/futres/rfutres)  as well as populating summary statistics in driving the [FuTRES website dashboard](https://futres.org/).  This repository aggregates FuTRES trait data that has been loaded into [GEOME](https://geome-db.org/) as well as VertNet.  Detailed instructions on loading data into GEOME, using the FuTRES team, are provided on the [FuTRES website](https://futres.org/data_tutorial/).  Please note that this repository is designed to process millions of records from multiple repositories and is fairly complex.  To give interested users an idea of how the reasoning steps work, we have a provided a simple start section below demonstrating how this crucial part of the process works.  
 
 *Credits: This codebase draws on the [Ontology Data Pipeline](https://github.com/biocodellc/ontology-data-pipeline) for triplifying and reasoning, the [FuTRES Ontology for Vertebrate Traits](https://github.com/futres/fovt) as the source ontology, and [ROBOT](http://robot.obolibrary.org/) as a contributing library for the reasoning steps.  Data processing scripts in assembling VertNet data extracts and getting legacy data ready for ingest into GEOME are stored at [fovt-data-mapping](https://github.com/futres/fovt-data-mapping)*
 
@@ -18,7 +18,7 @@ To quickly test the validation, triplifying and reasoning steps, you can start h
  python ../ontology-data-pipeline/pipeline.py -v --drop_invalid  sample_data_processed.csv sample_data/output https://raw.githubusercontent.com/futres/fovt/master/fovt.owl config
 ```
 
-This example uses a file that has already been pre-processed, `sample_data_processed.csv`, and tagged with labels that exist in our ontology.  Output is stored in `data/output` and uses processing directives stored in the `config` directory.
+This example uses a file that has already been pre-processed, `sample_data_processed.csv`, and tagged with labels that exist in our ontology.  Output is stored in `sample_data/output` and uses processing directives stored in the `config` directory.
 
 # Complete Process 
 Here we follow the complete process for processing FuTRES data.  The steps below are completed sequentially with outputs from earlier steps being used as input to later steps.
