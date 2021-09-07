@@ -123,6 +123,15 @@ class ESLoader(object):
                 if (row['yearCollected'] == 'unknown'): 
                     row['yearCollected'] = ''
 
+                if (row['lifeStage'] == ''): 
+                    row['lifeStage'] == 'Unknown' 
+                if (row['family'] == ''): 
+                    row['family'] == 'Unknown' 
+                if (row['order'] == ''): 
+                    row['order'] == 'Unknown' 
+                if (row['class'] == ''): 
+                    row['class'] == 'Unknown' 
+
                 data.append({k: v for k, v in row.items() if v})  # remove any empty values
 
             elasticsearch.helpers.bulk(client=self.es, index=self.index_name, actions=data, 
@@ -139,6 +148,9 @@ class ESLoader(object):
                         "mapped_traits": {"type": "keyword"},
                         "lifeStage": {"type": "keyword"},
                         "genus": {"type": "keyword"},
+                        "family": {"type": "keyword"},
+                        "order": {"type": "keyword"},
+                        "class": {"type": "keyword"},
                         "projectID": {"type": "keyword"},
                         "mapped_project": {"type": "keyword"},
                         "basisOfRecord": {"type": "keyword"},
@@ -169,8 +181,8 @@ index = 'futres'
 drop_existing = True
 alias = 'futres'
 host =  'tarly.cyverse.org:80'
-data_dir = 'data/output/output_reasoned_csv/'
-#data_dir = '/home/jdeck/data/futres/data/output/output_reasoned_csv/'
+#data_dir = 'data/output/output_reasoned_csv/'
+data_dir = '/home/jdeck/data/futres/data/output/output_reasoned_csv/'
 
 loader = ESLoader(data_dir, index, drop_existing, alias, host)
 loader.load()
