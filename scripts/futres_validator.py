@@ -27,7 +27,7 @@ def upload_files(project_id, filename, code):
 def validate_data(project_id, filename, code):
     errorsFound = False
     # use the test expedition for data validation
-    print('Validating data for expedition: ', code)
+    print('Validating data for filename: ', filename)
 
 
     validate_url = "{}data/validate".format(
