@@ -60,7 +60,7 @@ python fetch.py
 The above script reports any data that has been removed from the data set during processing into an error log: `data/futres_data_with_errors.csv` and storing data at `data/futres_data_processed.csv`.
 
 ## STEP 2: Running the Reasoner
-First, [Install docker](https://docs.docker.com/install/) and then clone this repository.  Once that is done, you can test
+Make sure you have [docker](https://docs.docker.com/install/) installed.  Once that is done, you can test
 the environment by following the instructions under 'Simple Start' above.  This will verify that the reasoner is running correctly.
 Run the ontology-data-pipeline using the input data file data/futres_data_processed.csv as input data,
 data/output as the output directory and configuration files stored in the config directory.
@@ -68,9 +68,6 @@ data/output as the output directory and configuration files stored in the config
 ```
 # using docker
 ./run.sh data/futres_data_processed.csv data/output config
-
-# using python and ontology-data-pipeline directly:
- python ../ontology-data-pipeline/pipeline.py -v --drop_invalid  data/futres_data_processed.csv data/output https://raw.githubusercontent.com/futres/fovt/master/fovt.owl config
 ```
 
 An alternate way of running the reasoner, if you want to bypass docker and instead use python directly would be:
@@ -86,24 +83,41 @@ The docker image cannot find files like `../some-other-directory/file.txt`.*
 
 *NOTE 2:  you may wish to run the reasoner using python directly instead of docker.  You can find a reference to that procedure by visiting the [ontology-data-pipeline repository](https://github.com/biocodellc/ontology-data-pipeline).*
 
-## STEP 3: Loading Data
+## STEP 3: Loading Data Into Document Store
 
-The `loader.py` script populates the elasticsearch backend database using the loader.py script.  The elastic search loader references the host, index, and directory to search for files directly in the script.  In cases where this repository is forked, these values can be changed directly in code. The following script looks for output in `data/output/output_reasoned_csv/data*.csv`
+The `loader.py` script populates the elasticsearch document store using the loader.py script.  The elastic search loader references the host, index, and directory to search for files directly in the script.  In cases where this repository is forked, these values can be changed directly in code. 
 
-```
-python loader.py
-```
-
-NOTE: since the size of the data can be quite large and the `loader.py` script sends uncompressed data, we probably want to send the files to a remote server from our desktop machine.  This command would look like:
+OPTIONAL: Since the size of the data can be quite large and the `loader.py` script sends uncompressed data, we probably want to first send the files to a remote server that has excellent bandwidth from our desktop machine.  This command would look like:
 
 ```
 tar zcvf - data/output/output_reasoned_csv/* | ssh USER@SOME.SERVER.COM  "cd /home/USER/data/futres; tar xvzf -"
 ```
 
-## STEP 4: biscicol-server updates
+If you choose to execute the above optional step you will want to clone this repository on the remote server.   Then you can execute the following command, which looks for data in `data/output/output_reasoned_csv/data*.csv`:
+
+```
+# FIRST:
+# edit loader.py and change the data_dir variable near the end of the script to the directory on your computer where the output is stored
+
+# SECOND:
+# execute the following script, which requires access to your remote document store.  You will need to update access settings and target as needed:
+python loader.py
+```
+
+
+## STEP 4: API Proxy updates
 The code over at [biscicol-server](https://biscicol.org/) has additional functions for serving the loaded FuTRES data living at the https://futres.org/ website, including:
   * updating fovt ontology lookups (with links to updating GEOME Controlled Vocabs) and dynamic links for generating ontology lookup lists for the FuTRES website
-  * a nodejs script, under `scripts/futres.fetchall.js` for bundling all of FuTRES script into a single zip archive, handy for R work where you want to look at all of FuTRES data
+  * a nodejs script, under `scripts/futres.fetchall.js` for bundling all of FuTRES script into a single zip archive, handy for R work where you want to look at all of FuTRES data, this script is run like:
+
+```
+# FIRST:
+# clone [biscicol-server](https://biscicol.org/)
+
+# SECOND:
+cd scripts
+node futres.fetchall.js
+```
 
 # Application Programming Interface
 This repository generates files in the pre-processing step which serve as an API.  These files are referenced at [https://github.com/futres/fovt-data-pipeline/blob/master/api.md].  In addition to this datasource, there is a dynamic data service which references files that were loaded into elasticsearch in the "Loading Data" step, above.  The FuTRES dynamic data is hosted by the plantphenology nodejs proxy service at:
