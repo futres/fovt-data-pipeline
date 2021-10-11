@@ -70,7 +70,7 @@ data/output as the output directory and configuration files stored in the config
 ./run.sh data/futres_data_processed.csv data/output config
 ```
 
-An alternate way of running the reasoner, if you want to bypass docker and instead use python directly would be:
+An alternate way of running the reasoner and more stable for large runs of data is to run directly using python. 
 
 ```
 # 1. clone biocodellc/ontology-data-pipeline into ../ontology-data-pipeline
@@ -80,8 +80,6 @@ python ../ontology-data-pipeline/pipeline.py -v --drop_invalid  data/futres_data
 
 *NOTE 1: you must reference your input data file to reason within the root-level heirarchicy of this repository. We have provided the `data/` directory for putting input and output data files, although you can use any directory under the root.
 The docker image cannot find files like `../some-other-directory/file.txt`.*
-
-*NOTE 2:  you may wish to run the reasoner using python directly instead of docker.  You can find a reference to that procedure by visiting the [ontology-data-pipeline repository](https://github.com/biocodellc/ontology-data-pipeline).*
 
 ## STEP 3: Loading Data Into Document Store
 
