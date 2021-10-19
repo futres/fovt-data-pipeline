@@ -47,10 +47,10 @@ pyenv local futres-api
 
 ### Fetching VertNet data
 Vertnet data extracts are stored in a directory called `vertnet` immediately off of the root directory of this repository.
-This directory is ignored in the .gitignore file.  You will need to first copy the VertNet data extracts from the CyVerse Discovery Environment. See [getDiscoveryEnvironmentData.md](getDiscoveryEnvironmentData.md) for instructions on coyping the VertNet data.
+This directory is ignored in the .gitignore file.  You will need to first copy the VertNet data extracts from the CyVerse Discovery Environment. See [getDiscoveryEnvironmentData.md](getDiscoveryEnvironmentData.md) for instructions on coyping the VertNet data.  The script will copy any CSV extension files under the `vertnet` directory.
 
 ### Running the Script
-The fetch.py script fetches data from GEOME and looks in the VertNet directory for
+The fetch.py script fetches data from GEOME and also looks in the VertNet directory for
 processed Vertnet data,  populating summary statistics as JSON files, and finally creates a single file to store all processed data as  `data/futres_data_processed.csv`.  This file is used by the reasoning pipeline in Step 2 below.  The fetch script is run using:
 
 ```
@@ -60,13 +60,15 @@ python fetch.py
 The above script reports any data that has been removed from the data set during processing into an error log: `data/futres_data_with_errors.csv` and storing data at `data/futres_data_processed.csv`.
 
 ## STEP 2: Running the Reasoner
-Make sure you have [docker](https://docs.docker.com/install/) installed.  Once that is done, you can test
-the environment by following the instructions under 'Simple Start' above.  This will verify that the reasoner is running correctly.
+There are two ways of running the reasoner: docker or directly with python.  Docker is easier but it if there is an issue it makes diagnosing the source of the problem more difficult and may sometimes fail where the python method does not.  If you try the docker route and run into an issue, you can next try running the reasoner directly in python.
+
+For the docker method, Make sure you have [docker](https://docs.docker.com/install/) installed.  Once that is done, you can test
+the environment by following the instructions under 'Simple Start' above.  This will verify that things are setup correctly.
 Run the ontology-data-pipeline using the input data file data/futres_data_processed.csv as input data,
 data/output as the output directory and configuration files stored in the config directory.
 
 ```
-# using docker
+# docker script
 ./run.sh data/futres_data_processed.csv data/output config
 ```
 
@@ -88,10 +90,11 @@ The `loader.py` script populates the elasticsearch document store using the load
 OPTIONAL: Since the size of the data can be quite large and the `loader.py` script sends uncompressed data, we probably want to first send the files to a remote server that has excellent bandwidth from our desktop machine.  This command would look like:
 
 ```
-tar zcvf - data/output/output_reasoned_csv/* | ssh USER@SOME.SERVER.COM  "cd /home/USER/data/futres; tar xvzf -"
+# replace `biscicol.org` with your server and user with your user name
+tar zcvf - data/output/output_reasoned_csv/* | ssh USER@biscicol.org  "cd /home/USER/data/futres; tar xvzf -"
 ```
 
-If you choose to execute the above optional step you will want to clone this repository on the remote server.   Then you can execute the following command, which looks for data in `data/output/output_reasoned_csv/data*.csv`:
+Once your data lives on the server that you wish to load from, you can execute the following command, which looks for data in `data/output/output_reasoned_csv/data*.csv`.  Note that if you copied your data to another server, as we did in the previous command, you will also need to check out fovt-data-pipeline on that server to run the next command.
 
 ```
 # FIRST:
@@ -107,12 +110,11 @@ python loader.py
 The code over at [biscicol-server](https://biscicol.org/) has additional functions for serving the loaded FuTRES data living at the https://futres.org/ website, including:
   * updating fovt ontology lookups (with links to updating GEOME Controlled Vocabs) and dynamic links for generating ontology lookup lists for the FuTRES website
   * a nodejs script, under `scripts/futres.fetchall.js` for bundling all of FuTRES script into a single zip archive, handy for R work where you want to look at all of FuTRES data, this script is run like:
+You will first need to clone [biscicol-server](https://biscicol.org/)
 
 ```
-# FIRST:
-# clone [biscicol-server](https://biscicol.org/)
-
-# SECOND:
+# navigate to the biscicol-server codebase:
+cd biscicol-server  
 cd scripts
 node futres.fetchall.js
 ```
