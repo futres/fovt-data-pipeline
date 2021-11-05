@@ -13,6 +13,7 @@ prefix urn: <urn:>
 SELECT ?observationID ?individualID ?materialSampleID 
 	?decimalLatitude ?decimalLongitude ?country ?stateProvince ?locality ?samplingProtocol ?yearCollected
 	?institutionCode ?collectionCode ?catalogNumber ?reproductiveCondition ?minimumChronometricAge ?maximumChronometricAge
+	?minimumChronometricAgeReferenceSystem ?maximumChronometricAgeReferenceSystem
 	?scientificName ?genus ?family ?order ?class ?specificEpithet ?basisOfRecord ?lifeStage ?sex ?projectID ?individualID 
 	?measurementValue ?measurementUnit ?measurementMethod ?measurementType ?measurementSide
 	(group_concat(distinct ?traitTypes;separator='|') as ?traits)
@@ -46,6 +47,8 @@ WHERE {
 	OPTIONAL {?vertTraitObsProc dwc:year ?yearCollected} .
 	OPTIONAL {?minimumChronometricAge urn:minimumChronometricAge ?minimumChronometricAge} .
 	OPTIONAL {?maximumChronometricAge urn:maximumChronometricAge ?maximumChronometricAge} .
+	OPTIONAL {?minimumChronometricAgeReferenceSystem urn:minimumChronometricAgeReferenceSystem ?minimumChronometricAgeReferenceSystem} .
+	OPTIONAL {?maximumChronometricAgeReferenceSystem urn:maximumChronometricAgeReferenceSystem ?maximumChronometricAgeReferenceSystem} .
 
 	# Organism Attributes
     OPTIONAL {?vertOrg dwc:scientificName ?scientificName} . 
@@ -78,6 +81,7 @@ WHERE {
 GROUP BY ?observationID ?individualID ?materialSampleID 
 	?decimalLatitude ?decimalLongitude ?country ?stateProvince ?locality ?samplingProtocol ?yearCollected
 	?institutionCode ?collectionCode ?catalogNumber ?reproductiveCondition ?minimumChronometricAge ?maximumChronometricAge
+	?minimumChronometricAgeReferenceSystem ?maximumChronometricAgeReferenceSystem
 	?scientificName ?genus ?family ?order ?class ?specificEpithet ?basisOfRecord ?lifeStage ?sex ?projectID ?individualID 
 	?measurementValue ?measurementUnit ?measurementMethod ?measurementType ?measurementSide
 ORDER BY ASC(?observationID)

@@ -93,7 +93,7 @@ def process_data():
                 thisDF = thisDF.reindex(columns=columns)            
                 thisDF = thisDF.astype(str)
                 df = df.append(thisDF,sort=False)
-    
+     
     print ('processing Vertnet data...')  
     for subdir, dirs, files in os.walk('vertnet'):
         for file in files:
@@ -106,11 +106,13 @@ def process_data():
                 thisDF = pd.read_csv(temp_file, na_filter=False)                                                
                 # the following columns vertnet does not have but we are creating a spot for them 
                 # anyway in the dataframe to match GEOME which may have the data
-                thisDF['individualID'] = ''
+                #thisDF['individualID'] = ''
                 thisDF['observationID'] = ''
                 thisDF['maximumChronometricAge'] = ''
-                thisDF['measurementSide'] = ''
+                thisDF['maximumChronometricAgeReferenceSystem'] = ''                
                 thisDF['minimumChronometricAge'] = ''
+                thisDF['minimumChronometricAgeReferenceSystem'] = ''
+                thisDF['measurementSide'] = ''
                 thisDF['reproductiveCondition'] = ''
                 thisDF['stateProvince'] = ''
                 thisDF['projectID'] = 'Vertnet'

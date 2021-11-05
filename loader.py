@@ -161,6 +161,10 @@ class ESLoader(object):
                         "measurementValue": {"type": "float"},
                         "decimalLatitude": { "type": "float" },
                         "decimalLongitude": { "type": "float" },
+                        "minimumChronometricAge": { "type": "float" },
+                        "maximumChronometricAge": { "type": "float" },
+                        "minimumChronometricAgeReferenceSystem": { "type": "keyword" },
+                        "maximumChronometricAgeReferenceSystem": { "type": "keyword" },
                         "location": { "type": "geo_point" }                        
                     }
             }
