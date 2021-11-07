@@ -30,9 +30,9 @@ WHERE {
 	# since these can be different for different projects we need to think carefully
 	# how to address joins in this section for the different projects.
 	# Using SPARQL property paths is one possible solution
-	?vertOrg rdf:type <http://https://raw.githubusercontent.com/futres/fovt/master/src/fovt-base.owl/FOVT_0001001> .
+	?vertOrg rdf:type <http://purl.obolibrary.org/obo/OBI_0100026> .
 	?measurementDatum <http://purl.obolibrary.org/obo/IAO_0000136> ?vertTrait .
-	?vertTrait obo:RO_0000052 ?vertOrg .
+	?vertTrait obo:BFO_0000050 ?vertOrg .
 	?vertTraitObsProc obo:OBI_0000299 ?measurementDatum .
 	?vertOrg obo:OBI_0000295 ?vertTraitObsProc .
 
@@ -45,10 +45,10 @@ WHERE {
 	OPTIONAL {?vertTraitObsProc dwc:locality ?locality} .
 	OPTIONAL {?vertTraitObsProc dwc:samplingProtocol ?samplingProtocol} .
 	OPTIONAL {?vertTraitObsProc dwc:year ?yearCollected} .
-	OPTIONAL {?minimumChronometricAge urn:minimumChronometricAge ?minimumChronometricAge} .
-	OPTIONAL {?maximumChronometricAge urn:maximumChronometricAge ?maximumChronometricAge} .
-	OPTIONAL {?minimumChronometricAgeReferenceSystem urn:minimumChronometricAgeReferenceSystem ?minimumChronometricAgeReferenceSystem} .
-	OPTIONAL {?maximumChronometricAgeReferenceSystem urn:maximumChronometricAgeReferenceSystem ?maximumChronometricAgeReferenceSystem} .
+	OPTIONAL {?vertTraitObsProc urn:minimumChronometricAge ?minimumChronometricAge} .
+	OPTIONAL {?vertTraitObsProc urn:maximumChronometricAge ?maximumChronometricAge} .
+	OPTIONAL {?vertTraitObsProc urn:minimumChronometricAgeReferenceSystem ?minimumChronometricAgeReferenceSystem} .
+	OPTIONAL {?vertTraitObsProc urn:maximumChronometricAgeReferenceSystem ?maximumChronometricAgeReferenceSystem} .
 
 	# Organism Attributes
     OPTIONAL {?vertOrg dwc:scientificName ?scientificName} . 
