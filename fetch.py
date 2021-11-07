@@ -467,7 +467,7 @@ api.write("|----|---|\n")
 # global variables
 #columns = ['observationID','materialSampleID','country','locality','yearCollected','samplingProtocol','basisOfRecord','scientificName','genus','specificEpithet','measurementMethod','measurementUnit','measurementType','measurementValue','lifeStage','individualID','sex','decimalLatitude','decimalLongitude','projectID']
 
-columns = ['observationID', 'projectID', 'expeditionCode', 'individualID', 'materialSampleID', 'diagnosticID', 'institutionCode', 'collectionCode', 'catalogNumber', 'basisOfRecord', 'scientificName', 'genus', 'family', 'order', 'class', 'specificEpithet', 'lifeStage', 'sex', 'reproductiveCondition', 'locality', 'country', 'stateProvince', 'decimalLatitude', 'decimalLongitude', 'yearCollected', 'samplingProtocol', 'minimumChronometricAge', 'maximumChronometricAge', 'measurementSide', 'measurementType', 'measurementValue', 'measurementUnit', 'measurementMethod']
+columns = ['observationID', 'projectID', 'expeditionCode', 'individualID', 'materialSampleID', 'diagnosticID', 'institutionCode', 'collectionCode', 'catalogNumber', 'basisOfRecord', 'scientificName', 'genus', 'family', 'order', 'class', 'specificEpithet', 'lifeStage', 'sex', 'reproductiveCondition', 'locality', 'country', 'stateProvince', 'decimalLatitude', 'decimalLongitude', 'yearCollected', 'samplingProtocol', 'minimumChronometricAge', 'maximumChronometricAge', 'minimumChronometricAgeReferenceSystem', 'maximumChronometricAgeReferenceSystem', 'measurementSide', 'measurementType', 'measurementValue', 'measurementUnit', 'measurementMethod']
 processed_csv_filename = 'data/futres_data_processed.csv'
 pruned_csv_filename = 'data/futres_data_with_errors.csv'
 
