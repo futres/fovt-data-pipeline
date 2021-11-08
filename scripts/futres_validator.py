@@ -11,7 +11,7 @@ import requests
 
 ENDPOINT = 'https://api.geome-db.org/'
 
-CSV_FILE = "{}.csv"
+CSV_FILE = "{}.xlsx"
 
 headers = {
     'Content-Type': 'application/json',

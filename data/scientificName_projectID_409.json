@@ -1,0 +1,21 @@
+[
+	{"scientificName":"Acinonyx jubatus","value":104},
+	{"scientificName":"Canis latrans","value":260},
+	{"scientificName":"Crocuta crocuta","value":138},
+	{"scientificName":"Gulo gulo","value":186},
+	{"scientificName":"Ichneumia albicauda","value":230},
+	{"scientificName":"Leopardus pardalis","value":130},
+	{"scientificName":"Lontra canadensis","value":218},
+	{"scientificName":"Lynx rufus","value":110},
+	{"scientificName":"Martes americana","value":231},
+	{"scientificName":"Mephitis mephitis","value":178},
+	{"scientificName":"Panthera leo","value":143},
+	{"scientificName":"Puma concolor","value":117},
+	{"scientificName":"Suricata suricatta","value":181},
+	{"scientificName":"Taxidea taxus","value":135},
+	{"scientificName":"Urocyon cinereoargenteus","value":250},
+	{"scientificName":"Ursus americanus","value":179},
+	{"scientificName":"Ursus arctos","value":202},
+	{"scientificName":"Ursus maritimus","value":113},
+	{"scientificName":"Vulpes lagopus","value":246}
+]

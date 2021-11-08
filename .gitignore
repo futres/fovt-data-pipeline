@@ -14,3 +14,4 @@ db.ini
 vertnet/
 ontopilot
 data/futres_data_processed.csv.gz
+data/futres_data_with_errors.csv

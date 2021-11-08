@@ -1,5 +1,5 @@
 subject_entity_alias,predicate,object_entity_alias,notes
 measurementDatum,{is about},vertTrait
-vertTrait,{inheres in},vertOrg,
+vertTrait,{part of},vertOrg,
 vertTraitObsProc,{has_specified_output},measurementDatum,
 vertOrg,{is_specified_input_of},vertTraitObsProc,

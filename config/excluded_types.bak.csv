@@ -1,5 +1,0 @@
-ID,Exclude class,Exclude superclasses,Notes
-http://purl.obolibrary.org/obo/PATO_0000001,Y,Y, #quality
-https://raw.githubusercontent.com/futres/fovt/master/src/fovt-base.owl/FOVT_0001001,N,Y, #vertebrate organism
-http://purl.obolibrary.org/obo/IAO_0000109,N,Y, #measurement datum
-http://purl.obolibrary.org/obo/OBA_0000001,Y,Y, #
