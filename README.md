@@ -16,7 +16,7 @@ python ../ontology-data-pipeline/pipeline.py -v --drop_invalid  sample_data_proc
 Here we follow the complete process for processing FuTRES data.  The steps below are completed sequentially with outputs from earlier steps being used as input to later steps.
 
 ## STEP 0: Updating files dependent on the ontology
-There are some helper files that are used in the FuTRES environment that are must be generated after the FOVT ontology is updated.
+There are some helper files that are used in the FuTRES environment that are must be generated after the FOVT ontology is updated.  This step is only necessary after the FOVT ontology is updated and not meant to be run every time data is processed.  This step may be skipped if you are only trying to re-process data.
 
 ```
 # checkout biscicol-server
