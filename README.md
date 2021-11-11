@@ -15,6 +15,19 @@ python ../ontology-data-pipeline/pipeline.py -v --drop_invalid  sample_data_proc
 # Complete Process 
 Here we follow the complete process for processing FuTRES data.  The steps below are completed sequentially with outputs from earlier steps being used as input to later steps.
 
+## STEP 0: Updating files dependent on the ontology
+There are some helper files that are used in the FuTRES environment that are must be generated after the FOVT ontology is updated.
+
+```
+# checkout biscicol-server
+cd biscicol-server/scripts
+# the following script writes JSON files which drive lookup lists on the 
+# FuTRES query interface as well as a GEOME output file: all_geome.json
+node futresapi.ontology.sh
+```
+
+The next step is updating the GEOME controlled vocabulary list for measurementType. Use `all_geome.json` file to update GEOME team environment.  Instructions at  [geome-configurations](https://github.com/biocodellc/geome-configurations/)
+
 ## STEP 1: Pre-processing
 The pre-processing step obtains data from remote sources and populates data tables which are then used in the reasoning step.   This provides summary statistics for the [FuTRES website](https://futres.org/) as well as assembling all data sources into a single file in `data/futres_data_processed.csv`.  Importantly, this step reports any data that has been removed from the data set during processing into an error log: `data/futres_data_with_errors.csv`
 
