@@ -5,8 +5,7 @@ The fovt-data-pipeline contains scripts to process, reason, and load data for th
 *Credits: This codebase draws on the [Ontology Data Pipeline](https://github.com/biocodellc/ontology-data-pipeline) for triplifying and reasoning, the [FuTRES Ontology for Vertebrate Traits](https://github.com/futres/fovt) as the source ontology, and [ROBOT](http://robot.obolibrary.org/) as a contributing library for the reasoning steps.  Data processing scripts in assembling VertNet data extracts and getting legacy data ready for ingest into GEOME are stored at [fovt-data-mapping](https://github.com/futres/fovt-data-mapping)*
 
 # Simple Start
-To quickly test the validation, triplifying and reasoning steps, you can start here.  You must first checkout [Ontology Data Pipeline](https://github.com/biocodellc/ontology-data-pipeline) at the same level as this repository.  The following command will process the pipeline
-using a limited set of data and should process in a minute or two.   
+To quickly test the validation, triplifying and reasoning steps, you can start here.  You must first checkout [Ontology Data Pipeline](https://github.com/biocodellc/ontology-data-pipeline) at the same level as this repository.  The following command will process the pipeline using a limited set of data and should process in a minute or two.   
 
 ``` 
 python ../ontology-data-pipeline/pipeline.py -v --drop_invalid  sample_data_processed.csv sample_data/output https://raw.githubusercontent.com/futres/fovt/master/fovt.owl config
