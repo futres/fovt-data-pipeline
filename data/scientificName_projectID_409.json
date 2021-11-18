@@ -1,6 +1,6 @@
 [
 	{"scientificName":"Acinonyx jubatus","value":104},
-	{"scientificName":"Canis latrans","value":260},
+	{"scientificName":"Canis latrans","value":251},
 	{"scientificName":"Crocuta crocuta","value":138},
 	{"scientificName":"Gulo gulo","value":186},
 	{"scientificName":"Ichneumia albicauda","value":230},
@@ -13,9 +13,9 @@
 	{"scientificName":"Puma concolor","value":117},
 	{"scientificName":"Suricata suricatta","value":181},
 	{"scientificName":"Taxidea taxus","value":135},
-	{"scientificName":"Urocyon cinereoargenteus","value":250},
-	{"scientificName":"Ursus americanus","value":179},
-	{"scientificName":"Ursus arctos","value":202},
-	{"scientificName":"Ursus maritimus","value":113},
-	{"scientificName":"Vulpes lagopus","value":246}
+	{"scientificName":"Urocyon cinereoargenteus","value":240},
+	{"scientificName":"Ursus americanus","value":171},
+	{"scientificName":"Ursus arctos","value":192},
+	{"scientificName":"Ursus maritimus","value":108},
+	{"scientificName":"Vulpes lagopus","value":237}
 ]

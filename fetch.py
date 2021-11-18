@@ -155,6 +155,7 @@ def data_cleaning(df):
     df = df.reindex(columns=columns)    
     df = df.reset_index(drop=True)
     
+    df['catalogNumber'] = df['catalogNumber'].str.replace('"','')
     df['genus'] = df['scientificName'].str.split(' ').str[0]
     df['specificEpithet'] = df['scientificName'].str.split(' ').str[1]    
     
