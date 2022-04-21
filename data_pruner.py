@@ -17,7 +17,7 @@ import urllib.request, json
                       
 # Check Traits from FOVT, need to make sure these all match
 def datatype_trait_checker(prunedDF, df):
-    with urllib.request.urlopen("https://plantphenology.org//futresapi/v2/fovt/") as url:
+    with urllib.request.urlopen("https://biscicol.org/futresapi/v2/fovt") as url:
         tempDF = df
         tempDF.loc[:, ('reason')] = "measurementType value not found in ontology"
 
