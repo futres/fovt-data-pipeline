@@ -48,7 +48,9 @@ def fetch_geome_data():
     #df = pd.DataFrame(columns = columns)
      
     # this will fetch a list of ALL projects from GEOME          
-    url = "https://api.geome-db.org/projects?includePublic=false&access_token="+access_token    
+    url = "https://api.geome-db.org/projects"
+    if (access_token != ""):
+       url += "?includePublic=false&access_token="+access_token 
     r = requests.get(url)
     print("fetching " + url)
 
@@ -57,14 +59,18 @@ def fetch_geome_data():
         # filter for just projects matching the teamID
         if (str(projectConfigurationID) == str(futres_team_id)):
             
-            url="https://api.geome-db.org/records/Event/excel?networkId=1&q=_projects_:" + str(project["projectId"]) + "+_select_:%5BSample,Diagnostics%5D" + "&access_token="+access_token
+            url="https://api.geome-db.org/records/Event/excel?networkId=1&q=_projects_:" + str(project["projectId"]) + "+_select_:%5BSample,Diagnostics%5D" 
+            if (access_token != ""):
+                url += "&access_token="+access_token 
             r = requests.get(url)
             if (r.status_code == 204):
                 print ('no data found for project = ' + str(project["projectId"]))
             else:
                 print("processing data for project = " + str(project["projectId"]))
                 temp_file = 'data/project_' + str(project["projectId"]) + ".xlsx"                                                
-                excel_file_url = json.loads(r.content)['url']   + "?access_token=" + access_token             
+                excel_file_url = json.loads(r.content)['url']
+                if (access_token != ""):
+                    excel_file_url += "?access_token="+access_token 
                 print(excel_file_url)
                 reqRet = urllib.request.urlretrieve(excel_file_url, temp_file)                
                                                                   
@@ -361,7 +367,9 @@ def project_table_builder():
     api.write("|"+filename+"|display project data|\n")
     # populate proejcts array with a complete list of project IDs for this team
     # this will fetch a list of ALL projects from GEOME        
-    url = "https://api.geome-db.org/projects/stats?includePublic=false&access_token="+access_token    
+    url = "https://api.geome-db.org/projects/stats"
+    if (access_token != ""):
+       url += "?includePublic=false&access_token="+access_token 
     r = requests.get(url)
     jsonstr = "["
     for project in json.loads(r.content):
@@ -493,6 +501,9 @@ payload = {'client_id':parser.get('geomedb', 'client_id'),
         'password':passwd}
 res = requests.post(token_url, data = payload)
 access_token = res.json()["access_token"]
+
+# temporarily set access_token to empty string
+access_token = ""
 
 # Run Application
 #quicktest()
