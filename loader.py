@@ -50,7 +50,7 @@ class ESLoader(object):
 
         # Create lookup file for mapping trait URIs to trait Labels
         self.lookup = dict()
-        with urllib.request.urlopen("https://plantphenology.org//futresapi/v2/fovt/") as url:
+        with urllib.request.urlopen("https://biscicol.org/futresapi/v2/fovt/") as url:
             data = json.loads(url.read().decode())
             for trait in data:
                 self.lookup[trait['termID']] = trait['label']
@@ -166,6 +166,28 @@ class ESLoader(object):
                         "minimumChronometricAgeReferenceSystem": { "type": "keyword" },
                         "maximumChronometricAgeReferenceSystem": { "type": "keyword" },
                         "location": { "type": "geo_point" }                        
+				        "collectionCode": { "type": "keyword" },
+				        "diagnosticID": { "type": "keyword" },
+       					"institutionCode": { "type": "keyword" },
+        				"maximumChronometricAge": { "type": "keyword" },
+        				"maximumChronometricAgeReferenceSystem": { "type": "keyword" },
+        				"maximumElevationInMeters": { "type": "keyword" },
+        				"measurementSide": { "type": "keyword" },
+        				"minimumChronometricAge": { "type": "keyword" },
+        				"minimumChronometricAgeReferenceSystem": { "type": "keyword" },
+        				"minimumElevationInMeters": { "type": "keyword" },
+        				"observationID": { "type": "keyword" },
+        				"occurrenceID": { "type": "keyword" },
+        				"occurrenceRemarks": { "type": "keyword" },
+        				"reproductiveCondition": { "type": "keyword" },
+        				"specificEpithet": { "type": "keyword" },
+        				"stateProvince": { "type": "keyword" },
+        				"verbatimElevation": { "type": "keyword" },
+        				"verbatimEventDate": { "type": "keyword" },
+        				"verbatimLatitude": { "type": "keyword" },
+        				"verbatimLocality": { "type": "keyword" },
+        				"verbatimLongitude": { "type": "keyword" },
+        				"verbatimMeasurementUnit": { "type": "keyword" }
                     }
             }
         }
