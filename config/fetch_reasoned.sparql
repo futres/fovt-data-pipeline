@@ -16,6 +16,8 @@ SELECT ?observationID ?individualID ?materialSampleID
 	?minimumChronometricAgeReferenceSystem ?maximumChronometricAgeReferenceSystem
 	?scientificName ?genus ?family ?order ?class ?specificEpithet ?basisOfRecord ?lifeStage ?sex ?projectID ?individualID 
 	?measurementValue ?measurementUnit ?measurementMethod ?measurementType ?measurementSide
+	?diagnosticID ?verbatimElevation ?verbatimEventDate ?verbatimLatitude ?verbatimLongitude ?verbatimLocality 
+	?minimumElevationInMeters ?maximumElevationInMeters ?verbatimMeasurementUnit ?occurrenceID ?occurrenceRemarks
 	(group_concat(distinct ?traitTypes;separator='|') as ?traits)
 
 WHERE {    
@@ -49,15 +51,24 @@ WHERE {
 	OPTIONAL {?vertTraitObsProc urn:maximumChronometricAge ?maximumChronometricAge} .
 	OPTIONAL {?vertTraitObsProc urn:minimumChronometricAgeReferenceSystem ?minimumChronometricAgeReferenceSystem} .
 	OPTIONAL {?vertTraitObsProc urn:maximumChronometricAgeReferenceSystem ?maximumChronometricAgeReferenceSystem} .
+	OPTIONAL {?vertTraitObsProc dwc:diagnosticID ?diagnosticID} .
+	OPTIONAL {?vertTraitObsProc dwc:verbatimElevation ?verbatimElevation} .
+	OPTIONAL {?vertTraitObsProc dwc:verbatimEventDate ?verbatimEventDate} .
+	OPTIONAL {?vertTraitObsProc dwc:verbatimLatitude ?verbatimLatitude} .
+	OPTIONAL {?vertTraitObsProc dwc:verbatimLongitude ?verbatimLongitude} .
+	OPTIONAL {?vertTraitObsProc dwc:verbatimLocality ?verbatimLocality} . 
+	OPTIONAL {?vertTraitObsProc dwc:minimumElevationInMeters ?minimumElevationInMeters} . 
+	OPTIONAL {?vertTraitObsProc dwc:maximumElevationInMeters ?maximumElevationInMeters} . 
+
 
 	# Organism Attributes
-    OPTIONAL {?vertOrg dwc:scientificName ?scientificName} . 
+    	OPTIONAL {?vertOrg dwc:scientificName ?scientificName} . 
 	OPTIONAL {?vertOrg dwc:genus ?genus} . 
 	OPTIONAL {?vertOrg dwc:family ?family} . 
 	OPTIONAL {?vertOrg dwc:order ?order} . 
 	OPTIONAL {?vertOrg dwc:class ?class} . 
 	OPTIONAL {?vertOrg dwc:specificEpithet ?specificEpithet} . 
-    OPTIONAL {?vertOrg dwc:materialSampleID ?materialSampleID} . 
+    	OPTIONAL {?vertOrg dwc:materialSampleID ?materialSampleID} . 
 	OPTIONAL {?vertOrg dwc:basisOfRecord ?basisOfRecord} . 
 	OPTIONAL {?vertOrg dwc:lifeStage ?lifeStage} . 
 	OPTIONAL {?vertOrg dwc:sex ?sex} . 
@@ -67,6 +78,8 @@ WHERE {
 	OPTIONAL {?vertOrg dwc:collectionCode ?collectionCode} . 
 	OPTIONAL {?vertOrg dwc:catalogNumber ?catalogNumber} . 
 	OPTIONAL {?vertOrg dwc:reproductiveCondition ?reproductiveCondition} . 
+	OPTIONAL {?vertOrg dwc:occurrenceID ?occurrenceID} .
+	OPTIONAL {?vertOrg dwc:occurrenceRemarks ?occurrenceRemarks} .
 
 	OPTIONAL {?vertTrait dwc:measurementType ?measurementType} .
 
@@ -75,6 +88,7 @@ WHERE {
 	OPTIONAL {?measurementDatum dwc:measurementUnit ?measurementUnit} .
 	OPTIONAL {?measurementDatum dwc:measurementMethod ?measurementMethod} .	
 	OPTIONAL {?measurementDatum urn:measurementSide ?measurementSide} .
+	OPTIONAL {?measurementDatum dwc:verbatimMeasurementUnit ?verbatimMeasurementUnit} .
 
 }
 
@@ -84,5 +98,7 @@ GROUP BY ?observationID ?individualID ?materialSampleID
 	?minimumChronometricAgeReferenceSystem ?maximumChronometricAgeReferenceSystem
 	?scientificName ?genus ?family ?order ?class ?specificEpithet ?basisOfRecord ?lifeStage ?sex ?projectID ?individualID 
 	?measurementValue ?measurementUnit ?measurementMethod ?measurementType ?measurementSide
+	?diagnosticID ?verbatimElevation ?verbatimEventDate ?verbatimLatitude ?verbatimLongitude ?verbatimLocality 
+	?minimumElevationInMeters ?maximumElevationInMeters ?verbatimMeasurementUnit ?occurrenceID ?occurrenceRemarks
 ORDER BY ASC(?observationID)
 
