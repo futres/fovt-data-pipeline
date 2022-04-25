@@ -108,7 +108,8 @@ class ESLoader(object):
                 row['mapped_traits'] = mapped_traits
 
                 # A mapping of projects to use instead of IDs
-                row['mapped_project'] = self.lookup_project[row['projectID']]
+                #row['mapped_project'] = self.lookup_project[row['projectID']]
+                row['mapped_project'] = row['projectID']
 
                 # remove hashes from measurementType
                 row['measurementType'] = row['measurementType'].replace('{', '').replace('}','')
@@ -165,7 +166,7 @@ class ESLoader(object):
                         "maximumChronometricAge": { "type": "float" },
                         "minimumChronometricAgeReferenceSystem": { "type": "keyword" },
                         "maximumChronometricAgeReferenceSystem": { "type": "keyword" },
-                        "location": { "type": "geo_point" }                        
+                        "location": { "type": "geo_point" },                        
 				        "collectionCode": { "type": "keyword" },
 				        "diagnosticID": { "type": "keyword" },
        					"institutionCode": { "type": "keyword" },
@@ -208,7 +209,9 @@ drop_existing = True
 alias = 'futres'
 host =  'tarly.cyverse.org:80'
 #data_dir = 'data/output/output_reasoned_csv/'
-data_dir = '/home/jdeck/data/futres/data/output/output_reasoned_csv/'
+#data_dir = '/home/jdeck/data/futres/data/output/output_reasoned_csv/'
+data_dir = '/home/exouser/data/futres/data/output/output_reasoned_csv/'
+#data_dir = '/home/exouser/tmp/'
 
 loader = ESLoader(data_dir, index, drop_existing, alias, host)
 loader.load()
