@@ -81,8 +81,8 @@ The `loader.py` script populates the elasticsearch document store using the load
 OPTIONAL: Since the size of the data can be quite large and the `loader.py` script sends uncompressed data, we probably want to first send the files to a remote server that has excellent bandwidth from our desktop machine.  This command would look like:
 
 ```
-# replace `biscicol.org` with your server and user with your user name
-tar zcvf - data/output/output_reasoned_csv/* | ssh $USER@biscicol.org  "cd /home/$USER/data/futres; tar xvzf -"
+# replace server IP and exouser with your server and username
+tar zcvf - data/output/output_reasoned_csv/* | ssh exouser@149.165.159.216  "cd /home/exouser/data/futres; tar xvzf -"
 ```
 
 Once your data is transfered to the server that you wish to load from, you can execute the following command, which looks for data in `data/output/output_reasoned_csv/data*.csv`.  Note that if you copied your data to another server, as we did in the previous command, you will also need to check out fovt-data-pipeline on that server to run the next command.  You will first want to edit loader.py and change the data_dir variable near the end of the script to the directory on your computer where the output is stored.  This command requires access to your remote document store.
