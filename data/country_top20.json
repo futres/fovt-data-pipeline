@@ -1,8 +1,8 @@
 [
-	{"country":"USA","value":1831694},
+	{"country":"USA","value":1818486},
 	{"country":"Canada","value":127664},
 	{"country":"Mexico","value":99180},
-	{"country":"Unknown","value":46307},
+	{"country":"Unknown","value":42924},
 	{"country":"Argentina","value":30898},
 	{"country":"Mongolia","value":29116},
 	{"country":"Panama","value":27405},
@@ -16,7 +16,7 @@
 	{"country":"Denmark","value":9796},
 	{"country":"Costa Rica","value":9715},
 	{"country":"Honduras","value":8483},
-	{"country":"Kenya","value":8030},
+	{"country":"Kenya","value":7838},
 	{"country":"Peru","value":5007},
 	{"country":"Brazil","value":4147}
 ]

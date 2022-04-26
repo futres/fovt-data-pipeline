@@ -163,21 +163,10 @@ Adelomyarion vireti,{body length},1
 Adenota kob,{body length},4
 Adenota vardoni,{body length},1
 Aepyceros melampus,{body length},6
-Aepyceros melampus,{body mass},10
+Aepyceros melampus,{body mass},4
 Aepyceros melampus,{ear length to notch},3
-Aepyceros melampus,{femur diaphysis breadth},15
-Aepyceros melampus,{femur diaphysis depth},15
-Aepyceros melampus,{femur distal breadth},16
-Aepyceros melampus,{femur length},15
-Aepyceros melampus,{humerus diaphysis breadth},14
-Aepyceros melampus,{humerus diaphysis depth},14
-Aepyceros melampus,{humerus distal breadth},14
-Aepyceros melampus,{humerus length},13
-Aepyceros melampus,{humerus proximal breadth},14
 Aepyceros melampus,{pes length},3
 Aepyceros melampus,{tail length},3
-Aepyceros melampus,{talus breadth},15
-Aepyceros melampus,{talus length},15
 Aepyprymnus rufescens,{body length},5
 Aepyprymnus rufescens,{body mass},2
 Aepyprymnus rufescens,{ear length to notch},2
@@ -1523,9 +1512,9 @@ Caenolestes fuliginosus,{ear length to notch},1
 Caenolestes fuliginosus,{pes length},1
 Caenolestes fuliginosus,{tail length},1
 Cainotherium bavaricum,{body length},1
-Calippus sp.,{metacarpal bone of digit 3 breadth},4
-Calippus sp.,{metacarpal bone of digit 3 depth},4
-Calippus sp.,{metacarpal bone of digit 3 proximal articular breadth},4
+Calippus sp.,{metacarpal bone of digit 3 breadth},2
+Calippus sp.,{metacarpal bone of digit 3 depth},2
+Calippus sp.,{metacarpal bone of digit 3 proximal articular breadth},2
 Callicebus cupreus,{body length},1
 Callicebus cupreus,{body mass},1
 Callicebus cupreus,{ear length to notch},1
@@ -2723,19 +2712,26 @@ Connochaetes taurinus,{body mass},2
 Connochaetes taurinus,{ear length to notch},3
 Connochaetes taurinus,{pes length},3
 Connochaetes taurinus,{tail length},2
-Cormohipparion aff. sinapensis,{metacarpal bone of digit 3 breadth},14
-Cormohipparion aff. sinapensis,{metacarpal bone of digit 3 depth},14
-Cormohipparion aff. sinapensis,{metacarpal bone of digit 3 proximal articular breadth},12
+Cormohipparion aff. sinapensis,{metacarpal bone of digit 3 breadth},7
+Cormohipparion aff. sinapensis,{metacarpal bone of digit 3 depth},7
+Cormohipparion aff. sinapensis,{metacarpal bone of digit 3 proximal articular breadth},7
 Cormohipparion aff. sinapensis,{talus breadth},1
 Cormohipparion aff. sinapensis,{talus length},1
 Cormohipparion aff. sinapensis,{talus medial depth},1
-Cormohipparion aff. sinapensis,{talus trochlea breadth},2
-Cormohipparion sinapensis,{metacarpal bone of digit 3 breadth},4
-Cormohipparion sinapensis,{metacarpal bone of digit 3 depth},4
-Cormohipparion sinapensis,{metacarpal bone of digit 3 proximal articular breadth},4
-Cormohipparion sp.,{metacarpal bone of digit 3 breadth},72
-Cormohipparion sp.,{metacarpal bone of digit 3 depth},71
-Cormohipparion sp.,{metacarpal bone of digit 3 proximal articular breadth},67
+Cormohipparion aff. sinapensis,{talus trochlea breadth},1
+Cormohipparion africanum,{metacarpal bone of digit 3 breadth},12
+Cormohipparion africanum,{metacarpal bone of digit 3 depth},12
+Cormohipparion africanum,{metacarpal bone of digit 3 proximal articular breadth},12
+Cormohipparion africanum,{talus breadth},4
+Cormohipparion africanum,{talus length},4
+Cormohipparion africanum,{talus medial depth},4
+Cormohipparion africanum,{talus trochlea breadth},4
+Cormohipparion sinapensis,{metacarpal bone of digit 3 breadth},2
+Cormohipparion sinapensis,{metacarpal bone of digit 3 depth},2
+Cormohipparion sinapensis,{metacarpal bone of digit 3 proximal articular breadth},2
+Cormohipparion sp.,{metacarpal bone of digit 3 breadth},37
+Cormohipparion sp.,{metacarpal bone of digit 3 depth},37
+Cormohipparion sp.,{metacarpal bone of digit 3 proximal articular breadth},37
 Cormura brevirostris,{body length},5
 Corynorhinus mexicanus,{body length},20
 Corynorhinus mexicanus,{body mass},12
@@ -2808,71 +2804,60 @@ Cratogeomys zinseri,{body length},3
 Cratogeomys zinseri,{ear length to notch},3
 Cratogeomys zinseri,{pes length},3
 Cratogeomys zinseri,{tail length},3
-Cremohipparion aff. matthewi,{calcaneus distal breadth (non-plantigrade)},1
-Cremohipparion aff. matthewi,{calcaneus distal depth (non-plantigrade)},1
-Cremohipparion aff. matthewi,{calcaneus length},1
-Cremohipparion aff. matthewi,{metacarpal bone of digit 3 breadth},2
-Cremohipparion aff. matthewi,{metacarpal bone of digit 3 depth},2
-Cremohipparion aff. matthewi,{metacarpal bone of digit 3 proximal articular breadth},2
+Cremohipparion aff. matthewi,{metacarpal bone of digit 3 breadth},1
+Cremohipparion aff. matthewi,{metacarpal bone of digit 3 depth},1
+Cremohipparion aff. matthewi,{metacarpal bone of digit 3 proximal articular breadth},1
 Cremohipparion aff. matthewi,{talus breadth},6
 Cremohipparion aff. matthewi,{talus length},6
 Cremohipparion aff. matthewi,{talus medial depth},6
-Cremohipparion aff. matthewi,{talus trochlea breadth},12
-Cremohipparion aff. mediterraneum,{metacarpal bone of digit 3 breadth},16
-Cremohipparion aff. mediterraneum,{metacarpal bone of digit 3 depth},16
-Cremohipparion aff. mediterraneum,{metacarpal bone of digit 3 proximal articular breadth},16
-Cremohipparion antelopinum,{calcaneus distal breadth (non-plantigrade)},3
-Cremohipparion antelopinum,{calcaneus distal depth (non-plantigrade)},4
-Cremohipparion antelopinum,{calcaneus length},4
-Cremohipparion antelopinum,{metacarpal bone of digit 3 breadth},6
-Cremohipparion antelopinum,{metacarpal bone of digit 3 depth},6
-Cremohipparion antelopinum,{metacarpal bone of digit 3 proximal articular breadth},8
+Cremohipparion aff. matthewi,{talus trochlea breadth},6
+Cremohipparion aff. mediterraneum,{metacarpal bone of digit 3 breadth},8
+Cremohipparion aff. mediterraneum,{metacarpal bone of digit 3 depth},8
+Cremohipparion aff. mediterraneum,{metacarpal bone of digit 3 proximal articular breadth},8
+Cremohipparion antelopinum,{metacarpal bone of digit 3 breadth},3
+Cremohipparion antelopinum,{metacarpal bone of digit 3 depth},3
+Cremohipparion antelopinum,{metacarpal bone of digit 3 proximal articular breadth},4
 Cremohipparion antelopinum,{talus breadth},4
 Cremohipparion antelopinum,{talus length},5
 Cremohipparion antelopinum,{talus medial depth},5
-Cremohipparion antelopinum,{talus trochlea breadth},9
+Cremohipparion antelopinum,{talus trochlea breadth},5
 Cremohipparion antelopinum,{tibia distal breadth},1
-Cremohipparion antelopinum,{tibia distal depth},2
+Cremohipparion antelopinum,{tibia distal depth},1
 Cremohipparion cf. antelopinum,{talus breadth},1
 Cremohipparion cf. antelopinum,{talus length},1
 Cremohipparion cf. antelopinum,{talus medial depth},1
-Cremohipparion cf. antelopinum,{talus trochlea breadth},2
-Cremohipparion cf. nikosi,{calcaneus distal breadth (non-plantigrade)},1
-Cremohipparion cf. nikosi,{calcaneus distal depth (non-plantigrade)},1
+Cremohipparion cf. antelopinum,{talus trochlea breadth},1
 Cremohipparion cf. nikosi,{talus breadth},1
 Cremohipparion cf. nikosi,{talus length},1
 Cremohipparion cf. nikosi,{talus medial depth},1
-Cremohipparion cf. nikosi,{talus trochlea breadth},2
-Cremohipparion matthewi,{metacarpal bone of digit 3 breadth},16
-Cremohipparion matthewi,{metacarpal bone of digit 3 depth},16
-Cremohipparion matthewi,{metacarpal bone of digit 3 proximal articular breadth},16
-Cremohipparion mediterraneum,{calcaneus distal breadth (non-plantigrade)},1
-Cremohipparion mediterraneum,{calcaneus distal depth (non-plantigrade)},2
-Cremohipparion mediterraneum,{calcaneus length},2
-Cremohipparion mediterraneum,{humerus diaphysis breadth},6
+Cremohipparion cf. nikosi,{talus trochlea breadth},1
+Cremohipparion matthewi,{metacarpal bone of digit 3 breadth},8
+Cremohipparion matthewi,{metacarpal bone of digit 3 depth},8
+Cremohipparion matthewi,{metacarpal bone of digit 3 proximal articular breadth},8
+Cremohipparion mediterraneum,{humerus diaphysis breadth},3
 Cremohipparion mediterraneum,{humerus diaphysis depth},3
 Cremohipparion mediterraneum,{humerus distal depth},3
 Cremohipparion mediterraneum,{humerus medial trochlear height},6
-Cremohipparion mediterraneum,{humerus trochlea breadth},12
-Cremohipparion mediterraneum,{humerus trochlear height at sagittal crest},12
+Cremohipparion mediterraneum,{humerus trochlea breadth},6
+Cremohipparion mediterraneum,{humerus trochlear height at sagittal crest},6
 Cremohipparion mediterraneum,{humerus trochlear sulcus height},6
-Cremohipparion mediterraneum,{metacarpal bone of digit 3 breadth},24
-Cremohipparion mediterraneum,{metacarpal bone of digit 3 depth},24
-Cremohipparion mediterraneum,{metacarpal bone of digit 3 proximal articular breadth},20
+Cremohipparion mediterraneum,{metacarpal bone of digit 3 breadth},12
+Cremohipparion mediterraneum,{metacarpal bone of digit 3 depth},12
+Cremohipparion mediterraneum,{metacarpal bone of digit 3 proximal articular breadth},10
 Cremohipparion mediterraneum,{talus breadth},4
 Cremohipparion mediterraneum,{talus length},4
 Cremohipparion mediterraneum,{talus medial depth},4
-Cremohipparion mediterraneum,{talus trochlea breadth},8
+Cremohipparion mediterraneum,{talus trochlea breadth},4
 Cremohipparion mediterraneum,{tibia diaphysis breadth},3
-Cremohipparion mediterraneum,{tibia diaphysis depth},6
+Cremohipparion mediterraneum,{tibia diaphysis depth},3
 Cremohipparion mediterraneum,{tibia distal breadth},3
-Cremohipparion mediterraneum,{tibia distal depth},6
-Cremohipparion moldavicum,{metacarpal bone of digit 3 breadth},8
-Cremohipparion moldavicum,{metacarpal bone of digit 3 depth},8
-Cremohipparion moldavicum,{metacarpal bone of digit 3 proximal articular breadth},4
-Cremohipparion nikosi,{metacarpal bone of digit 3 breadth},2
-Cremohipparion nikosi,{metacarpal bone of digit 3 depth},2
-Cremohipparion nikosi,{metacarpal bone of digit 3 proximal articular breadth},2
+Cremohipparion mediterraneum,{tibia distal depth},3
+Cremohipparion moldavicum,{metacarpal bone of digit 3 breadth},4
+Cremohipparion moldavicum,{metacarpal bone of digit 3 depth},4
+Cremohipparion moldavicum,{metacarpal bone of digit 3 proximal articular breadth},2
+Cremohipparion nikosi,{metacarpal bone of digit 3 breadth},1
+Cremohipparion nikosi,{metacarpal bone of digit 3 depth},1
+Cremohipparion nikosi,{metacarpal bone of digit 3 proximal articular breadth},1
 Cremohipparion nikosi,{ulna depth across the process anaconaeus},1
 Cremohipparion nikosi,{ulna proximal articular breadth},1
 Cricetidae,{body length},48
@@ -4449,90 +4434,49 @@ Eptesicus tenuipinnis,{ear length to notch},5
 Eptesicus tenuipinnis,{pes length},5
 Eptesicus tenuipinnis,{tail length},5
 Equid lg.,{tibia diaphysis breadth},1
-Equid lg.,{tibia diaphysis depth},2
+Equid lg.,{tibia diaphysis depth},1
 Equid lg.,{tibia distal breadth},1
-Equid lg.,{tibia distal depth},2
-Equus,{upper premolar tooth 2 occlusal surface length},97
-Equus,{upper premolar tooth 2 occlusal surface width},97
-Equus,{upper premolar tooth 3 occlusal surface length},43
-Equus,{upper premolar tooth 3 occlusal surface width},43
-Equus,{upper premolar tooth 4 occlusal surface length},47
-Equus,{upper premolar tooth 4 occlusal surface width},47
+Equid lg.,{tibia distal depth},1
 Equus Linnaeus,{body length},2
-Equus aff. stehlini,{metacarpal bone of digit 3 breadth},1
-Equus aff. stehlini,{metacarpal bone of digit 3 depth},1
 Equus asinus,{body length},1
 Equus asinus,{breadth of calcaneal body},2
-Equus asinus,{calcaneus distal breadth (non-plantigrade)},4
-Equus asinus,{calcaneus distal depth (non-plantigrade)},1
-Equus asinus,{calcaneus length},6
-Equus asinus,{calcaneus proximal length (non-plantigrade)},3
-Equus asinus,{metacarpal bone of digit 3 breadth},2
-Equus asinus,{metacarpal bone of digit 3 depth},2
-Equus asinus,{metacarpal bone of digit 3 proximal articular breadth},2
+Equus asinus,{calcaneus length},2
 Equus asinus,{talus breadth},2
 Equus asinus,{talus length},2
 Equus asinus,{talus medial depth},2
-Equus asinus,{talus trochlea breadth},6
+Equus asinus,{talus trochlea breadth},2
 Equus asinus,{trochlea tali length},2
 Equus burchelli,{body length},1
 Equus burchelli,{body mass},1
 Equus burchellii,{body length},4
-Equus burchellii,{calcaneus distal breadth (non-plantigrade)},1
-Equus burchellii,{calcaneus distal depth (non-plantigrade)},1
-Equus burchellii,{calcaneus length},1
 Equus burchellii,{ear length to notch},2
 Equus burchellii,{pes length},2
 Equus burchellii,{tail length},2
-Equus burchellii,{talus trochlea breadth},1
 Equus caballus,{body length},5
 Equus caballus,{body mass},1
-Equus caballus,{calcaneus distal breadth (non-plantigrade)},1
-Equus caballus,{calcaneus length},1
-Equus caballus,{calcaneus proximal length (non-plantigrade)},1
 Equus caballus,{ear length to notch},2
 Equus caballus,{pes length},2
 Equus caballus,{tail length},3
-Equus caballus,{talus trochlea breadth},1
 Equus calobatus,{body length},2
 Equus cedralensis sp. nov.,{upper molar tooth 1-2 length},34
 Equus cedralensis sp. nov.,{upper molar tooth 3 occlusal surface length},7
 Equus cedralensis sp. nov.,{upper molar tooth 3 occlusal surface width},7
-Equus cf. grevyi,{talus trochlea breadth},2
-Equus cf. grevyi,{tibia distal depth},4
-Equus cf. livenzovensis,{humerus diaphysis breadth},1
 Equus conversidens,{body length},1
-Equus conversidens,{metacarpal bone of digit 3 breadth},2
-Equus conversidens,{metacarpal bone of digit 3 depth},2
-Equus conversidens,{metacarpal bone of digit 3 proximal articular breadth},2
-Equus conversidens,{talus trochlea breadth},1
 Equus conversidens,{upper molar tooth 1-2 length},4
 Equus conversidens,{upper molar tooth 3 occlusal surface length},3
 Equus conversidens,{upper molar tooth 3 occlusal surface width},3
-Equus eisenmannae,{calcaneus distal breadth (non-plantigrade)},1
-Equus eisenmannae,{metacarpal bone of digit 3 breadth},50
-Equus eisenmannae,{metacarpal bone of digit 3 depth},50
-Equus eisenmannae,{metacarpal bone of digit 3 proximal articular breadth},40
+Equus eisenmannae,{metacarpal bone of digit 3 breadth},25
+Equus eisenmannae,{metacarpal bone of digit 3 depth},25
+Equus eisenmannae,{metacarpal bone of digit 3 proximal articular breadth},20
 Equus eisenmannae,{talus breadth},1
 Equus eisenmannae,{talus length},1
 Equus eisenmannae,{talus medial depth},1
-Equus eisenmannae,{talus trochlea breadth},2
+Equus eisenmannae,{talus trochlea breadth},1
 Equus grevyi,{body length},3
 Equus grevyi,{body mass},1
 Equus grevyi,{breadth of calcaneal body},4
-Equus grevyi,{calcaneus distal breadth (non-plantigrade)},17
-Equus grevyi,{calcaneus distal depth (non-plantigrade)},12
-Equus grevyi,{calcaneus length},21
-Equus grevyi,{calcaneus proximal length (non-plantigrade)},5
+Equus grevyi,{calcaneus length},4
 Equus grevyi,{ear length to notch},2
-Equus grevyi,{femur caput depth},3
-Equus grevyi,{femur distal breadth},3
-Equus grevyi,{femur distal depth},3
-Equus grevyi,{femur proximal breadth},3
-Equus grevyi,{femur proximal depth},3
-Equus grevyi,{humerus diaphysis breadth},3
-Equus grevyi,{humerus trochlea breadth},3
-Equus grevyi,{humerus trochlear height at sagittal crest},3
 Equus grevyi,{lower molar tooth 1 occlusal surface length},12
 Equus grevyi,{lower molar tooth 2 occlusal surface length},12
 Equus grevyi,{pes length},2
@@ -4543,21 +4487,11 @@ Equus grevyi,{tail length},2
 Equus grevyi,{talus breadth},5
 Equus grevyi,{talus length},5
 Equus grevyi,{talus medial depth},5
-Equus grevyi,{talus trochlea breadth},22
-Equus grevyi,{tibia diaphysis depth},3
-Equus grevyi,{tibia distal depth},3
-Equus grevyi,{tibia medial length},3
-Equus grevyi,{tibia proximal breadth},3
-Equus grevyi,{tibia proximal depth},3
+Equus grevyi,{talus trochlea breadth},5
 Equus grevyi,{trochlea tali length},3
 Equus grevyi,{upper molar tooth 1 occlusal surface length},12
 Equus grevyi,{upper molar tooth 2 occlusal surface length},11
 Equus hemionus,{body length},1
-Equus hemionus,{calcaneus distal breadth (non-plantigrade)},4
-Equus hemionus,{calcaneus distal depth (non-plantigrade)},2
-Equus hemionus,{calcaneus length},4
-Equus hemionus,{calcaneus proximal length (non-plantigrade)},2
-Equus hemionus,{talus trochlea breadth},4
 Equus hipparionoides,{metacarpal bone of digit 3 breadth},3
 Equus hipparionoides,{metacarpal bone of digit 3 depth},3
 Equus hipparionoides,{metacarpal bone of digit 3 proximal articular breadth},3
@@ -4570,186 +4504,69 @@ Equus hipparionoides,{tibia diaphysis depth},1
 Equus hipparionoides,{tibia distal breadth},2
 Equus hipparionoides,{tibia distal depth},2
 Equus hipparionoides,{trochlea tali length},4
-Equus kiang,{calcaneus distal breadth (non-plantigrade)},3
-Equus kiang,{calcaneus distal depth (non-plantigrade)},3
-Equus kiang,{calcaneus length},3
-Equus kiang,{talus trochlea breadth},4
-Equus livenzoensis,{calcaneus distal breadth (non-plantigrade)},1
-Equus livenzoensis,{calcaneus distal depth (non-plantigrade)},1
-Equus livenzoensis,{talus trochlea breadth},4
-Equus livenzoensis,{tibia diaphysis depth},1
-Equus livenzoensis,{tibia distal depth},1
-Equus major/bressanus,{metacarpal bone of digit 3 breadth},2
-Equus major/bressanus,{metacarpal bone of digit 3 depth},2
-Equus major/bressanus,{metacarpal bone of digit 3 proximal articular breadth},2
+Equus major/bressanus,{metacarpal bone of digit 3 breadth},1
+Equus major/bressanus,{metacarpal bone of digit 3 depth},1
+Equus major/bressanus,{metacarpal bone of digit 3 proximal articular breadth},1
 Equus major/bressanus,{talus breadth},2
 Equus major/bressanus,{talus length},2
 Equus major/bressanus,{talus medial depth},2
-Equus major/bressanus,{talus trochlea breadth},4
+Equus major/bressanus,{talus trochlea breadth},2
 Equus mexicanus,{upper molar tooth 1-2 length},35
 Equus mexicanus,{upper molar tooth 3 occlusal surface length},20
 Equus mexicanus,{upper molar tooth 3 occlusal surface width},20
-Equus neogeus,{lower molar tooth 1 occlusal surface length},3
-Equus neogeus,{lower molar tooth 1 occlusal surface width},3
-Equus neogeus,{lower molar tooth 2 occlusal surface length},2
-Equus neogeus,{lower molar tooth 2 occlusal surface width},2
-Equus neogeus,{lower molar tooth 3 occlusal surface length},2
-Equus neogeus,{lower molar tooth 3 occlusal surface width},2
-Equus neogeus,{lower premolar tooth 2 occlusal surface length},2
-Equus neogeus,{lower premolar tooth 2 occlusal surface width},2
-Equus neogeus,{lower premolar tooth 3 occlusal surface length},2
-Equus neogeus,{lower premolar tooth 3 occlusal surface width},2
-Equus neogeus,{lower premolar tooth 4 occlusal surface length},3
-Equus neogeus,{lower premolar tooth 4 occlusal surface width},3
-Equus neogeus,{metacarpal bone of digit 3 breadth},4
-Equus neogeus,{metacarpal bone of digit 3 depth},4
-Equus neogeus,{metacarpal bone of digit 3 distal articular breadth},4
-Equus neogeus,{metacarpal bone of digit 3 length},4
-Equus neogeus,{metacarpal bone of digit 3 proximal articular breadth},4
-Equus neogeus,{upper molar tooth 1 occlusal surface length},1
-Equus neogeus,{upper molar tooth 1 occlusal surface width},1
-Equus neogeus,{upper molar tooth 2 occlusal surface length},1
-Equus neogeus,{upper molar tooth 2 occlusal surface width},1
-Equus neogeus,{upper molar tooth 3 occlusal surface length},1
-Equus neogeus,{upper molar tooth 3 occlusal surface width},1
-Equus neogeus,{upper premolar tooth 2 occlusal surface length},1
-Equus neogeus,{upper premolar tooth 2 occlusal surface width},1
-Equus neogeus,{upper premolar tooth 3 occlusal surface length},1
-Equus neogeus,{upper premolar tooth 3 occlusal surface width},1
-Equus neogeus,{upper premolar tooth 4 occlusal surface length},1
-Equus neogeus,{upper premolar tooth 4 occlusal surface width},1
 Equus occidentalis,{body length},2
-Equus occidentalis,{calcaneus distal breadth (non-plantigrade)},10
-Equus occidentalis,{calcaneus distal depth (non-plantigrade)},10
-Equus occidentalis,{calcaneus length},10
-Equus occidentalis,{metacarpal bone of digit 3 breadth},10
-Equus occidentalis,{metacarpal bone of digit 3 depth},10
-Equus occidentalis,{metacarpal bone of digit 3 proximal articular breadth},10
-Equus occidentalis,{talus trochlea breadth},10
 Equus quagga,{body length},1
-Equus quagga,{calcaneus distal breadth (non-plantigrade)},10
-Equus quagga,{calcaneus distal depth (non-plantigrade)},7
-Equus quagga,{calcaneus length},10
-Equus quagga,{calcaneus proximal length (non-plantigrade)},3
-Equus quagga,{femur caput depth},3
 Equus quagga,{femur diaphysis breadth},3
-Equus quagga,{femur distal breadth},6
-Equus quagga,{femur distal depth},3
+Equus quagga,{femur distal breadth},3
 Equus quagga,{femur length from caput to medial condyle},3
-Equus quagga,{femur proximal breadth},3
-Equus quagga,{femur proximal depth},3
-Equus quagga,{humerus diaphysis breadth},6
-Equus quagga,{humerus distal depth},1
-Equus quagga,{humerus proximal breadth},1
-Equus quagga,{humerus trochlea breadth},6
-Equus quagga,{humerus trochlear height at sagittal crest},3
+Equus quagga,{humerus diaphysis breadth},3
+Equus quagga,{humerus trochlea breadth},3
 Equus quagga,{lower molar tooth 1 occlusal surface length},11
 Equus quagga,{lower molar tooth 2 occlusal surface length},11
 Equus quagga,{radius distal width},1
 Equus quagga,{radius length},1
 Equus quagga,{radius proximal articular width},1
-Equus quagga,{talus trochlea breadth},10
-Equus quagga,{tibia diaphysis depth},4
 Equus quagga,{tibia diaphysis width},4
-Equus quagga,{tibia distal depth},4
 Equus quagga,{tibia distal width},4
 Equus quagga,{tibia length},4
-Equus quagga,{tibia medial length},4
-Equus quagga,{tibia proximal breadth},4
-Equus quagga,{tibia proximal depth},4
 Equus quagga,{tibia proximal width},4
 Equus quagga,{upper molar tooth 1 occlusal surface length},10
 Equus quagga,{upper molar tooth 2 occlusal surface length},10
-Equus quagga boehemi,{calcaneus distal breadth (non-plantigrade)},6
-Equus quagga boehemi,{calcaneus distal depth (non-plantigrade)},5
-Equus quagga boehemi,{calcaneus length},6
-Equus quagga boehemi,{calcaneus proximal length (non-plantigrade)},1
-Equus quagga boehemi,{talus trochlea breadth},6
-Equus quagga chapmani,{calcaneus distal breadth (non-plantigrade)},1
-Equus quagga chapmani,{calcaneus length},1
-Equus quagga chapmani,{calcaneus proximal length (non-plantigrade)},1
-Equus quagga chapmani,{talus trochlea breadth},2
-Equus simplicidens,{calcaneus distal breadth (non-plantigrade)},16
-Equus simplicidens,{calcaneus distal depth (non-plantigrade)},13
-Equus simplicidens,{calcaneus length},16
-Equus simplicidens,{femur caput depth},3
-Equus simplicidens,{femur distal breadth},3
-Equus simplicidens,{femur distal depth},3
-Equus simplicidens,{femur proximal breadth},3
-Equus simplicidens,{femur proximal depth},3
-Equus simplicidens,{humerus diaphysis breadth},3
-Equus simplicidens,{humerus trochlea breadth},3
-Equus simplicidens,{humerus trochlear height at sagittal crest},3
-Equus simplicidens,{metacarpal bone of digit 3 breadth},9
-Equus simplicidens,{metacarpal bone of digit 3 depth},9
-Equus simplicidens,{metacarpal bone of digit 3 proximal articular breadth},9
-Equus simplicidens,{talus trochlea breadth},16
-Equus simplicidens,{tibia diaphysis depth},3
-Equus simplicidens,{tibia distal depth},3
-Equus simplicidens,{tibia medial length},3
-Equus simplicidens,{tibia proximal breadth},3
-Equus simplicidens,{tibia proximal depth},2
 Equus sp.,{breadth of calcaneal body},3
-Equus sp.,{calcaneus distal breadth (non-plantigrade)},42
-Equus sp.,{calcaneus distal depth (non-plantigrade)},39
-Equus sp.,{calcaneus length},40
-Equus sp.,{calcaneus proximal length (non-plantigrade)},4
+Equus sp.,{calcaneus length},3
 Equus sp.,{femur diaphysis breadth},1
 Equus sp.,{femur diaphysis depth},1
-Equus sp.,{femur distal breadth},1
-Equus sp.,{femur distal depth},1
 Equus sp.,{humerus diaphysis breadth},1
 Equus sp.,{humerus diaphysis depth},1
 Equus sp.,{humerus distal depth},2
 Equus sp.,{humerus medial trochlear height},2
 Equus sp.,{humerus trochlea breadth},1
-Equus sp.,{humerus trochlear height at sagittal crest},3
+Equus sp.,{humerus trochlear height at sagittal crest},2
 Equus sp.,{humerus trochlear sulcus height},2
-Equus sp.,{metacarpal bone of digit 3 breadth},190
-Equus sp.,{metacarpal bone of digit 3 depth},189
-Equus sp.,{metacarpal bone of digit 3 proximal articular breadth},197
+Equus sp.,{metacarpal bone of digit 3 breadth},57
+Equus sp.,{metacarpal bone of digit 3 depth},57
+Equus sp.,{metacarpal bone of digit 3 proximal articular breadth},57
 Equus sp.,{talus breadth},34
 Equus sp.,{talus length},37
 Equus sp.,{talus medial depth},29
-Equus sp.,{talus trochlea breadth},145
+Equus sp.,{talus trochlea breadth},37
 Equus sp.,{tibia diaphysis breadth},1
-Equus sp.,{tibia diaphysis depth},3
+Equus sp.,{tibia diaphysis depth},2
 Equus sp.,{tibia distal breadth},4
-Equus sp.,{tibia distal depth},6
-Equus sp.,{tibia medial length},1
-Equus sp.,{tibia proximal breadth},1
-Equus sp.,{tibia proximal depth},1
+Equus sp.,{tibia distal depth},4
 Equus sp.,{trochlea tali length},5
-Equus sp. large,{metacarpal bone of digit 3 breadth},1
-Equus sp. large,{metacarpal bone of digit 3 depth},1
-Equus sp. large,{metacarpal bone of digit 3 proximal articular breadth},1
-Equus sp. lg.,{metacarpal bone of digit 3 breadth},1
-Equus sp. lg.,{metacarpal bone of digit 3 depth},1
-Equus sp. lg.,{metacarpal bone of digit 3 proximal articular breadth},1
-Equus sp. medium,{metacarpal bone of digit 3 breadth},1
-Equus sp. medium,{metacarpal bone of digit 3 depth},1
-Equus sp. medium,{metacarpal bone of digit 3 proximal articular breadth},1
-Equus sp. sm.,{metacarpal bone of digit 3 breadth},2
-Equus sp. sm.,{metacarpal bone of digit 3 depth},2
-Equus sp. sm.,{metacarpal bone of digit 3 proximal articular breadth},2
-Equus sp. very large,{metacarpal bone of digit 3 breadth},23
-Equus sp. very large,{metacarpal bone of digit 3 depth},23
-Equus sp. very large,{metacarpal bone of digit 3 proximal articular breadth},23
-Equus stehlini,{metacarpal bone of digit 3 breadth},7
-Equus stehlini,{metacarpal bone of digit 3 depth},7
-Equus stehlini,{metacarpal bone of digit 3 proximal articular breadth},7
-Equus stehlini,{talus trochlea breadth},1
+Equus sp. sm.,{metacarpal bone of digit 3 breadth},1
+Equus sp. sm.,{metacarpal bone of digit 3 depth},1
+Equus sp. sm.,{metacarpal bone of digit 3 proximal articular breadth},1
 Equus stenonis,{breadth of calcaneal body},1
-Equus stenonis,{calcaneus distal breadth (non-plantigrade)},2
-Equus stenonis,{calcaneus distal depth (non-plantigrade)},2
-Equus stenonis,{calcaneus length},4
-Equus stenonis,{metacarpal bone of digit 3 breadth},17
-Equus stenonis,{metacarpal bone of digit 3 depth},16
-Equus stenonis,{metacarpal bone of digit 3 proximal articular breadth},17
+Equus stenonis,{calcaneus length},1
+Equus stenonis,{metacarpal bone of digit 3 breadth},2
+Equus stenonis,{metacarpal bone of digit 3 depth},2
+Equus stenonis,{metacarpal bone of digit 3 proximal articular breadth},2
 Equus stenonis,{talus breadth},4
 Equus stenonis,{talus length},4
 Equus stenonis,{talus medial depth},3
-Equus stenonis,{talus trochlea breadth},7
+Equus stenonis,{talus trochlea breadth},4
 Equus stenonis,{trochlea tali length},5
 Equus suessenbornensis,{metacarpal bone of digit 3 breadth},32
 Equus suessenbornensis,{metacarpal bone of digit 3 depth},32
@@ -4761,20 +4578,13 @@ Equus suessenbornensis,{talus trochlea breadth},10
 Equus suessenbornensis,{trochlea tali length},10
 Equus zebra,{body length},2
 Equus zebra,{body mass},1
-Equus zebra,{calcaneus distal breadth (non-plantigrade)},5
-Equus zebra,{calcaneus length},5
-Equus zebra,{calcaneus proximal length (non-plantigrade)},5
 Equus zebra,{ear length to notch},2
 Equus zebra,{pes length},2
 Equus zebra,{tail length},2
-Equus zebra,{talus trochlea breadth},5
-Equus zebra zebra,{calcaneus distal breadth (non-plantigrade)},1
-Equus zebra zebra,{calcaneus distal depth (non-plantigrade)},1
-Equus zebra zebra,{calcaneus length},1
 Equus zebra zebra,{talus breadth},2
 Equus zebra zebra,{talus length},2
 Equus zebra zebra,{talus medial depth},2
-Equus zebra zebra,{talus trochlea breadth},4
+Equus zebra zebra,{talus trochlea breadth},2
 Equus zebra zebra,{trochlea tali length},1
 Eremitalpa granti,{body mass},1
 Erethizon dorsata,{body length},18
@@ -4940,172 +4750,131 @@ Euphractus sexcinctus,{body mass},3
 Euphractus sexcinctus,{ear length to notch},6
 Euphractus sexcinctus,{pes length},6
 Euphractus sexcinctus,{tail length},7
-Eurygnathohippus aff. cornelianus,{talus trochlea breadth},2
-Eurygnathohippus aff. feibeli,{talus trochlea breadth},3
-Eurygnathohippus aff. hasumense,{calcaneus distal breadth (non-plantigrade)},6
-Eurygnathohippus aff. hasumense,{calcaneus distal depth (non-plantigrade)},7
-Eurygnathohippus aff. hasumense,{calcaneus length},6
-Eurygnathohippus aff. hasumense,{humerus diaphysis breadth},2
-Eurygnathohippus aff. hasumense,{humerus trochlea breadth},3
-Eurygnathohippus aff. hasumense,{humerus trochlear height at sagittal crest},2
-Eurygnathohippus aff. hasumense,{metacarpal bone of digit 3 breadth},11
-Eurygnathohippus aff. hasumense,{metacarpal bone of digit 3 depth},11
-Eurygnathohippus aff. hasumense,{metacarpal bone of digit 3 proximal articular breadth},12
+Eurygnathohippus aff. hasumense,{metacarpal bone of digit 3 breadth},2
+Eurygnathohippus aff. hasumense,{metacarpal bone of digit 3 depth},2
+Eurygnathohippus aff. hasumense,{metacarpal bone of digit 3 proximal articular breadth},2
 Eurygnathohippus aff. hasumense,{talus breadth},2
 Eurygnathohippus aff. hasumense,{talus length},2
 Eurygnathohippus aff. hasumense,{talus medial depth},2
-Eurygnathohippus aff. hasumense,{talus trochlea breadth},17
-Eurygnathohippus aff. hasumense,{tibia diaphysis depth},5
-Eurygnathohippus aff. hasumense,{tibia distal depth},8
-Eurygnathohippus aff. hasumense,{tibia medial length},4
-Eurygnathohippus aff. hasumense,{tibia proximal breadth},13
-Eurygnathohippus aff. hasumense,{tibia proximal depth},15
+Eurygnathohippus aff. hasumense,{talus trochlea breadth},3
 Eurygnathohippus cf. feibeli,{talus breadth},1
 Eurygnathohippus cf. feibeli,{talus length},1
 Eurygnathohippus cf. feibeli,{talus medial depth},1
-Eurygnathohippus cf. feibeli,{talus trochlea breadth},4
-Eurygnathohippus cf. feibeli,{tibia diaphysis depth},1
+Eurygnathohippus cf. feibeli,{talus trochlea breadth},1
 Eurygnathohippus cf. feibeli,{tibia distal breadth},2
-Eurygnathohippus cf. feibeli,{tibia distal depth},5
+Eurygnathohippus cf. feibeli,{tibia distal depth},2
 Eurygnathohippus cf. hasumense,{talus breadth},2
 Eurygnathohippus cf. hasumense,{talus length},2
 Eurygnathohippus cf. hasumense,{talus medial depth},2
-Eurygnathohippus cf. hasumense,{talus trochlea breadth},3
+Eurygnathohippus cf. hasumense,{talus trochlea breadth},1
 Eurygnathohippus cf. hasumense,{tibia distal breadth},1
-Eurygnathohippus cf. hasumense,{tibia distal depth},2
-Eurygnathohippus feibeli,{calcaneus distal breadth (non-plantigrade)},2
-Eurygnathohippus feibeli,{calcaneus distal depth (non-plantigrade)},2
-Eurygnathohippus feibeli,{calcaneus length},2
-Eurygnathohippus feibeli,{metacarpal bone of digit 3 breadth},3
-Eurygnathohippus feibeli,{metacarpal bone of digit 3 depth},3
-Eurygnathohippus feibeli,{metacarpal bone of digit 3 proximal articular breadth},3
+Eurygnathohippus cf. hasumense,{tibia distal depth},1
+Eurygnathohippus feibeli,{metacarpal bone of digit 3 breadth},1
+Eurygnathohippus feibeli,{metacarpal bone of digit 3 depth},1
+Eurygnathohippus feibeli,{metacarpal bone of digit 3 proximal articular breadth},1
 Eurygnathohippus feibeli,{talus breadth},7
 Eurygnathohippus feibeli,{talus length},7
 Eurygnathohippus feibeli,{talus medial depth},7
-Eurygnathohippus feibeli,{talus trochlea breadth},15
+Eurygnathohippus feibeli,{talus trochlea breadth},7
 Eurygnathohippus feibeli,{tibia diaphysis breadth},2
-Eurygnathohippus feibeli,{tibia diaphysis depth},4
+Eurygnathohippus feibeli,{tibia diaphysis depth},2
 Eurygnathohippus feibeli,{tibia distal breadth},3
-Eurygnathohippus feibeli,{tibia distal depth},7
-Eurygnathohippus hasumense,{femur caput depth},1
-Eurygnathohippus hasumense,{femur proximal breadth},1
-Eurygnathohippus hasumense,{femur proximal depth},1
-Eurygnathohippus hasumense,{humerus diaphysis breadth},4
+Eurygnathohippus feibeli,{tibia distal depth},3
+Eurygnathohippus hasumense,{humerus diaphysis breadth},1
 Eurygnathohippus hasumense,{humerus diaphysis depth},1
 Eurygnathohippus hasumense,{humerus distal depth},1
 Eurygnathohippus hasumense,{humerus medial trochlear height},1
-Eurygnathohippus hasumense,{humerus trochlea breadth},4
-Eurygnathohippus hasumense,{humerus trochlear height at sagittal crest},4
+Eurygnathohippus hasumense,{humerus trochlea breadth},1
+Eurygnathohippus hasumense,{humerus trochlear height at sagittal crest},1
 Eurygnathohippus hasumense,{humerus trochlear sulcus height},1
-Eurygnathohippus hasumense,{metacarpal bone of digit 3 breadth},8
-Eurygnathohippus hasumense,{metacarpal bone of digit 3 depth},8
-Eurygnathohippus hasumense,{metacarpal bone of digit 3 proximal articular breadth},7
+Eurygnathohippus hasumense,{metacarpal bone of digit 3 breadth},2
+Eurygnathohippus hasumense,{metacarpal bone of digit 3 depth},2
+Eurygnathohippus hasumense,{metacarpal bone of digit 3 proximal articular breadth},2
 Eurygnathohippus hasumense,{olecranon depth},1
 Eurygnathohippus hasumense,{olecranon length},1
 Eurygnathohippus hasumense,{talus breadth},2
 Eurygnathohippus hasumense,{talus length},2
 Eurygnathohippus hasumense,{talus medial depth},2
-Eurygnathohippus hasumense,{talus trochlea breadth},10
-Eurygnathohippus hasumense,{tibia diaphysis depth},2
-Eurygnathohippus hasumense,{tibia distal depth},2
-Eurygnathohippus hasumense,{tibia medial length},2
-Eurygnathohippus hasumense,{tibia proximal breadth},2
-Eurygnathohippus hasumense,{tibia proximal depth},2
+Eurygnathohippus hasumense,{talus trochlea breadth},3
 Eurygnathohippus hasumense,{ulna depth across the process anaconaeus},1
 Eurygnathohippus hasumense,{ulna length},1
 Eurygnathohippus hasumense,{ulna proximal articular breadth},1
 Eurygnathohippus hooijeri,{anterior tibial tuberosity length},4
-Eurygnathohippus hooijeri,{calcaneus distal breadth (non-plantigrade)},5
-Eurygnathohippus hooijeri,{calcaneus distal depth (non-plantigrade)},5
-Eurygnathohippus hooijeri,{calcaneus length},4
-Eurygnathohippus hooijeri,{femur caput depth},8
+Eurygnathohippus hooijeri,{femur caput depth},4
 Eurygnathohippus hooijeri,{femur diaphysis breadth},6
 Eurygnathohippus hooijeri,{femur diaphysis depth},6
-Eurygnathohippus hooijeri,{femur distal breadth},10
-Eurygnathohippus hooijeri,{femur distal depth},10
+Eurygnathohippus hooijeri,{femur distal breadth},5
+Eurygnathohippus hooijeri,{femur distal depth},5
 Eurygnathohippus hooijeri,{femur length from caput to lateral condyle},2
 Eurygnathohippus hooijeri,{femur length from greater trochanter to medial condyle},2
-Eurygnathohippus hooijeri,{femur proximal breadth},8
-Eurygnathohippus hooijeri,{femur proximal depth},6
+Eurygnathohippus hooijeri,{femur proximal breadth},4
+Eurygnathohippus hooijeri,{femur proximal depth},3
 Eurygnathohippus hooijeri,{femur trochlea breadth},4
-Eurygnathohippus hooijeri,{humerus diaphysis breadth},2
+Eurygnathohippus hooijeri,{humerus diaphysis breadth},1
 Eurygnathohippus hooijeri,{humerus diaphysis depth},1
 Eurygnathohippus hooijeri,{humerus distal depth},1
 Eurygnathohippus hooijeri,{humerus length from trochlea to caput},1
 Eurygnathohippus hooijeri,{humerus length from trochlea to ventral tubercle},1
 Eurygnathohippus hooijeri,{humerus medial trochlear height},1
 Eurygnathohippus hooijeri,{humerus proximal breadth},1
-Eurygnathohippus hooijeri,{humerus trochlea breadth},2
-Eurygnathohippus hooijeri,{humerus trochlear height at sagittal crest},2
+Eurygnathohippus hooijeri,{humerus trochlea breadth},1
+Eurygnathohippus hooijeri,{humerus trochlear height at sagittal crest},1
 Eurygnathohippus hooijeri,{humerus trochlear sulcus height},1
-Eurygnathohippus hooijeri,{metacarpal bone of digit 3 breadth},20
-Eurygnathohippus hooijeri,{metacarpal bone of digit 3 depth},20
-Eurygnathohippus hooijeri,{metacarpal bone of digit 3 proximal articular breadth},16
+Eurygnathohippus hooijeri,{metacarpal bone of digit 3 breadth},10
+Eurygnathohippus hooijeri,{metacarpal bone of digit 3 depth},10
+Eurygnathohippus hooijeri,{metacarpal bone of digit 3 proximal articular breadth},8
 Eurygnathohippus hooijeri,{talus breadth},13
 Eurygnathohippus hooijeri,{talus length},13
 Eurygnathohippus hooijeri,{talus medial depth},13
-Eurygnathohippus hooijeri,{talus trochlea breadth},29
+Eurygnathohippus hooijeri,{talus trochlea breadth},16
 Eurygnathohippus hooijeri,{tibia diaphysis breadth},7
-Eurygnathohippus hooijeri,{tibia diaphysis depth},14
+Eurygnathohippus hooijeri,{tibia diaphysis depth},7
 Eurygnathohippus hooijeri,{tibia distal breadth},12
-Eurygnathohippus hooijeri,{tibia distal depth},20
+Eurygnathohippus hooijeri,{tibia distal depth},10
 Eurygnathohippus hooijeri,{tibia length},1
-Eurygnathohippus hooijeri,{tibia medial length},2
-Eurygnathohippus hooijeri,{tibia proximal breadth},12
-Eurygnathohippus hooijeri,{tibia proximal depth},12
-Eurygnathohippus pomeli,{metacarpal bone of digit 3 breadth},10
-Eurygnathohippus pomeli,{metacarpal bone of digit 3 depth},8
-Eurygnathohippus pomeli,{metacarpal bone of digit 3 proximal articular breadth},8
+Eurygnathohippus hooijeri,{tibia medial length},1
+Eurygnathohippus hooijeri,{tibia proximal breadth},6
+Eurygnathohippus hooijeri,{tibia proximal depth},6
+Eurygnathohippus pomeli,{metacarpal bone of digit 3 breadth},5
+Eurygnathohippus pomeli,{metacarpal bone of digit 3 depth},4
+Eurygnathohippus pomeli,{metacarpal bone of digit 3 proximal articular breadth},4
 Eurygnathohippus pomeli,{talus breadth},1
 Eurygnathohippus pomeli,{talus length},1
 Eurygnathohippus pomeli,{talus medial depth},1
-Eurygnathohippus pomeli,{talus trochlea breadth},2
+Eurygnathohippus pomeli,{talus trochlea breadth},1
 Eurygnathohippus sp.,{anterior tibial tuberosity length},1
-Eurygnathohippus sp.,{calcaneus distal breadth (non-plantigrade)},6
-Eurygnathohippus sp.,{calcaneus distal depth (non-plantigrade)},6
-Eurygnathohippus sp.,{calcaneus length},2
-Eurygnathohippus sp.,{femur caput depth},3
+Eurygnathohippus sp.,{femur caput depth},1
 Eurygnathohippus sp.,{femur diaphysis breadth},1
 Eurygnathohippus sp.,{femur diaphysis depth},1
-Eurygnathohippus sp.,{femur distal breadth},2
-Eurygnathohippus sp.,{femur distal depth},2
+Eurygnathohippus sp.,{femur distal breadth},1
+Eurygnathohippus sp.,{femur distal depth},1
 Eurygnathohippus sp.,{femur length from caput to lateral condyle},1
 Eurygnathohippus sp.,{femur length from greater trochanter to medial condyle},1
-Eurygnathohippus sp.,{femur proximal breadth},3
-Eurygnathohippus sp.,{femur proximal depth},1
+Eurygnathohippus sp.,{femur proximal breadth},1
 Eurygnathohippus sp.,{femur trochlea breadth},1
-Eurygnathohippus sp.,{humerus diaphysis breadth},1
 Eurygnathohippus sp.,{humerus distal depth},1
 Eurygnathohippus sp.,{humerus medial trochlear height},1
-Eurygnathohippus sp.,{humerus trochlea breadth},3
-Eurygnathohippus sp.,{humerus trochlear height at sagittal crest},3
+Eurygnathohippus sp.,{humerus trochlea breadth},1
+Eurygnathohippus sp.,{humerus trochlear height at sagittal crest},1
 Eurygnathohippus sp.,{humerus trochlear sulcus height},1
-Eurygnathohippus sp.,{metacarpal bone of digit 3 breadth},17
-Eurygnathohippus sp.,{metacarpal bone of digit 3 depth},19
-Eurygnathohippus sp.,{metacarpal bone of digit 3 proximal articular breadth},54
+Eurygnathohippus sp.,{metacarpal bone of digit 3 breadth},8
+Eurygnathohippus sp.,{metacarpal bone of digit 3 depth},9
+Eurygnathohippus sp.,{metacarpal bone of digit 3 proximal articular breadth},25
 Eurygnathohippus sp.,{talus breadth},23
 Eurygnathohippus sp.,{talus length},23
 Eurygnathohippus sp.,{talus medial depth},14
-Eurygnathohippus sp.,{talus trochlea breadth},67
+Eurygnathohippus sp.,{talus trochlea breadth},24
 Eurygnathohippus sp.,{tibia diaphysis breadth},1
-Eurygnathohippus sp.,{tibia diaphysis depth},7
+Eurygnathohippus sp.,{tibia diaphysis depth},1
 Eurygnathohippus sp.,{tibia distal breadth},5
-Eurygnathohippus sp.,{tibia distal depth},16
+Eurygnathohippus sp.,{tibia distal depth},5
 Eurygnathohippus sp.,{tibia length},1
-Eurygnathohippus sp.,{tibia medial length},2
-Eurygnathohippus sp.,{tibia proximal breadth},3
-Eurygnathohippus sp.,{tibia proximal depth},3
-Eurygnathohippus sp. lg.,{talus trochlea breadth},3
-Eurygnathohippus sp. sm,{metacarpal bone of digit 3 proximal articular breadth},1
-Eurygnathohippus sp. sm.,{metacarpal bone of digit 3 breadth},2
-Eurygnathohippus sp. sm.,{metacarpal bone of digit 3 depth},2
-Eurygnathohippus sp. sm.,{metacarpal bone of digit 3 proximal articular breadth},2
-Eurygnathohippus woldegabrieli,{calcaneus distal breadth (non-plantigrade)},1
-Eurygnathohippus woldegabrieli,{calcaneus distal depth (non-plantigrade)},1
-Eurygnathohippus woldegabrieli,{metacarpal bone of digit 3 breadth},4
-Eurygnathohippus woldegabrieli,{metacarpal bone of digit 3 depth},4
-Eurygnathohippus woldegabrieli,{metacarpal bone of digit 3 proximal articular breadth},6
-Eurygnathohippus woldegabrieli,{talus trochlea breadth},3
+Eurygnathohippus sp.,{tibia medial length},1
+Eurygnathohippus sp.,{tibia proximal breadth},1
+Eurygnathohippus sp.,{tibia proximal depth},1
+Eurygnathohippus sp. sm.,{metacarpal bone of digit 3 breadth},1
+Eurygnathohippus sp. sm.,{metacarpal bone of digit 3 depth},1
+Eurygnathohippus sp. sm.,{metacarpal bone of digit 3 proximal articular breadth},1
 Euryoryzomys legatus,{body length},33
 Euryoryzomys legatus,{body mass},32
 Euryoryzomys legatus,{ear length to notch},33
@@ -6070,24 +5839,22 @@ Heteromys teleus,{pes length},1
 Heteromys teleus,{tail length},1
 Heterosorex Gaillard,{body length},1
 Heteroxerus Stehlin,{body length},2
-Hipparion cf. prostylum,{tibia distal depth},2
-Hipparion dietrichi,{metacarpal bone of digit 3 breadth},10
-Hipparion dietrichi,{metacarpal bone of digit 3 depth},10
-Hipparion dietrichi,{metacarpal bone of digit 3 proximal articular breadth},10
-Hipparion prostylum,{calcaneus distal breadth (non-plantigrade)},24
-Hipparion prostylum,{calcaneus distal depth (non-plantigrade)},23
-Hipparion prostylum,{calcaneus length},22
-Hipparion prostylum,{metacarpal bone of digit 3 breadth},40
-Hipparion prostylum,{metacarpal bone of digit 3 depth},42
-Hipparion prostylum,{metacarpal bone of digit 3 proximal articular breadth},30
+Hipparion dietrichi,{metacarpal bone of digit 3 breadth},5
+Hipparion dietrichi,{metacarpal bone of digit 3 depth},5
+Hipparion dietrichi,{metacarpal bone of digit 3 proximal articular breadth},5
+Hipparion prostylum,{metacarpal bone of digit 3 breadth},20
+Hipparion prostylum,{metacarpal bone of digit 3 depth},21
+Hipparion prostylum,{metacarpal bone of digit 3 proximal articular breadth},15
 Hipparion prostylum,{talus breadth},29
 Hipparion prostylum,{talus length},24
 Hipparion prostylum,{talus medial depth},26
-Hipparion prostylum,{talus trochlea breadth},60
+Hipparion prostylum,{talus trochlea breadth},31
+Hipparion sm.,{talus breadth},5
+Hipparion sm.,{talus length},5
+Hipparion sm.,{talus medial depth},5
+Hipparion sm.,{talus trochlea breadth},5
 Hipparion sp.,{breadth of calcaneal body},1
-Hipparion sp.,{calcaneus distal breadth (non-plantigrade)},1
-Hipparion sp.,{calcaneus distal depth (non-plantigrade)},1
-Hipparion sp.,{calcaneus length},2
+Hipparion sp.,{calcaneus length},1
 Hipparion sp.,{humerus diaphysis breadth},1
 Hipparion sp.,{humerus diaphysis depth},1
 Hipparion sp.,{humerus distal depth},1
@@ -6097,26 +5864,18 @@ Hipparion sp.,{humerus medial trochlear height},1
 Hipparion sp.,{humerus trochlea breadth},1
 Hipparion sp.,{humerus trochlear height at sagittal crest},1
 Hipparion sp.,{humerus trochlear sulcus height},1
-Hipparion sp.,{metacarpal bone of digit 3 breadth},1
-Hipparion sp.,{metacarpal bone of digit 3 depth},1
-Hipparion sp.,{metacarpal bone of digit 3 proximal articular breadth},1
-Hipparion sp.,{talus breadth},1
-Hipparion sp.,{talus length},1
-Hipparion sp.,{talus medial depth},1
-Hipparion sp.,{talus trochlea breadth},1
+Hipparion sp.,{metacarpal bone of digit 3 breadth},9
+Hipparion sp.,{metacarpal bone of digit 3 depth},9
+Hipparion sp.,{metacarpal bone of digit 3 proximal articular breadth},9
+Hipparion sp.,{talus breadth},6
+Hipparion sp.,{talus length},6
+Hipparion sp.,{talus medial depth},5
+Hipparion sp.,{talus trochlea breadth},6
+Hipparion sp.,{tibia distal breadth},1
 Hipparion sp.,{trochlea tali length},1
-Hippidion principale,{lower molar tooth 1 occlusal surface length},1
-Hippidion principale,{lower molar tooth 1 occlusal surface width},1
-Hippidion principale,{lower molar tooth 2 occlusal surface length},1
-Hippidion principale,{lower molar tooth 2 occlusal surface width},1
-Hippidion principale,{lower molar tooth 3 occlusal surface length},1
-Hippidion principale,{lower molar tooth 3 occlusal surface width},1
-Hippidion principale,{lower premolar tooth 2 occlusal surface length},3
-Hippidion principale,{lower premolar tooth 2 occlusal surface width},3
-Hippidion principale,{lower premolar tooth 3 occlusal surface length},2
-Hippidion principale,{lower premolar tooth 3 occlusal surface width},2
-Hippidion principale,{lower premolar tooth 4 occlusal surface length},2
-Hippidion principale,{lower premolar tooth 4 occlusal surface width},2
+Hipparion sp. lg,{metacarpal bone of digit 3 breadth},1
+Hipparion sp. lg,{metacarpal bone of digit 3 depth},1
+Hipparion sp. lg,{metacarpal bone of digit 3 proximal articular breadth},1
 Hippocamelus antisensis,{body length},5
 Hippocamelus antisensis,{ear length to notch},4
 Hippocamelus antisensis,{pes length},4
@@ -6249,61 +6008,58 @@ Hipposideros vittatus,{body length},1
 Hipposideros vittatus,{ear length to notch},1
 Hipposideros vittatus,{pes length},1
 Hipposideros vittatus,{tail length},1
-Hippotherium giganteum,{femur caput depth},2
+Hippotherium giganteum,{femur caput depth},1
 Hippotherium giganteum,{femur diaphysis breadth},1
 Hippotherium giganteum,{femur diaphysis depth},1
-Hippotherium giganteum,{femur distal breadth},2
-Hippotherium giganteum,{femur distal depth},2
+Hippotherium giganteum,{femur distal breadth},1
+Hippotherium giganteum,{femur distal depth},1
 Hippotherium giganteum,{femur length from caput to lateral condyle},1
 Hippotherium giganteum,{femur length from greater trochanter to medial condyle},1
-Hippotherium giganteum,{femur proximal breadth},2
-Hippotherium giganteum,{femur proximal depth},2
+Hippotherium giganteum,{femur proximal breadth},1
+Hippotherium giganteum,{femur proximal depth},1
 Hippotherium giganteum,{femur trochlea breadth},1
-Hippotherium giganteum,{metacarpal bone of digit 3 breadth},15
-Hippotherium giganteum,{metacarpal bone of digit 3 depth},14
-Hippotherium giganteum,{metacarpal bone of digit 3 proximal articular breadth},16
-Hippotherium microdon,{metacarpal bone of digit 3 proximal articular breadth},2
+Hippotherium giganteum,{metacarpal bone of digit 3 breadth},8
+Hippotherium giganteum,{metacarpal bone of digit 3 depth},8
+Hippotherium giganteum,{metacarpal bone of digit 3 proximal articular breadth},8
+Hippotherium microdon,{metacarpal bone of digit 3 proximal articular breadth},1
 Hippotherium primigeneium,{anterior tibial tuberosity length},37
-Hippotherium primigeneium,{calcaneus distal breadth (non-plantigrade)},32
-Hippotherium primigeneium,{calcaneus distal depth (non-plantigrade)},33
-Hippotherium primigeneium,{calcaneus length},32
-Hippotherium primigeneium,{femur caput depth},33
+Hippotherium primigeneium,{femur caput depth},18
 Hippotherium primigeneium,{femur diaphysis breadth},18
 Hippotherium primigeneium,{femur diaphysis depth},18
-Hippotherium primigeneium,{femur distal breadth},28
-Hippotherium primigeneium,{femur distal depth},31
+Hippotherium primigeneium,{femur distal breadth},18
+Hippotherium primigeneium,{femur distal depth},18
 Hippotherium primigeneium,{femur length from caput to lateral condyle},18
 Hippotherium primigeneium,{femur length from greater trochanter to medial condyle},18
-Hippotherium primigeneium,{femur proximal breadth},28
-Hippotherium primigeneium,{femur proximal depth},22
+Hippotherium primigeneium,{femur proximal breadth},18
+Hippotherium primigeneium,{femur proximal depth},18
 Hippotherium primigeneium,{femur trochlea breadth},18
-Hippotherium primigeneium,{humerus diaphysis breadth},38
+Hippotherium primigeneium,{humerus diaphysis breadth},26
 Hippotherium primigeneium,{humerus diaphysis depth},26
 Hippotherium primigeneium,{humerus distal depth},26
 Hippotherium primigeneium,{humerus length from trochlea to caput},26
 Hippotherium primigeneium,{humerus length from trochlea to ventral tubercle},26
 Hippotherium primigeneium,{humerus medial trochlear height},26
 Hippotherium primigeneium,{humerus proximal breadth},26
-Hippotherium primigeneium,{humerus trochlea breadth},51
-Hippotherium primigeneium,{humerus trochlear height at sagittal crest},49
+Hippotherium primigeneium,{humerus trochlea breadth},26
+Hippotherium primigeneium,{humerus trochlear height at sagittal crest},26
 Hippotherium primigeneium,{humerus trochlear sulcus height},26
-Hippotherium primigeneium,{metacarpal bone of digit 3 breadth},150
-Hippotherium primigeneium,{metacarpal bone of digit 3 depth},149
-Hippotherium primigeneium,{metacarpal bone of digit 3 proximal articular breadth},138
+Hippotherium primigeneium,{metacarpal bone of digit 3 breadth},86
+Hippotherium primigeneium,{metacarpal bone of digit 3 depth},86
+Hippotherium primigeneium,{metacarpal bone of digit 3 proximal articular breadth},79
 Hippotherium primigeneium,{olecranon depth},16
 Hippotherium primigeneium,{olecranon length},16
 Hippotherium primigeneium,{talus breadth},63
 Hippotherium primigeneium,{talus length},67
 Hippotherium primigeneium,{talus medial depth},67
-Hippotherium primigeneium,{talus trochlea breadth},112
+Hippotherium primigeneium,{talus trochlea breadth},67
 Hippotherium primigeneium,{tibia diaphysis breadth},38
-Hippotherium primigeneium,{tibia diaphysis depth},61
+Hippotherium primigeneium,{tibia diaphysis depth},38
 Hippotherium primigeneium,{tibia distal breadth},38
-Hippotherium primigeneium,{tibia distal depth},75
+Hippotherium primigeneium,{tibia distal depth},38
 Hippotherium primigeneium,{tibia length},37
-Hippotherium primigeneium,{tibia medial length},55
-Hippotherium primigeneium,{tibia proximal breadth},52
-Hippotherium primigeneium,{tibia proximal depth},51
+Hippotherium primigeneium,{tibia medial length},37
+Hippotherium primigeneium,{tibia proximal breadth},37
+Hippotherium primigeneium,{tibia proximal depth},37
 Hippotherium primigeneium,{ulna depth across the process anaconaeus},16
 Hippotherium primigeneium,{ulna length},16
 Hippotherium primigeneium,{ulna proximal articular breadth},16
@@ -12649,13 +12405,13 @@ Plecotus townsendii,{ear length to notch},138
 Plecotus townsendii,{pes length},151
 Plecotus townsendii,{tail length},154
 Plesiadapis walbeckensis,{tail length},1
-Plesiohipparion longipes,{metacarpal bone of digit 3 breadth},2
-Plesiohipparion longipes,{metacarpal bone of digit 3 depth},2
-Plesiohipparion longipes,{metacarpal bone of digit 3 proximal articular breadth},2
+Plesiohipparion longipes,{metacarpal bone of digit 3 breadth},1
+Plesiohipparion longipes,{metacarpal bone of digit 3 depth},1
+Plesiohipparion longipes,{metacarpal bone of digit 3 proximal articular breadth},1
 Plesiohipparion longipes,{talus breadth},2
 Plesiohipparion longipes,{talus length},2
 Plesiohipparion longipes,{talus medial depth},2
-Plesiohipparion longipes,{talus trochlea breadth},4
+Plesiohipparion longipes,{talus trochlea breadth},2
 Plesiohipparion rocinantis,{breadth of calcaneal body},5
 Plesiohipparion rocinantis,{calcaneus length},5
 Plesiohipparion rocinantis,{metacarpal bone of digit 3 breadth},7
@@ -12794,19 +12550,16 @@ Prionailurus viverrinus,{body mass},1
 Prionailurus viverrinus,{ear length to notch},1
 Prionailurus viverrinus,{pes length},1
 Prionailurus viverrinus,{tail length},1
-Proboscidipparion heintzi,{calcaneus distal breadth (non-plantigrade)},3
-Proboscidipparion heintzi,{calcaneus distal depth (non-plantigrade)},4
-Proboscidipparion heintzi,{calcaneus length},1
-Proboscidipparion heintzi,{metacarpal bone of digit 3 breadth},20
-Proboscidipparion heintzi,{metacarpal bone of digit 3 depth},16
-Proboscidipparion heintzi,{metacarpal bone of digit 3 proximal articular breadth},18
+Proboscidipparion heintzi,{metacarpal bone of digit 3 breadth},10
+Proboscidipparion heintzi,{metacarpal bone of digit 3 depth},8
+Proboscidipparion heintzi,{metacarpal bone of digit 3 proximal articular breadth},9
 Proboscidipparion heintzi,{talus breadth},4
 Proboscidipparion heintzi,{talus length},4
 Proboscidipparion heintzi,{talus medial depth},3
-Proboscidipparion heintzi,{talus trochlea breadth},8
-Proboscidipparion sinense,{metacarpal bone of digit 3 breadth},2
-Proboscidipparion sinense,{metacarpal bone of digit 3 depth},2
-Proboscidipparion sinense,{metacarpal bone of digit 3 proximal articular breadth},2
+Proboscidipparion heintzi,{talus trochlea breadth},4
+Proboscidipparion sinense,{metacarpal bone of digit 3 breadth},1
+Proboscidipparion sinense,{metacarpal bone of digit 3 depth},1
+Proboscidipparion sinense,{metacarpal bone of digit 3 proximal articular breadth},1
 Procamptoceras Schaub,{body length},1
 Procapra gutturosa,{body length},1
 Procapra picticaudata,{body length},1
@@ -13217,9 +12970,8 @@ Pudu puda,{body mass},4
 Pudu puda,{ear length to notch},4
 Pudu puda,{pes length},4
 Pudu puda,{tail length},4
-Puma concolor,{body length with tail},7349
 Puma concolor,{body length},146
-Puma concolor,{body mass},5976
+Puma concolor,{body mass},117
 Puma concolor,{ear length to notch},93
 Puma concolor,{lower secondary molar tooth 1 occlusal surface length},9
 Puma concolor,{lower secondary molar tooth 1 occlusal surface width},9
@@ -14478,79 +14230,67 @@ Sigmodontomys alfari,{ear length to notch},2
 Sigmodontomys alfari,{pes length},2
 Sigmodontomys alfari,{tail length},2
 Sinomastodon Tobien,{body length},1
-Sivalhippus anwari,{calcaneus distal breadth (non-plantigrade)},2
-Sivalhippus anwari,{calcaneus distal depth (non-plantigrade)},2
-Sivalhippus anwari,{calcaneus length},2
-Sivalhippus anwari,{metacarpal bone of digit 3 proximal articular breadth},2
+Sivalhippus anwari,{metacarpal bone of digit 3 proximal articular breadth},1
 Sivalhippus anwari,{talus breadth},1
 Sivalhippus anwari,{talus length},1
 Sivalhippus anwari,{talus medial depth},1
-Sivalhippus anwari,{talus trochlea breadth},2
+Sivalhippus anwari,{talus trochlea breadth},1
 Sivalhippus cf. perimense,{talus breadth},1
 Sivalhippus cf. perimense,{talus length},1
 Sivalhippus cf. perimense,{talus medial depth},1
-Sivalhippus cf. perimense,{talus trochlea breadth},2
+Sivalhippus cf. perimense,{talus trochlea breadth},1
 Sivalhippus cf. theobaldi,{talus breadth},1
 Sivalhippus cf. theobaldi,{talus length},1
 Sivalhippus cf. theobaldi,{talus medial depth},1
-Sivalhippus cf. theobaldi,{talus trochlea breadth},2
-Sivalhippus nagriensis,{calcaneus distal breadth (non-plantigrade)},10
-Sivalhippus nagriensis,{calcaneus distal depth (non-plantigrade)},10
-Sivalhippus nagriensis,{calcaneus length},9
-Sivalhippus nagriensis,{metacarpal bone of digit 3 breadth},4
-Sivalhippus nagriensis,{metacarpal bone of digit 3 depth},4
-Sivalhippus nagriensis,{metacarpal bone of digit 3 proximal articular breadth},8
+Sivalhippus cf. theobaldi,{talus trochlea breadth},1
+Sivalhippus nagriensis,{metacarpal bone of digit 3 breadth},2
+Sivalhippus nagriensis,{metacarpal bone of digit 3 depth},2
+Sivalhippus nagriensis,{metacarpal bone of digit 3 proximal articular breadth},4
 Sivalhippus nagriensis,{talus breadth},21
 Sivalhippus nagriensis,{talus length},21
 Sivalhippus nagriensis,{talus medial depth},17
-Sivalhippus nagriensis,{talus trochlea breadth},43
-Sivalhippus perimense,{calcaneus distal breadth (non-plantigrade)},3
-Sivalhippus perimense,{calcaneus distal depth (non-plantigrade)},3
-Sivalhippus perimense,{calcaneus length},2
-Sivalhippus perimense,{metacarpal bone of digit 3 breadth},4
-Sivalhippus perimense,{metacarpal bone of digit 3 depth},4
-Sivalhippus perimense,{metacarpal bone of digit 3 proximal articular breadth},8
+Sivalhippus nagriensis,{talus trochlea breadth},22
+Sivalhippus perimense,{metacarpal bone of digit 3 breadth},2
+Sivalhippus perimense,{metacarpal bone of digit 3 depth},2
+Sivalhippus perimense,{metacarpal bone of digit 3 proximal articular breadth},4
 Sivalhippus perimense,{talus breadth},7
 Sivalhippus perimense,{talus length},7
 Sivalhippus perimense,{talus medial depth},6
-Sivalhippus perimense,{talus trochlea breadth},14
-Sivalhippus perimensis,{metacarpal bone of digit 3 breadth},4
-Sivalhippus perimensis,{metacarpal bone of digit 3 depth},2
-Sivalhippus perimensis,{metacarpal bone of digit 3 proximal articular breadth},4
-Sivalhippus sp.,{calcaneus distal breadth (non-plantigrade)},1
-Sivalhippus sp.,{calcaneus distal depth (non-plantigrade)},1
-Sivalhippus sp.,{calcaneus length},1
-Sivalhippus sp.,{metacarpal bone of digit 3 proximal articular breadth},2
+Sivalhippus perimense,{talus trochlea breadth},7
+Sivalhippus perimensis,{metacarpal bone of digit 3 breadth},2
+Sivalhippus perimensis,{metacarpal bone of digit 3 depth},1
+Sivalhippus perimensis,{metacarpal bone of digit 3 proximal articular breadth},2
+Sivalhippus sp.,{metacarpal bone of digit 3 proximal articular breadth},1
 Sivalhippus sp.,{talus breadth},3
 Sivalhippus sp.,{talus length},3
 Sivalhippus sp.,{talus medial depth},3
-Sivalhippus sp.,{talus trochlea breadth},6
+Sivalhippus sp.,{talus trochlea breadth},3
 Sivalhippus turkanensis,{anterior tibial tuberosity length},3
-Sivalhippus turkanensis,{femur caput depth},2
+Sivalhippus turkanensis,{femur caput depth},1
 Sivalhippus turkanensis,{femur diaphysis breadth},2
 Sivalhippus turkanensis,{femur diaphysis depth},2
-Sivalhippus turkanensis,{femur distal breadth},2
-Sivalhippus turkanensis,{femur distal depth},2
+Sivalhippus turkanensis,{femur distal breadth},1
+Sivalhippus turkanensis,{femur distal depth},1
 Sivalhippus turkanensis,{femur length from caput to lateral condyle},1
 Sivalhippus turkanensis,{femur length from greater trochanter to medial condyle},1
-Sivalhippus turkanensis,{femur proximal breadth},2
-Sivalhippus turkanensis,{femur proximal depth},2
+Sivalhippus turkanensis,{femur proximal breadth},1
+Sivalhippus turkanensis,{femur proximal depth},1
 Sivalhippus turkanensis,{femur trochlea breadth},2
-Sivalhippus turkanensis,{metacarpal bone of digit 3 breadth},2
-Sivalhippus turkanensis,{metacarpal bone of digit 3 depth},2
-Sivalhippus turkanensis,{metacarpal bone of digit 3 proximal articular breadth},2
+Sivalhippus turkanensis,{metacarpal bone of digit 3 breadth},1
+Sivalhippus turkanensis,{metacarpal bone of digit 3 depth},1
+Sivalhippus turkanensis,{metacarpal bone of digit 3 proximal articular breadth},1
 Sivalhippus turkanensis,{talus breadth},3
 Sivalhippus turkanensis,{talus length},2
 Sivalhippus turkanensis,{talus medial depth},3
-Sivalhippus turkanensis,{talus trochlea breadth},6
+Sivalhippus turkanensis,{talus trochlea breadth},3
 Sivalhippus turkanensis,{tibia diaphysis breadth},2
-Sivalhippus turkanensis,{tibia diaphysis depth},4
+Sivalhippus turkanensis,{tibia diaphysis depth},2
 Sivalhippus turkanensis,{tibia distal breadth},3
-Sivalhippus turkanensis,{tibia distal depth},6
+Sivalhippus turkanensis,{tibia distal depth},3
 Sivalhippus turkanensis,{tibia length},2
-Sivalhippus turkanensis,{tibia medial length},4
-Sivalhippus turkanensis,{tibia proximal breadth},4
-Sivalhippus turkanensis,{tibia proximal depth},6
+Sivalhippus turkanensis,{tibia medial length},2
+Sivalhippus turkanensis,{tibia proximal breadth},2
+Sivalhippus turkanensis,{tibia proximal depth},3
 Sminthopsis crassicaudata,{body length},18
 Sminthopsis crassicaudata,{body mass},1
 Sminthopsis crassicaudata,{ear length to notch},2
@@ -14928,14 +14668,12 @@ Spermophilus atricapillus,{body mass},3
 Spermophilus atricapillus,{ear length to notch},3
 Spermophilus atricapillus,{pes length},3
 Spermophilus atricapillus,{tail length},3
-Spermophilus beecheyi,{body length with tail},158
 Spermophilus beecheyi,{body length},373
-Spermophilus beecheyi,{body mass},238
-Spermophilus beecheyi,{ear length to notch},434
+Spermophilus beecheyi,{body mass},152
+Spermophilus beecheyi,{ear length to notch},296
 Spermophilus beecheyi,{lower tooth row length},5
-Spermophilus beecheyi,{pes length},492
-Spermophilus beecheyi,{tail length},489
-Spermophilus beecheyi,{tooth row length},323
+Spermophilus beecheyi,{pes length},334
+Spermophilus beecheyi,{tail length},330
 Spermophilus beecheyi,{upper secondary molar tooth 1 occlusal surface width},5
 Spermophilus beechyi,{body length},1
 Spermophilus beechyi,{ear length to notch},1
@@ -16561,60 +16299,43 @@ Uncia uncia,{tail length},15
 Unknown,{anterior tibial tuberosity length},2
 Unknown,{body length},12
 Unknown,{body mass},6
-Unknown,{calcaneus distal breadth (non-plantigrade)},19
-Unknown,{calcaneus distal depth (non-plantigrade)},16
-Unknown,{calcaneus length},14
 Unknown,{ear length to notch},10
-Unknown,{femur caput depth},6
+Unknown,{femur caput depth},3
 Unknown,{femur diaphysis breadth},1
 Unknown,{femur diaphysis depth},1
-Unknown,{femur distal breadth},8
-Unknown,{femur distal depth},6
+Unknown,{femur distal breadth},4
+Unknown,{femur distal depth},3
 Unknown,{femur length from caput to lateral condyle},1
 Unknown,{femur length from greater trochanter to medial condyle},1
-Unknown,{femur proximal breadth},6
+Unknown,{femur proximal breadth},3
 Unknown,{femur trochlea breadth},2
-Unknown,{humerus diaphysis breadth},6
+Unknown,{humerus diaphysis breadth},3
 Unknown,{humerus diaphysis depth},3
 Unknown,{humerus distal depth},7
 Unknown,{humerus length from trochlea to caput},1
 Unknown,{humerus length from trochlea to ventral tubercle},1
 Unknown,{humerus medial trochlear height},7
 Unknown,{humerus proximal breadth},2
-Unknown,{humerus trochlea breadth},14
-Unknown,{humerus trochlear height at sagittal crest},14
+Unknown,{humerus trochlea breadth},7
+Unknown,{humerus trochlear height at sagittal crest},7
 Unknown,{humerus trochlear sulcus height},7
-Unknown,{lower molar tooth 1 occlusal surface length},1
-Unknown,{lower molar tooth 1 occlusal surface width},1
-Unknown,{lower premolar tooth 2 occlusal surface length},12
-Unknown,{lower premolar tooth 2 occlusal surface width},12
-Unknown,{metacarpal bone of digit 3 breadth},20
-Unknown,{metacarpal bone of digit 3 depth},18
-Unknown,{metacarpal bone of digit 3 proximal articular breadth},30
+Unknown,{metacarpal bone of digit 3 breadth},10
+Unknown,{metacarpal bone of digit 3 depth},9
+Unknown,{metacarpal bone of digit 3 proximal articular breadth},15
 Unknown,{pes length},10
 Unknown,{tail length},10
 Unknown,{talus breadth},22
 Unknown,{talus length},27
 Unknown,{talus medial depth},15
-Unknown,{talus trochlea breadth},48
+Unknown,{talus trochlea breadth},26
 Unknown,{tibia diaphysis breadth},3
-Unknown,{tibia diaphysis depth},7
+Unknown,{tibia diaphysis depth},3
 Unknown,{tibia distal breadth},22
-Unknown,{tibia distal depth},46
+Unknown,{tibia distal depth},22
 Unknown,{tibia length},2
-Unknown,{tibia medial length},4
-Unknown,{tibia proximal breadth},4
-Unknown,{tibia proximal depth},6
-Unknown,{upper molar tooth 1 occlusal surface length},132
-Unknown,{upper molar tooth 1 occlusal surface width},132
-Unknown,{upper molar tooth 2 occlusal surface length},141
-Unknown,{upper molar tooth 2 occlusal surface width},141
-Unknown,{upper molar tooth 3 occlusal surface length},115
-Unknown,{upper molar tooth 3 occlusal surface width},115
-Unknown,{upper premolar tooth 3 occlusal surface length},77
-Unknown,{upper premolar tooth 3 occlusal surface width},77
-Unknown,{upper premolar tooth 4 occlusal surface length},44
-Unknown,{upper premolar tooth 4 occlusal surface width},44
+Unknown,{tibia medial length},2
+Unknown,{tibia proximal breadth},2
+Unknown,{tibia proximal depth},3
 Uranomys ruddi,{body length},2
 Uranomys ruddi,{body mass},1
 Uranomys ruddi,{ear length to notch},1
@@ -17221,36 +16942,20 @@ Zyzomys argurus,{ear length to notch},10
 Zyzomys argurus,{pes length},10
 Zyzomys argurus,{tail length},3
 Zyzomys woodwardi,{tail length},1
-aff. Cremohipparion matthewi,{metacarpal bone of digit 3 breadth},2
-aff. Cremohipparion matthewi,{metacarpal bone of digit 3 depth},2
-aff. Cremohipparion matthewi,{metacarpal bone of digit 3 proximal articular breadth},2
-aff. Cremohipparion periafricanum,{calcaneus distal breadth (non-plantigrade)},1
-aff. Cremohipparion periafricanum,{calcaneus distal depth (non-plantigrade)},1
-aff. Cremohipparion periafricanum,{calcaneus length},1
-aff. Cremohipparion periafricanum,{metacarpal bone of digit 3 breadth},1
-aff. Cremohipparion periafricanum,{metacarpal bone of digit 3 depth},1
-aff. Cremohipparion periafricanum,{metacarpal bone of digit 3 proximal articular breadth},1
-aff. Cremohipparion periafricanum,{talus trochlea breadth},1
-cf. Cremohipparion cf. moldavicum,{tibia distal depth},1
+aff. Cremohipparion matthewi,{metacarpal bone of digit 3 breadth},1
+aff. Cremohipparion matthewi,{metacarpal bone of digit 3 depth},1
+aff. Cremohipparion matthewi,{metacarpal bone of digit 3 proximal articular breadth},1
 cf. Cremohipparion matthewi,{anterior tibial tuberosity length},1
-cf. Cremohipparion matthewi,{tibia distal depth},2
-cf. Equus sp.,{tibia proximal depth},1
-cf. Eurygnathohippus sp.,{calcaneus distal breadth (non-plantigrade)},1
-cf. Eurygnathohippus sp.,{calcaneus distal depth (non-plantigrade)},2
-cf. Eurygnathohippus sp.,{calcaneus length},2
-cf. Eurygnathohippus sp.,{talus trochlea breadth},1
-cf. Hippotherium brachypus,{metacarpal bone of digit 3 breadth},12
-cf. Hippotherium brachypus,{metacarpal bone of digit 3 depth},10
-cf. Hippotherium brachypus,{metacarpal bone of digit 3 proximal articular breadth},16
-cf. Sivalhippus turkanensis,{calcaneus distal breadth (non-plantigrade)},2
-cf. Sivalhippus turkanensis,{calcaneus distal depth (non-plantigrade)},2
-cf. Sivalhippus turkanensis,{calcaneus length},2
+cf. Cremohipparion matthewi,{tibia distal depth},1
+cf. Hippotherium brachypus,{metacarpal bone of digit 3 breadth},6
+cf. Hippotherium brachypus,{metacarpal bone of digit 3 depth},5
+cf. Hippotherium brachypus,{metacarpal bone of digit 3 proximal articular breadth},8
 cf. Sivalhippus turkanensis,{talus breadth},3
 cf. Sivalhippus turkanensis,{talus length},4
 cf. Sivalhippus turkanensis,{talus medial depth},5
-cf. Sivalhippus turkanensis,{talus trochlea breadth},8
+cf. Sivalhippus turkanensis,{talus trochlea breadth},5
 cf. Sivalhippus turkanensis,{tibia distal breadth},2
-cf. Sivalhippus turkanensis,{tibia distal depth},6
+cf. Sivalhippus turkanensis,{tibia distal depth},3
 sigmodon hispidus,{body length},1
 sigmodon hispidus,{body mass},1
 sigmodon hispidus,{ear length to notch},1
