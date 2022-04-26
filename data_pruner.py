@@ -55,6 +55,15 @@ def pattern(value, pattern, prunedDF, df, message):
     tempDF = df.copy()
     cleanDF = df.copy()
     tempDF.loc[:, ('reason')] = message
+
+    #n = tempDF.shape[1]
+    #print("Number of columns of tempDF:", n)
+    #print(tempDF.columns)
+    #n2 = prunedDF.shape[1]
+    #print("Number of columns of prunedDF:", n2)
+    #print(prunedDF.columns)
+    prunedDF['reason'] = ' ' 
+
     prunedDF = prunedDF.append(tempDF[pattern.astype(str).str.contains(value) == True],ignore_index=True)
     del tempDF['reason']
     cleanDF = df[pattern.astype(str).str.contains(value) == False]
