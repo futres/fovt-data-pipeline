@@ -143,14 +143,17 @@ def process_data():
     prunedDF, cleanDF = data_cleaning(df)
     
     print("writing dataframe to spreadsheet and csv file...")               
+    #clean index values
+    cleanDF.loc[~cleanDF.index.duplicated(), :]
     # Create output file
-    SamplesDFOutput = cleanDF.reindex(columns=columns)
-    SamplesDFOutput.to_csv(processed_csv_filename, index=False)
+    #SamplesDFOutput = cleanDF.reindex(columns=columns)
+    #SamplesDFOutput.to_csv(processed_csv_filename, index=False)
+    cleanDF.to_csv(processed_csv_filename, index=False)
     
     prunecolumns = columns
     prunecolumns.append('reason')
-    PrunedDFOutput = prunedDF.reindex(columns=prunecolumns)
-    PrunedDFOutput.to_csv(pruned_csv_filename, index=False)
+    #PrunedDFOutput = prunedDF.reindex(columns=prunecolumns)
+    prunedDF.to_csv(pruned_csv_filename, index=False)
 
 # Final step of data cleaning
 # we are careful about what values we change here... we only change
@@ -161,7 +164,8 @@ def data_cleaning(df):
     df = df.reindex(columns=columns)    
     df = df.reset_index(drop=True)
     
-    df['catalogNumber'] = df['catalogNumber'].str.replace('"','')
+    df = df.replace('"','', regex=True)
+
     df['genus'] = df['scientificName'].str.split(' ').str[0]
     df['specificEpithet'] = df['scientificName'].str.split(' ').str[1]    
     
