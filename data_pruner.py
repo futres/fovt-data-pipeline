@@ -18,7 +18,7 @@ import urllib.request, json
 # Check Traits from FOVT, need to make sure these all match
 def datatype_trait_checker(prunedDF, df):
     with urllib.request.urlopen("https://biscicol.org/futresapi/v2/fovt") as url:
-        tempDF = df
+        tempDF = df.copy()
         tempDF.loc[:, ('reason')] = "measurementType value not found in ontology"
 
         data = json.loads(url.read().decode())
@@ -36,8 +36,8 @@ def datatype_trait_checker(prunedDF, df):
 
 # enforce numeric datatype
 def datatype_pattern(value, pattern, prunedDF, df, message):
-    tempDF = df
-    cleanDF = df
+    tempDF = df.copy()
+    cleanDF = df.copy()
     tempDF.loc[:, ('reason')] = message
     # convert to numeric, coerce means turn bad values to NaN
     pattern = pd.to_numeric(pattern, errors='coerce')
@@ -54,6 +54,7 @@ def pattern(value, pattern, prunedDF, df, message):
     warnings.filterwarnings("ignore", 'This pattern has match groups')
     tempDF = df.copy()
     cleanDF = df.copy()
+    print('pattern' + message)
     tempDF.loc[:, ('reason')] = message
 
     #n = tempDF.shape[1]
@@ -62,8 +63,8 @@ def pattern(value, pattern, prunedDF, df, message):
     #n2 = prunedDF.shape[1]
     #print("Number of columns of prunedDF:", n2)
     #print(prunedDF.columns)
-    prunedDF['reason'] = ' ' 
 
+    #print(tempDF)
     prunedDF = prunedDF.append(tempDF[pattern.astype(str).str.contains(value) == True],ignore_index=True)
     del tempDF['reason']
     cleanDF = df[pattern.astype(str).str.contains(value) == False]
@@ -73,9 +74,10 @@ def pattern(value, pattern, prunedDF, df, message):
 def prune_patterns(df):
 
     prunedDF = pd.DataFrame(columns=df.columns.values.tolist())
+    prunedDF['reason'] = ' ' 
     
     # a very general name not useful to us
-    prunedDF, df = pattern('Mammalia', df.scientificName, prunedDF, df, 'scientificName Mammalia not specific enough')
+    #prunedDF, df = pattern('Mammalia', df.scientificName, prunedDF, df, 'scientificName Mammalia not specific enough')
     # discard names with paranthesis
     prunedDF, df = pattern('\((.*?)\)',df.scientificName, prunedDF, df, 'scientificName has parenthesis somewhere')
     prunedDF, df = pattern('\(new SW',df.scientificName, prunedDF, df, 'scientificName matches something strange')

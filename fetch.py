@@ -164,7 +164,16 @@ def data_cleaning(df):
     df = df.reindex(columns=columns)    
     df = df.reset_index(drop=True)
     
+    # clean up name issues
     df = df.replace('"','', regex=True)
+	# replace two spaces with one space
+    df = df.replace('  ',' ', regex=True)
+    # remove commas from names
+    df['scientificName'] = df['scientificName'].replace(',','', regex=True)
+    # remove everything in parantheses for names
+    df['scientificName'] = df['scientificName'].replace(r'\(.*\)','', regex=True)
+    # strip leading and trailing spaces
+    df['scientificName'] = df['scientificName'].replace(r"^ +| +$", r"", regex=True)
 
     df['genus'] = df['scientificName'].str.split(' ').str[0]
     df['specificEpithet'] = df['scientificName'].str.split(' ').str[1]    
@@ -176,7 +185,7 @@ def data_cleaning(df):
     #df['order'] = ''    
     #df['class'] = '' 
     # merge the futres_scientific_levels data file, generated using taxize into set
-    output = pd.merge(df, taxon_levels_df,  left_on = 'genus', right_on = 'genus',  how='outer', suffixes=('_delme', ''))
+    output = pd.merge(df, taxon_levels_df,  left_on = 'genus', right_on = 'genus',  how='left', suffixes=('_delme', ''))
     #output = pd.merge(df, taxon_levels_df,  left_on = 'genus', right_on = 'genus',  how='outer', suffixes=('_delme', ''))
     del output['family_delme'] 
     del output['order_delme'] 
