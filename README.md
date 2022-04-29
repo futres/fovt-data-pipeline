@@ -28,7 +28,7 @@ node futresapi.ontology.sh
 The next step is updating the GEOME controlled vocabulary list for measurementType. Use `all_geome.json` file to update GEOME team environment.  Instructions at  [geome-configurations](https://github.com/biocodellc/geome-configurations/)
 
 ## STEP 1: Pre-processing
-The pre-processing step obtains data from remote sources and populates data tables which are then used in the reasoning step.   This provides summary statistics for the [FuTRES website](https://futres.org/) as well as assembling all data sources into a single file in `data/futres_data_processed.csv`.  Importantly, this step reports any data that has been removed from the data set during processing into an error log: `data/futres_data_with_errors.csv`
+The pre-processing step obtains data from remote sources and populates data tables which are then used in the reasoning step.   This provides summary statistics for the [FuTRES website](https://futres.org/) as well as assembling all data sources into a single file in `data/futres_data_processed.csv`.  Importantly, this step reports any data that has been removed from the data set during processing into an error log: `data/futres_data_with_errors.csv` ..Take a look at the errors file and examine the "reason" column to get the reason why the particular row was removed from the output.
 
 ### Installation
 First, we need to setup our environment to be able to connect to remote local stores and setup our python working environment:
