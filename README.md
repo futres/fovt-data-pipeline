@@ -25,7 +25,14 @@ cd biscicol-server/scripts
 node futresapi.ontology.sh
 ```
 
-The next step is updating the GEOME controlled vocabulary list for measurementType. Use `all_geome.json` file to update GEOME team environment.  Instructions at  [geome-configurations](https://github.com/biocodellc/geome-configurations/)
+The next step is updating the GEOME controlled vocabulary list for measurementType. Use `all_geome.json` file to update GEOME team environment.  Complete Instructions at  [geome-configurations](https://github.com/biocodellc/geome-configurations/)
+However, here is an abbreviated method to be run in the geome-configurations repo:
+
+```
+curl https://api.geome-db.org/projects/configs/70 | gunzip - | python -m json.tool > 70.json
+# edit 70.json file, inserting all_geome.json file into the measurementType field list
+curl -X PUT -H 'Content-Type: application/json' --data "@70.json" https://api.geome-db.org/projects/configs/70?access_token=r8Fqn3w3RFVvEcWAbm-h
+```
 
 ## STEP 1: Pre-processing
 The pre-processing step obtains data from remote sources and populates data tables which are then used in the reasoning step.   This provides summary statistics for the [FuTRES website](https://futres.org/) as well as assembling all data sources into a single file in `data/futres_data_processed.csv`. 

@@ -96,6 +96,8 @@ def process_data():
 
                 thisDF = pd.read_excel(temp_file,sheet_name='Samples', na_filter=False, engine='xlrd')                                                
                 thisDF = thisDF.rename(columns={'projectId': 'projectID'})
+                #thisDF = thisDF.rename(columns={'Sample_bcid': 'occurrenceID'})
+                thisDF['occurrenceID'] = thisDF['Sample_bcid']
                 thisDF = thisDF.reindex(columns=columns)            
                 thisDF = thisDF.astype(str)
                 df = df.append(thisDF,sort=False)
@@ -168,6 +170,8 @@ def data_cleaning(df):
     df = df.replace('"','', regex=True)
 	# replace two spaces with one space
     df = df.replace('  ',' ', regex=True)
+    # remove trailing backslash, which interferes with quotes
+    df = df.replace(r'\\$','', regex=True)
     # remove commas from names
     df['scientificName'] = df['scientificName'].replace(',','', regex=True)
     # remove everything in parantheses for names
